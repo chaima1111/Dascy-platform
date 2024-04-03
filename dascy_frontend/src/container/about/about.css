@@ -1,0 +1,101 @@
+.dascy__about-start{
+    border: 5px solid #EEF0FD;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: #EEF0FD; 
+    margin: 50px 5px 0 5px;
+}
+.dascy__about-start_title{
+    height: min-content;
+    flex: 1;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dascy__about-start_title h1{
+    font-size: 40px;
+    font-family: karla;
+    font-weight: bold;
+    flex-shrink: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+.label1{
+    color: #9995CE;
+}
+.label2{
+    color: var(--color-text2);
+}
+.dascy__about-start_content{
+    height: min-content;
+    flex: 1;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+.dascy__about-start_content p{
+    font-family: karla;
+    font-size: 17px;
+    flex-shrink: 1;
+    letter-spacing: 0.08em;
+}
+.label3{
+    line-height: 172.4%;
+    font-weight: 500;
+}
+.dascy__about-start_content2{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.dascy__about-start_text{
+    width: min-content;
+    height: min-content;
+    flex: 1;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.dascy__about-start_text img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 5px;
+}
+.textblock{
+    font-size: 24px;
+    line-height: 172.4%;
+    font-weight: bold;
+    font-family: karla;
+    letter-spacing: 0.08em;
+    margin-top: 0;
+}
+.text_margin{
+    margin-top: -1.8px;
+}
+.font{
+    margin-top: 0;
+    font-family: karla;
+    font-size: 16px;
+    flex-shrink: 1;
+    line-height: 172.4%;
+    font-weight: medium;
+    letter-spacing: 0.08em;
+}
+
+@media screen and (max-width:1050px){}
+
+@media screen and (max-width:650px){}
+
+@media screen and (max-width:490px){}
