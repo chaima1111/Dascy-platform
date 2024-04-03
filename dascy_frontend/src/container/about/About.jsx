@@ -21,13 +21,13 @@ const About = () => {
         <div className='dascy__about-start_content'>
         <p> 
           <span className='label3'> DASCY </span>
-          <span> is now- your go-to e-learning platform for simplifying </span>
-          <p>complex topics with engaging content and interactive quizzes.</p>
+          is now- your go-to e-learning platform for simplifying 
+          complex topics with engaging content and interactive quizzes.
         </p>
         </div>
         <div className='dascy__about-start_content2'>
-        <div className='dascy__about-start_text'>
-          <div className='image'>
+        <div className='dascy__about-start_text margin1'>
+          <div>
             <img src={star} alt="star" />
           </div>
           <div className='textblock text_margin'>Progress Tracking</div>
@@ -53,7 +53,7 @@ const About = () => {
               <p className='font'>Assess your understanding to <br />identify areas to improve and <br /> boost your learning journey.</p>
             </div>
           </div>
-          <div className='dascy__about-start_text'>
+          <div className='dascy__about-start_text margin3'>
             <div>
               <img src={head} alt="head" />
             </div>
