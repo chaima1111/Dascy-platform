@@ -1,6 +1,6 @@
 import React from 'react'
 import {Navbar} from './components';
-import {Courses,Header,About,Feedbacks} from './container';
+import {Courses,Header, About, Search,Feedbacks} from './container';
 
 import './App.css';
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <About/>
       <Courses/>
-      
+      <Search/>
       <Feedbacks/>
     </div>
   )

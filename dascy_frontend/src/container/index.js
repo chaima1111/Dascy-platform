@@ -5,3 +5,4 @@ export {default as Header } from './header/Header';
 export {default as features } from './features/Features';
 export {default as Feedbacks } from './feedbacks/Feedbacks';
 export {default as Courses } from './courses/Courses';
+export {default as Search } from './search/Search';
