@@ -1,0 +1,181 @@
+.dascy__search{
+    display: flex;
+    border: 5px solid #EEF0FD;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: #EEF0FD; 
+    margin: 50px 5px 0 5px;
+}
+.dascy__search-content{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 4.3rem;
+}
+.dascy__search-content_title{
+    font-family: karla;
+    font-weight: bold;
+    font-size: 38px;
+    letter-spacing: 0.02em;
+    line-height: 150%;
+    margin-left: 2.9rem;
+    margin-top: -20px;
+}
+.dascy__search-content_input{
+    width: 100%;
+    margin: 2rem 0 0 6.5rem;
+    display: flex;
+}
+.dascy__search-content_input input {
+    flex: 2;
+    width: 100%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+    min-height: 50px;
+    font-family: karla;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 2rem;
+    height: 40px;
+}
+.dascy__search-content_input button {
+    flex: 0.55;
+    width: 142px;
+    min-height: 50px;
+    background: var(--color-text2);
+    font-family: karla;
+    color: #FFF;
+    border-radius: 10px;
+    background: #AA2EE6;
+    box-shadow: 0px 2px 2px 0px #5955B3;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    border: none;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+.dascy__search-image {
+    margin: 50px 50px 35px 30px;
+}
+.dascy__search-image img {
+    width: 312px;
+    height: 268px;
+}
+
+@media screen and (max-width:1050px) {
+    .dascy__search-content_title{
+        font-size: 36px;
+        line-height: 140%;
+        margin-top: 40px;
+        margin-right: -80px;
+    }
+    .dascy__search-content_input input {
+        font-size:13px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        padding-right: 4rem;
+    }
+    .dascy__search-content_input button {
+        font-size: 15px;
+        line-height: 16px;
+        padding: 0 2rem;
+        margin-bottom: 50px;
+        margin-right: -25px;
+    }
+    .dascy__search-image img {
+        display: none;
+    }   
+}
+
+@media screen and (max-width:650px) {
+    .dascy__search-content_title {
+        font-size: 28px;
+        line-height: 140%;
+        margin-top: 40px;
+        margin-right: -100px;
+    }
+    .dascy__search-content_input input {
+        font-size:12px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        padding-right: 7rem;
+    }
+    .dascy__search-content_input button {
+        font-size: 15px;
+        line-height: 16px;
+        padding: 0 2rem;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .dascy__search-image img {
+        display: none;
+    }   
+}
+
+@media screen and (max-width:490px) {
+    .dascy__search-content_title {
+        font-size: 22px;
+        line-height: 140%;
+        margin-top: 40px;
+        margin-right: -100px;
+        margin-left: 35px;
+    }
+    .dascy__search-content_input input {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        margin-left: -20px;
+        padding-right: 1.5rem;
+    }
+    .dascy__search-content_input button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 0.5rem;
+        margin-bottom: 50px;
+        margin-right: -60px;
+    }
+    .dascy__search-image img {
+        display: none;
+    }    
+}
+@media screen and (max-width:390px) {
+    .dascy__search-content_title {
+        font-size: 20px;
+        line-height: 140%;
+        margin-top: 40px;
+        margin-right: -90px;
+        margin-left: 20px;
+    }
+    .dascy__search-content_input input {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        margin-left: -35px;
+        padding-right: 1rem;
+    }
+    .dascy__search-content_input button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 0.5rem;
+        margin-bottom: 50px;
+        margin-right: -50px;
+    }
+    .dascy__search-image img {
+        display: none;
+    }    
+}
