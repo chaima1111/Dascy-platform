@@ -4,13 +4,14 @@ import './contact.css';
 import facebook from '../../assets/Facebook.png';
 import insta from '../../assets/insta.png';
 import link from '../../assets/link.png';
-import logo from '../../assets/logoV3.png';
+import logo from '../../assets/logoV5.png';
 
 const Contact = () => {
   return (
     <div className='dascy__contact'>
       <div className='dascy__contact_logo'>
         <img src={logo} alt="logo"/>
+        <p>DASCY</p>
       </div>
       <div className='dascy__contact-content'>
         <h1>Contact Us</h1>

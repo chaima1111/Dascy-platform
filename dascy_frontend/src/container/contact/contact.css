@@ -5,11 +5,25 @@
     background-color: #EEF0FD; 
     margin: 70px 1rem 0 1rem;
 }
+.dascy__contact_logo {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 30px;
+    margin-bottom: 15px
+}
+.dascy__contact_logo p{
+    font-family: karla;
+    font-weight: Medium;
+    font-size: 30px;
+    line-height: 150%;
+    
+}
 .dascy__contact_logo img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: -320px;
-    margin-left: 15px;
+    width: 45px;
+    height: 44px;
 }
 .dascy__contact-content{
     flex: 1;
@@ -17,7 +31,7 @@
     align-self: stretch;
     text-align: center;
     align-items: center;
-    margin-left: -175px;
+    margin-left: -1120px;
     
 }
 .dascy__contact-content h1{
@@ -50,11 +64,25 @@
     margin-bottom: 25px;
 }
 
+@media screen and (max-width:1050px) {
+    .dascy__contact-content {
+        margin-left: -710px;
+    }
+    .dascy__contact_logo p{
+        font-size: 24px;
+    }
+    .dascy__contact_logo img {
+        width: 29px;
+        height: 28px;
+        margin-bottom: 5px;
+    }
+}
+
 @media screen and (max-width:650px) {
     .dascy__contact-content {
         margin-left: -10px;
     }
-    .dascy__contact_logo img {
+    .dascy__contact_logo {
         display: none;
     }
 }
@@ -76,7 +104,7 @@
         width: 37px;
         height: 37px;
     }
-    .dascy__contact_logo img { 
+    .dascy__contact_logo { 
         display: none;
     }
 }
@@ -98,7 +126,7 @@
         width: 35px;
         height: 35px;
     }
-    .dascy__contact_logo img { 
+    .dascy__contact_logo { 
         display: none;
     }
 }
