@@ -1,0 +1,104 @@
+.dascy__courses-container__feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    border-radius: 30px;
+    background: #F7ECFC;
+    box-shadow: 5px 5px 10px 5px #E6C4F7;
+    height: 16rem;
+}
+
+.dascy__courses-container__feature-image {
+    margin: 2rem 0;
+}
+
+.dascy__courses-container__feature-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.dascy__courses-container__feature-content h3 {
+    color: var(--color-text);
+    /* text-align: center; */
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.40px;
+    margin: 2rem 0 1rem 0;
+}
+
+.dascy__courses-container__feature-content p {
+    color: #8D8A8E;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    margin-bottom: 2rem;
+}
+
+.dascy__courses-container__feature-content-img {
+    position: relative;
+    left: 225px;
+    top: -20px;
+
+}
+
+@media screen and (max-width:700px) {
+    .dascy__courses-container__feature {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5px;
+        height: 28rem;
+        margin-top: 3rem;
+    }
+
+    .dascy__courses-container__feature-image {
+        margin: -2rem 0;
+    }
+
+    .dascy__courses-container__feature-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dascy__courses-container__feature-content h3 {
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 0.40px;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .dascy__courses-container__feature-content p {
+        margin-left: 2rem;
+    }
+
+    .dascy__courses-container__feature-content-img {
+        left: 60px;
+        top: -20px;
+
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .dascy__courses-heading {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 200%;
+    }
+
+    .dascy__courses-container {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .dascy__courses-container__feature-content-img {
+        left: 350px;
+        top: 1px;
+    }
+}
