@@ -43,7 +43,7 @@ const Navbar = () => {
 
             </div>
             <div className="dascy__navbar-menu_container-links-sign">
-            <p>sign in</p>
+            <button type='button'>sign in</button>
             <button type="button">Sign up</button>
                 </div>
               </div>  

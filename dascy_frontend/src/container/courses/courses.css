@@ -1,0 +1,65 @@
+.dascy__courses-heading {
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    font-family: var(--font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+
+.dascy__courses-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 45%;
+    gap: 2rem;
+    height: 18rem;
+    overflow-x: auto;
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+.dascy__courses-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.dascy__courses-container .hello:hover {
+    background-color: red;
+}
+
+@media screen and (max-width:1050px) {
+    .dascy__courses-heading {
+        font-size: 28px;
+    }
+
+    .dascy__courses-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        gap: 2rem;
+        height: 16rem;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .dascy__courses-heading {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 200%;
+    }
+
+    .dascy__courses-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        gap: 2rem;
+        height: 15rem;
+    }
+
+}
+
