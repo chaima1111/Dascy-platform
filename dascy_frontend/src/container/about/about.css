@@ -2,12 +2,11 @@
     border-radius: 5px ;
     border: none;
     border-radius: 35px;
- background-color: #EEF0FD;; 
-    margin: 2rem  2rem ;
+    background-color: #EEF0FD;; 
+    margin: 2rem  1rem ;
 }
 .dascy__about-start_title{
     height: min-content;
-
     align-self: stretch;
     text-align: center;
     align-items: center;

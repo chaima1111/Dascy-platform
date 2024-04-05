@@ -1,10 +1,9 @@
 .dascy__search{
     display: flex;
     border: 5px solid #EEF0FD;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-radius: 35px;
     background-color: #EEF0FD; 
-    margin: 50px 5px 0 5px;
+    margin: 50px 1rem 0 1rem;
 }
 .dascy__search-content{
     flex:1;
@@ -12,7 +11,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 4.3rem;
+    margin-right: 2.5rem;
 }
 .dascy__search-content_title{
     font-family: karla;
@@ -63,10 +62,10 @@
     padding: 0;
     border: none;
     margin-left: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 .dascy__search-image {
-    margin: 50px 50px 35px 30px;
+    margin: 50px 40px 35px 30px;
 }
 .dascy__search-image img {
     width: 312px;
@@ -138,7 +137,7 @@
         font-weight: 600;
         letter-spacing: 0.03em;
         margin-bottom: 50px;
-        margin-left: -20px;
+        margin-left: -25px;
         padding-right: 1.5rem;
     }
     .dascy__search-content_input button {
@@ -146,7 +145,7 @@
         line-height: 16px;
         padding: 0 0.5rem;
         margin-bottom: 50px;
-        margin-right: -60px;
+        margin-right: -50px;
     }
     .dascy__search-image img {
         display: none;
@@ -166,7 +165,7 @@
         letter-spacing: 0.03em;
         margin-bottom: 50px;
         margin-left: -35px;
-        padding-right: 1rem;
+        padding-right: 0.5rem;
     }
     .dascy__search-content_input button {
         font-size: 12px;

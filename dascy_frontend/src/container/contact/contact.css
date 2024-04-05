@@ -1,15 +1,15 @@
 .dascy__contact {
     display: flex;
     border: 5px solid #EEF0FD;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-radius: 35px;
     background-color: #EEF0FD; 
-    margin: 70px 5px 0 5px;
+    margin: 70px 1rem 0 1rem;
 }
 .dascy__contact_logo img {
     width: 200px;
     height: 200px;
     margin-bottom: -320px;
+    margin-left: 15px;
 }
 .dascy__contact-content{
     flex: 1;
@@ -17,7 +17,8 @@
     align-self: stretch;
     text-align: center;
     align-items: center;
-    margin-left: -160px;
+    margin-left: -175px;
+    
 }
 .dascy__contact-content h1{
     font-family: karla;
@@ -33,7 +34,7 @@
     font-weight: 380;
     line-height: 150%;
     letter-spacing: 0.02em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .dascy__contact-socials img {
     width: 40px;
@@ -49,10 +50,55 @@
     margin-bottom: 25px;
 }
 
-@media screen and (max-width:1050px) {}
+@media screen and (max-width:650px) {
+    .dascy__contact-content {
+        margin-left: -10px;
+    }
+    .dascy__contact_logo img {
+        display: none;
+    }
+}
 
-@media screen and (max-width:650px) {}
+@media screen and (max-width:490px) {
+    .dascy__contact-content {
+        margin-left: 0;
+    }
+    .dascy__contact-content h1 {
+        font-size: 32px;
+    }
+    .textblock {
+        font-size: 19px;
+    }
+    .textblock1 {
+        font-size: 14px;
+    }
+    .dascy__contact-socials img {
+        width: 37px;
+        height: 37px;
+    }
+    .dascy__contact_logo img { 
+        display: none;
+    }
+}
 
-@media screen and (max-width:490px) {}
-
-@media screen and (max-width:390px) {}
+@media screen and (max-width:390px) {
+    .dascy__contact-content {
+        margin-left: 10px;
+    }
+    .dascy__contact-content h1 {
+        font-size: 30px;
+    }
+    .textblock {
+        font-size: 17px;
+    }
+    .textblock1 {
+        font-size: 12px;
+    }
+    .dascy__contact-socials img {
+        width: 35px;
+        height: 35px;
+    }
+    .dascy__contact_logo img { 
+        display: none;
+    }
+}
