@@ -27,9 +27,7 @@
     width: 0;
 }
 
-.dascy__courses-container .hello:hover {
-    background-color: red;
-}
+
 
 @media screen and (max-width:1050px) {
     .dascy__courses-heading {

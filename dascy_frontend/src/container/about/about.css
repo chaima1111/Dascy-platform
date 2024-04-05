@@ -1,13 +1,13 @@
 .dascy__about-start{
-    border: 5px solid #EEF0FD;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
-    background-color: #EEF0FD; 
-    margin: 50px 5px 0 5px;
+    border-radius: 5px ;
+    border: none;
+    border-radius: 35px;
+ background-color: #EEF0FD;; 
+    margin: 2rem  2rem ;
 }
 .dascy__about-start_title{
     height: min-content;
-    flex: 1;
+
     align-self: stretch;
     text-align: center;
     align-items: center;
@@ -15,12 +15,13 @@
 }
 .dascy__about-start_title h1{
     font-size: 40px;
-    font-family: karla;
+    font-family: var(--font-family);
     font-weight: bold;
     flex-shrink: 1;
     letter-spacing: 0.02em;
     margin-bottom: 30px;
     margin-top: 80px;
+    padding-top: 2rem;
 }
 .label1{
     color: #9995CE;
@@ -30,7 +31,6 @@
 }
 .dascy__about-start_content{
     height: min-content;
-    flex: 1;
     align-self: stretch;
     text-align: center;
     align-items: center;
@@ -40,7 +40,7 @@
     margin-left: 290px;
 }
 .dascy__about-start_content p{
-    font-family: karla;
+    font-family: var(--font-family);
     font-size: 17px;
     flex-shrink: 1;
     letter-spacing: 0.08em;
@@ -51,13 +51,12 @@
 }
 .dascy__about-start_content2{
     display: flex;
-    flex: 1;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-right: 20px;
-    margin-bottom: 40px;
+    gap: 1rem;
 }
 .dascy__about-start_text{
     width: min-content;
@@ -79,7 +78,7 @@
     font-size: 24px;
     line-height: 172.4%;
     font-weight: bold;
-    font-family: karla;
+    font-family: var(--font-family);
     letter-spacing: 0.08em;
     margin-top: 0;
 }
@@ -107,12 +106,7 @@
     .dascy__about-start_content p{
         font-size: 20px;
     }
-    /*.dascy__about-start_content2{
-        margin-left: 390px;
-    }
-    .dascy__about-start_text{
-        margin-right: 50px;
-    }*/
+
 }
 
 @media screen and (max-width:650px){

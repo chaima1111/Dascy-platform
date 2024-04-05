@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './feature.css'
 const Feature = ({imgCourse,title,desc,cont}) => {
   return (
     <div className="dascy__courses-container__feature">
@@ -10,8 +10,10 @@ const Feature = ({imgCourse,title,desc,cont}) => {
         <div>
           <h3>{title}</h3>
           <p>{desc}</p>
-        </div>
+        </div >
+        <div className="dascy__courses-container__feature-content-img">
          <img src={cont} alt="continue" />
+         </div>
       </div>
     </div>
   )
