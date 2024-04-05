@@ -1,0 +1,58 @@
+.dascy__contact {
+    display: flex;
+    border: 5px solid #EEF0FD;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: #EEF0FD; 
+    margin: 70px 5px 0 5px;
+}
+.dascy__contact_logo img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: -320px;
+}
+.dascy__contact-content{
+    flex: 1;
+    flex-direction: column;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    margin-left: -160px;
+}
+.dascy__contact-content h1{
+    font-family: karla;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.textblock {
+    font-family: karla;
+    font-size: 20px;
+    font-weight: 380;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+}
+.dascy__contact-socials img {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    margin-bottom: 30px;
+}
+.textblock1 {
+    font-family: karla;
+    font-size: 14px;
+    line-height: 172.4%;
+    letter-spacing: 0.08em;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:1050px) {}
+
+@media screen and (max-width:650px) {}
+
+@media screen and (max-width:490px) {}
+
+@media screen and (max-width:390px) {}
