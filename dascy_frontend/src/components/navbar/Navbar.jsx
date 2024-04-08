@@ -1,6 +1,7 @@
 import React ,{useState}from 'react';
 import {RiMenu3Line , RiCloseLine} from  "react-icons/ri" ;
 import logo from '../../assets/logoV4.svg';
+import {Link} from "react-router-dom"
 import './navbar.css'
 
 const Menu =() => (
@@ -27,8 +28,8 @@ const Navbar = () => {
             </div>
         </div>
         <div className="dascy__navbar-sign">
-            <p>sign in</p>
-            <button type='button'>Sign up</button>
+           <Link className='link' to="/login"><p>sign in</p></Link> 
+            <Link className='link' to="/register" ><button type='button'>Sign up</button></Link>
         </div>
 
          <div className="dascy__navbar-menu">
@@ -43,8 +44,8 @@ const Navbar = () => {
 
             </div>
             <div className="dascy__navbar-menu_container-links-sign">
-            <button type='button'>sign in</button>
-            <button type="button">Sign up</button>
+             <Link className='link' to="/login"><p>sign in</p></Link> 
+            <Link className='link' to="/register" ><button type='button'>Sign up</button></Link>
                 </div>
               </div>  
          )}

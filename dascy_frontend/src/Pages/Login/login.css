@@ -1,0 +1,109 @@
+.container{
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dascy__login{
+    width:527px;
+    height: 682px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgba(71, 70, 70, 0.60);
+    opacity: 0.85;
+    box-shadow: 0px 0px 60.1px 0px rgba(179, 179, 179, 0.44) inset, -25.1px 25.1px 25.1px 0px rgba(255, 255, 255, 0.09) inset;
+}
+h1{
+    color: #000; 
+    font-family: Karla;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    align-items: center;
+    letter-spacing: -0.704px;
+}
+h3 {
+    color: #000;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 1rem 0 ;
+ 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+
+ }
+
+
+  input {
+      padding:  10px 20px ;
+      border: none;
+      border-bottom: 1px solid gray;
+      background-color: #EFEFEF;
+      border-radius: 20px;
+      border: none;
+      
+  }
+  
+  h5{
+    margin-top: 1rem;
+    color: #5955B3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+   button {
+        margin: 1rem;
+       padding: 10px;
+      
+       border: none;
+       background-color: var(--color-text2);
+       cursor: pointer;
+       color: white;
+       border-radius: 10px;
+       box-shadow: 0px 2px 2px 0px #5955B3;
+   }
+
+   p {
+       font-size: 12px;
+       color: red;
+       text-align: center;
+   }
+
+   span {
+       font-size: 12px;
+       text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+   }
+
+   .dascy__signup{
+    color: #5955B3;
+    font-size: bold;
+
+   }
+   .dascy__signup:hover{
+    color: #AA2EE6;
+
+   }
+
+   hr{
+    background: rgba(0, 0, 0, 0.50);
+   }
