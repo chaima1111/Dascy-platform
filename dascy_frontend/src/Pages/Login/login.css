@@ -6,12 +6,12 @@
 }
 
 .dascy__login-container_wrapper {
-    background-color: var(--color-text2);
+    background-color: #EEF0FD;
     border: 2px solid rgba(255, 255, 255, .1);
     backdrop-filter: blur(30px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     width: 420px;
-    color: #fff;
+    color: var(--color-text);
     border-radius: 10px;
     padding: 30px 40px;
     font-family: var(--font-family);
@@ -20,6 +20,7 @@
 .dascy__login-container_wrapper h1 {
     font-size: 36px;
     text-align: center;
+    color: var(--color-text3);
 }
 
 .dascy__login-container_wrapper .dascy__login-wrapper_input-box {
@@ -32,19 +33,18 @@
 .dascy__login-wrapper_input-box input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: #fff;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+    color: var(--color-text);
+        padding: 20px 45px 20px 20px;
 }
 
 .dascy__login-container_wrapper .dascy__login-wrapper_input-box input::placeholder {
-    color: #fff;
-}
+    color: var(--color-text);}
 
 .dascy__login-wrapper_input-box .icon {
     position: absolute;
@@ -62,12 +62,13 @@
 }
 
 .dascy__login-remember-forgot label input {
-    accent-color: #fff;
+    accent-color: var(--color-text);
     margin-right: 4px;
+
 }
 
 .dascy__login-remember-forgot a {
-    color: #fff;
+    color: var(--color-text3);
 }
 
 .dascy__login-remember-forgot a:hover {
@@ -77,19 +78,20 @@
 .dascy__login-container_wrapper button {
     width: 100%;
     height: 45px;
-    background-color: #fff;
+    background-color: var(--color-text2);
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #EEF0FD;
     font-weight: 700;
 }
 
 .dascy__login-container_wrapper button:hover {
     background-color: #EFEFEF;
+    color: var(--color-text3);
 
 }
 
@@ -100,6 +102,6 @@
 }
 
 .register-link p a:hover {
-    color: #333;
+    color: #AA2EE6;
 
 }
