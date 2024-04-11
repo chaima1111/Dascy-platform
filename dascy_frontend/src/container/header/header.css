@@ -70,12 +70,34 @@
 
 }
 
-.dascy__header-image{
+.dascy__header .dascy__header-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: updown;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    /* margin-top: 0%; */
 
+
+}
+
+@keyframes updown{
+    0%{
+    transform: translateY(-10px);
+}
+
+    50%{
+    transform: translateY(-50px);
+    }
+
+    100%{
+    transform: translateY(-10px);
+    }
 }
 .dascy__header-image img {
     width: 120%;

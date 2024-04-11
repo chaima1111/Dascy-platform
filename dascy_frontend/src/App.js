@@ -2,8 +2,6 @@ import React from 'react'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
   Outlet,
 } from "react-router-dom";
 import {Navbar} from './components';
@@ -11,7 +9,7 @@ import {Contact} from './container';
 import FirstPage from "../src/Pages/FirstPage/FirstPage.jsx"
 import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
-import HomePage from "../src/Pages/HomePage.jsx"
+import HomePage from "./Main/HomePage.jsx"
 
 import './App.css';
 const Layout = () =>{

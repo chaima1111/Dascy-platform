@@ -1,25 +1,44 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import "./register.css"
+import {Link} from "react-router-dom";
+import { FaUser,FaUniversity } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLock } from "react-icons/fa";
+import './register.css'
 const Register = () => {
   return (
-    <div  className="dascy__register">
-       <h1>Create An Account</h1>
+    <div>
+        <div className="Register_container">
+    <div className='dascy__login-container_wrapper'>
       <form action="">
-        <h3>Your Name</h3>
-       <input required type="text" placeholder='First Last'/>
-        <h3>Your Year of Study</h3>
-       <input required type="number" placeholder='2024'/>
-        <h3>Your University</h3>
-       <input required type="text" placeholder='University name'/>
-       <h3>Password</h3>
-        <input required type="text" placeholder='password' />
-       <h3>Email</h3>
-        <input  required type="email" placeholder='email'/>
-        <button>Sign up</button>
-       <hr />
-        <span>Already a member? <Link className='dascy__signup' to="/login"> Login</Link></span>
+        <h1>Create An Account</h1>
+        <div className="dascy__login-wrapper_input-box">
+          <input type="text" placeholder='Your name' required />
+          <FaUser className='icon' />
+        </div>
+        <div className="dascy__login-wrapper_input-box">
+          <input type="text" placeholder='Your Year of Study' required />
+          <FaUniversity className='icon'/>
+        </div>
+        <div className="dascy__login-wrapper_input-box">
+          <input type="text" placeholder='Your University' required />
+          <FaUniversity className='icon'/>
+        </div>
+        <div className="dascy__login-wrapper_input-box">
+          <input type="password" placeholder='your password' required />
+          <FaLock className='icon'/>
+        </div>
+        <div className="dascy__login-wrapper_input-box">
+          <input type="email" placeholder='you@email.com' required />
+          <MdEmail className='icon'/>
+        </div>
+       
+        <button type="submit">Log in</button>
+        <div className="register-link">
+          <p> You have an account?    <Link to="/login">Log in</Link></p>
+        </div>
       </form>
+    </div>
+    </div>
     </div>
   )
 }

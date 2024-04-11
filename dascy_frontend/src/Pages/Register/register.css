@@ -1,20 +1,12 @@
-.container {
-    margin: 2rem 1rem;
+.Register_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.dascy__register{
-width: 527px;
-    height: 1000px;
-    margin: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 15px;
-    border: 2px solid rgba(71, 70, 70, 0.60);
-    opacity: 0.85;
-    box-shadow: 0px 0px 60.1px 0px rgba(179, 179, 179, 0.44) inset, -25.1px 25.1px 25.1px 0px rgba(255, 255, 255, 0.09) inset;
+.wrapper {
+    padding: 20px 40px;
 }
