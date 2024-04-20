@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { registerUser } = require('./project_db/database');// added 
+const { registerUser } = require('../../project_db/database');// added 
 
 // Login Page
 router.get('/login', (req, res) => res.render('Login'));
@@ -13,17 +13,36 @@ router.post('/register', (req, res) => {
     const { name, yearOfStudy, university, password, password2, email } = req.body;
     let errors = [];
 
+    // Check for empty fields
+
     if (!name || !yearOfStudy || !university || !email || !password || !password2) {
         errors.push({ msg: 'Please enter all fields' });
     }
 
+     // Check if passwords match
+
     if (password != password2) {
         errors.push({ msg: 'Passwords do not match' });
     }
+     // Check password length
 
     if (password.length < 6) {
         errors.push({ msg: 'Password must be at least 6 characters' });
     }
+    // added code 
+    // Email validation 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        errors.push({ msg: 'Invalid email address' });
+    }
+
+    // Check if email is already registered
+    User.findOne({ email: email }).then(user => {
+      if (user) {
+          errors.push({ msg: 'Email already exists' });
+      }
+    });
+    //end of added code 
 
     if (errors.length > 0) {
         res.render('register', {
@@ -71,7 +90,7 @@ router.post('/register', (req, res) => {
           res.redirect('/users/login');
         });
         //end of new code
-  }
+      }
 });
 
 // Login
