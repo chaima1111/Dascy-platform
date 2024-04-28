@@ -113,10 +113,10 @@
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 2px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .dascy__navbar-sign .btn:hover {
-  transition-delay: 1.5s;
+  transition-delay: 1s;
   filter: hue-rotate(1deg);
   box-shadow: 0 0 05px var(--color-text2), 0 0 10px var(--color-text2);
 }
@@ -141,7 +141,7 @@
   transform: translateY(-50%);
   box-shadow: 5px -8px 0 var(--color-text2), 5px 8px 0 var(--color-text2);
   transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
-  transition-delay: 1s, 0.5s, 0s, 0s;
+  transition-delay: 0.7s, 0.5s, 0s, 0s;
 }
 
 .dascy__navbar-sign .btn:hover::before {
@@ -149,7 +149,7 @@
   height: 100%;
   left: -2px;
   box-shadow: 5px 0 0 var(--color-text2), 5px 0 0 var(--color-text2);
-  transition-delay: 0s, 0.5s, 1s, 1s;
+  transition-delay: 0s, 0.5s, 0.7s, 0.7s;
 }
 
 .dascy__navbar-sign .btn::after {
@@ -163,7 +163,7 @@
   transform: translateY(-50%);
   box-shadow: -5px -8px 0 var(--color-text2), -5px 8px 0 var(--color-text2);
   transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
-  transition-delay: 1s, 0.5s, 0s, 0s;
+  transition-delay: 0.7s, 0.5s, 0s, 0s;
 }
 
 .dascy__navbar-sign .btn:hover::after {
@@ -171,7 +171,7 @@
   height: 100%;
   right: -2px;
   box-shadow: -5px 0 0 var(--color-text2), -5px 0 0 var(--color-text2);
-  transition-delay: 0s, 0.5s, 1s, 1s;
+  transition-delay: 0s, 0.5s, 0.7s, 0.7s;
 }
 
 /* navbar responsive */
