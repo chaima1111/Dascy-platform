@@ -10,7 +10,11 @@ import FirstPage from "../src/Pages/FirstPage/FirstPage.jsx"
 import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
-
+import OSI from  "./Pages/OSI/OSI.jsx"
+import Layers from "./Pages/OSI/Layers.jsx"
+import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
+import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
+import IdeaThreeFirst from  "./Pages/PhyLayer/idThree/IdThree"
 import './App.css';
 const Layout = () =>{
     return(
@@ -24,27 +28,56 @@ const Layout = () =>{
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Layout/> ,
-    children:[
-        {
-            path:"/",
-            element:<HomePage/>
-        },
-        {
-            path:"/post/:id",
-            element:<FirstPage/>
-        },
-        
-    ]
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/post/:id",
+        element: <FirstPage />,
+      },
+    ],
+  },
+  //path to register page
+
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  //path to login page
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
-    path:"/register",
-    element:<Register/>,
+    // Starting page of Networking course
+    path: "/start",
+    element: <FirstPage />,
   },
   {
-    path:"/login",
-    element: <Login/>,
+    // to modify to physicalLayer/chapterOne
+    path: "/chapterOne",
+    element: <OSI />,
   },
+  {
+    // to modify to physicalLayer/chapterOne
+    path: "/chapterOne/layers",
+    element: <Layers />,
+  },
+  {
+    path: "/chapterTwo/first",
+    element: <IdeaOneFirst />,
+  },
+  {
+    path: "/chapterTwo/second",
+    element: <IdeaTwoFirst />,
+  },
+  {
+    path: "/chapterTwo/three",
+    element: <IdeaThreeFirst />,
+  }
 ]);
 const App = () => {
   return (

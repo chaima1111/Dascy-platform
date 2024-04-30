@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <div className="dascy__navbar-sign">
            <Link className='link' to="/login"><p>sign in</p></Link> 
-            <Link className='link' to="/register" ><button type='button'>Sign up</button></Link>
+            <Link className='link btn ' to="/register" ><span>Sign up</span></Link>
         </div>
 
          <div className="dascy__navbar-menu">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
             <div className="dascy__navbar-menu_container-links-sign">
              <Link className='link' to="/login"><p>sign in</p></Link> 
-            <Link className='link' to="/register" ><button type='button'>Sign up</button></Link>
+            <Link className=' dascy__navbar-menu_container-links-register' to="/register" ><button className=" dascy__navbar-menu_container-links-register "type='button'><span>Sign up</span></button></Link>
                 </div>
               </div>  
          )}

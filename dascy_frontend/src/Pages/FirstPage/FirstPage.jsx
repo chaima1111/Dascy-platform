@@ -1,11 +1,14 @@
 import React from 'react'
-
+import "./firstPage.css"
 const FirstPage = () => {
   return (
-    <div>
-      firstpage
+    
+    <div className="dascy__firstPage">
+      <div className="dascy__firstPage-content">
+        First page
+      </div>
     </div>
-  )
+  );
 }
 
 export default FirstPage
