@@ -14,6 +14,7 @@ import OSI from  "./Pages/OSI/OSI.jsx"
 import Layers from "./Pages/OSI/Layers.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
+import IdeaThreeFirst from  "./Pages/PhyLayer/idThree/IdThree"
 import './App.css';
 const Layout = () =>{
     return(
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
   {
     path: "/chapterTwo/second",
     element: <IdeaTwoFirst />,
+  },
+  {
+    path: "/chapterTwo/three",
+    element: <IdeaThreeFirst />,
   }
 ]);
 const App = () => {
