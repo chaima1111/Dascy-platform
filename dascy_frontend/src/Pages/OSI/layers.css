@@ -78,3 +78,48 @@
   width: 270%;
   height: 60px;
 }
+.dascy__layers::before {
+       content: "";
+    background-color: #f0c808;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    /* left: 230px;
+    top: 15px; */
+        left: 430px;
+            top: 155px;
+    z-index: 2;
+    animation: pose-two 2s linear  3s  ;
+    background-color: transparent;
+
+}
+
+@keyframes pose-two {
+    
+    0%{
+        transform: translate(0px,0px);
+        background-color: #fea604;
+    
+    }
+    50%{
+        transform: translate(0px,50px);
+        background-color: #fea604;
+    }
+    70%{
+        transform: translate(0 , 300px);
+        background-color: #fea604;
+    }
+    80% {
+        transform: translate(0px, 450px);
+        background-color: #fea604;
+    }
+    90% {
+        transform: translate(0px, 450px);
+        background-color: #fea604;
+    }
+    100% {
+        transform: translate(0, 500px);
+        background-color: #fea604;
+    }
+}

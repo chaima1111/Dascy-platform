@@ -2,8 +2,11 @@ import React from 'react'
 
 const IdOneFirst = () => {
   return (
-    <div>IdOneFirst</div>
-  )
+    <div className='dascy__physical-idone'>
+      IdOneFirst
+      <div>hello</div>
+    </div>
+  );
 }
 
 export default IdOneFirst
