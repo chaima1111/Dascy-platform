@@ -11,6 +11,7 @@ import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
 import OSI from  "./Pages/OSI/OSI.jsx"
+import Layers from "./Pages/OSI/Layers.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import './App.css';
 const Layout = () =>{
@@ -37,18 +38,31 @@ const router = createBrowserRouter([
       },
     ],
   },
+  //path to register page
+
   {
     path: "/register",
     element: <Register />,
   },
+  //path to login page
   {
     path: "/login",
     element: <Login />,
   },
   {
+    // Starting page of Networking course
+    path: "/start",
+    element: <FirstPage />,
+  },
+  {
     // to modify to physicalLayer/chapterOne
     path: "/chapterOne",
     element: <OSI />,
+  },
+  {
+    // to modify to physicalLayer/chapterOne
+    path: "/chapterOne/layers",
+    element: <Layers />,
   },
   {
     path: "/chapterTwo/first",

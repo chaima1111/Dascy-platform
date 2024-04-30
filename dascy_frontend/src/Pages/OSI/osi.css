@@ -1,0 +1,56 @@
+.dascy__osi-continer{
+  background: linear-gradient(-45deg, red, purple, blue, yellow);
+  background-size: 400% 400%;
+	width: 100%;
+	height: 100vh;
+  animation: animate 10s ease infinite;
+
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  font-size: 10vw;
+  border-bottom: 1px solid #666;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-weight: normal;
+  margin: 0;
+}
+
+.letter {
+  font-size: 15vw;
+  color: #ffffff;
+  font-family: var(--font-family);
+  display: inline-block;
+}
+
+
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
