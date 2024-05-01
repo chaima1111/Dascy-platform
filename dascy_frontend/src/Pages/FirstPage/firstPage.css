@@ -1,0 +1,95 @@
+
+.dascy__firstPage{
+    background-color: var(--color-text2);
+    display:flex;
+    align-items: center;
+    width:fit-content;
+    text-align: center;
+    justify-content: center; 
+    width: 100%; 
+    height: 100vh; 
+}
+
+  
+.dascy__firstPage-content{
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+     ;
+}
+
+
+    .dascy__firstPage-content h1{
+    font-weight: bold; 
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .dascy__firstPage-content h2 {
+    
+    font-weight: smaller; 
+    font-size: 20px; 
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+  
+
+
+  
+  .dascy__firstPage-images__robot-img {
+    position: fixed;
+    top: 40%;
+    right: 0; 
+    transform: translate(0, -50%); 
+  }
+  
+  .dascy__firstPage-images__satellite-img {
+    position: fixed; 
+    top: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+  }
+  
+  .dascy__firstPage-images__clouds-img {
+    position: fixed;
+    top: -100px; 
+    left: -120px;
+  }
+
+  .dascy__firstPage-images__city-img {
+    opacity: 0; /* L'image est initialement invisible */
+  animation: fadeInFromBottom 2s forwards; /* Animation pour faire apparaître l'image */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+  }
+
+
+  .dascy__firstPage-content__startbuttom-img {
+    margin-left: 60px;
+    width:40px;
+    display: inline-block; 
+    vertical-align: middle; 
+    position: absolute; 
+    margin-top: -5px; 
+    left: 80px; 
+    cursor: pointer !important;}
+
+
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0; /* L'image est invisible au début */
+      transform: translateY(100%); /* Déplacer l'image vers le bas de la fenêtre */
+    }
+    to {
+      opacity: 1; /* L'image devient visible à la fin de l'animation */
+      transform: translateY(0); /* Ajuster l'image à sa position finale */
+    }
+  }
