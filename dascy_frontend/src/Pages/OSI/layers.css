@@ -1,7 +1,9 @@
 .dascy__layers {
   display: flex;
+  position:relative;
   justify-content: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-left: 5rem;
   height: 100vh;
   padding: 0 6rem;
@@ -12,7 +14,45 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
+.dascy__layers-content-first::before{
+  content: "Software Layer";
+  position: absolute;
+  padding: 10px;
+  left: 50px;
+  top: 310px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font-family);
+        transform: translateY(-50%) rotate(90deg);
+
+
+}
+.dascy__layers-content-first::after{
+  content: "Hardware ";
+  position: absolute;
+  padding: 10px 20px ;
+  left: 78px;
+  top: 560px;
+  /* width: 50; */
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: white;
+  font-family: var(--font-family);
+        transform: translateY(-50%) rotate(90deg);
+
+
+}
+
+.dascy__layers-content-first:hover::after{
+  background: linear-gradient(296deg, #EEF0FD 2.49%, #8CA8FF 29.54%, #C987F1 49.92%, #5955B3 99.29%);
+  color: white;
+border: none;
+}
+
 .dascy__layers-content__first-img {
   display: flex;
   flex-direction: row;
@@ -36,6 +76,7 @@
   font-family: var(--font-family);
   text-align: center;
   color: black;
+  cursor: pointer;
   z-index: 3;
 }
 .dascy__layers-content__first-sender {
@@ -44,8 +85,6 @@
   position: absolute;
   left: -183px;
   top: 9px;
-}
-.dascy__layers-content__first-sender img {
 }
 
 .dascy__layers-content-layer h3 {
@@ -71,55 +110,63 @@
 }
 .dascy__layers-content-arrowCurved {
   position: absolute;
-  left: 33rem;
+  left: 28rem;
   top: 38rem;
 }
 .dascy__layers-content-arrowCurved img {
   width: 270%;
   height: 60px;
 }
-.dascy__layers::before {
-       content: "";
-    background-color: #f0c808;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    border-radius: 50%;
-    /* left: 230px;
-    top: 15px; */
-        left: 430px;
-            top: 155px;
-    z-index: 2;
-    animation: pose-two 2s linear  3s  ;
-    background-color: transparent;
-
+/* .dascy__layers::before */
+.circle {
+  background-color: #f0c808;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  left: 70px;
+  top: 155px;
+  z-index: 2;
+  color: transparent;
+  text-align: center;
+  font-family: var(--font-family);
+  background-color: transparent;
+  padding: 3px;
+}
+.circle.animate {
+  animation: pose-two 5s linear forwards;
 }
 
 @keyframes pose-two {
-    
-    0%{
-        transform: translate(0px,0px);
-        background-color: #fea604;
-    
-    }
-    50%{
-        transform: translate(0px,50px);
-        background-color: #fea604;
-    }
-    70%{
-        transform: translate(0 , 300px);
-        background-color: #fea604;
-    }
-    80% {
-        transform: translate(0px, 450px);
-        background-color: #fea604;
-    }
-    90% {
-        transform: translate(0px, 450px);
-        background-color: #fea604;
-    }
-    100% {
-        transform: translate(0, 500px);
-        background-color: #fea604;
-    }
+  0% {
+    transform: translate(0px, 0px);
+    background-color: #f0c808;
+    color: black;
+  }
+  30% {
+    transform: translate(0px, 450px);
+    background-color: #f0c808;
+  }
+  50% {
+    transform: translate(300px, 450px);
+    background-color: #f0c808;
+  }
+  80% {
+    transform: translate(550px, 450px);
+    background-color: #f0c808;
+  }
+  90% {
+    transform: translate(550px, 250px);
+    background-color: #f0c808;
+  }
+  96% {
+    transform: translate(550px, 0px);
+    background-color: #f0c808;
+    color: black;
+  }
+  100% {
+    transform: translate(550px, 0px);
+    background-color: transparent;
+    color: transparent;
+  }
 }
