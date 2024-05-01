@@ -3,7 +3,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import Hangman from "./practice/Hangman.jsx";
 import Layers from "./Layers"
+import HardWare from "./HardWare"
 import './osi.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -137,9 +139,7 @@ const OSI = () => {
 
    return (
      <div className="dascy__osi-continer">
-
        <h1 className="title" ref={titleRef}>
-        
          <span className="letter">O</span>
          <span className="letter">S</span>
          <span className="letter">I</span>
@@ -151,17 +151,17 @@ const OSI = () => {
          <span className="letter">R</span>
        </h1>
        <section id="nextSection">
-         <div id="box1" >
+         <div id="box1">
            <Layers />
          </div>
          <div id="box2" className="box">
-           Box 2
+           box2
          </div>
          <div id="box3" className="box">
            Box 3
          </div>
          <div id="box4" className="box">
-           Box 4
+           <Hangman />
          </div>
        </section>
 

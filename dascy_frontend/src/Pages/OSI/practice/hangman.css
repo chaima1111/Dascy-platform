@@ -1,0 +1,116 @@
+.dascy__hangman {
+  background: var(--color-text2);
+  width: 100vm;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.dascy__hangman-container {
+  display: flex;
+  width: 850px;
+  /* height: 60vh; */
+  gap: 50px;
+  padding: 60px 40px;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dascy__hangman-figure {
+  user-select: none;
+ 
+}
+
+.dascy__hangman-title {
+  font-size: 1.45rem;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+}
+.figure-container {
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  max-width: 270px;
+}
+
+.figure-part {
+  display: none;
+}
+
+/* word keybaord */
+.dascy__hangman-content {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(1, auto);
+  gap: 40px;
+}
+
+.dascy__hangman-word {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: var(--font-family);
+}
+.correctword {
+  letter-spacing: 1rem;
+  color: red;
+}
+.dascy__hangman-hint {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.left {
+  display: flex;
+  justify-content: center;
+}
+.dascy__hangman-guesses {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.dascy__hangman-gL {
+  color: red;
+}
+.dascy__hangman-keyboard {
+  display: flex;
+  
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+.keyboard-letter{
+padding: 12px;
+border: none;
+background-color: var(--color-text2);
+color: white;
+border-radius: 5px;
+font-family: var(--font-family);
+}
+.keyboard-letter:hover{
+background-color: #7e7de4;
+}
+
+.dascy__hangman-next {
+  border: none;
+  background-color: transparent;
+}

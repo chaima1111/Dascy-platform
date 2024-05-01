@@ -11,11 +11,13 @@ import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
 import OSI from  "./Pages/OSI/OSI.jsx"
-import Layers from "./Pages/OSI/Layers.jsx"
+import HardWare from "./Pages/OSI/HardWare.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
 import IdeaThreeFirst from  "./Pages/PhyLayer/idThree/IdThree"
 import './App.css';
+import Hangman from './Pages/OSI/practice/Hangman.jsx';
+import Quizzes from './Pages/OSI/practice/Quizzes.jsx';
 const Layout = () =>{
     return(
         <>
@@ -64,7 +66,7 @@ const router = createBrowserRouter([
   {
     // to modify to physicalLayer/chapterOne
     path: "/chapterOne/layers",
-    element: <Layers />,
+    element: <HardWare />,
   },
   {
     path: "/chapterTwo/first",
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
   {
     path: "/chapterTwo/three",
     element: <IdeaThreeFirst />,
+  },
+  {
+    path: "/hangman",
+    element: <Hangman />,
+  },
+  {
+    path: "/quizz",
+    element: <Quizzes />,
   }
 ]);
 const App = () => {
