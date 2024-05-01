@@ -13,53 +13,44 @@ const FirstPage = () => {
   return (
     <div className="dascy__firstPage">
       <div className="dascy__firstPage-content">
-        <h1>LET'S </h1>
-        <h1>START</h1>
-        <h2>
-          here we go
-          <Link to="/chapterOne">
-            <img
-              className="dascy__firstPage-content__startbuttom-img"
-              src={startButtomImage}
-              alt="startbuttom"
-            />
-          </Link>
-        </h2>
+        <h1>LET'S START</h1>
+        <div className="dascy__firstPage-content-text">
+          <h2>here we go</h2>
+
+          <div className="dascy__firstPage-content__startbuttom-img">
+            <Link to="/chapterOne">
+              <img src={startButtomImage} alt="startbuttom" />
+            </Link>
+          </div>
+        </div>
       </div>
 
-       <div className="dascy__firstPage-images">
-  <img
-    className="dascy__firstPage-images__robot-img"
-    src={robotImage}
-    alt="Robot"
-  />
+      <div className="dascy__firstPage-images">
+        <img
+          className="dascy__firstPage-images__robot-img"
+          src={robotImage}
+          alt="Robot"
+        />
 
-  <img
-    className="dascy__firstPage-images__satellite-img"
-    src={satelliteImage}
-    alt="satellite"
-  />
+        <img
+          className="dascy__firstPage-images__satellite-img"
+          src={satelliteImage}
+          alt="satellite"
+        />
 
+        <img
+          className="dascy__firstPage-images__city-img"
+          src={cityImage}
+          alt="city"
+        />
 
-  <img
-    className="dascy__firstPage-images__city-img"
-    src={cityImage}
-    alt="city"
-  />
-
-  <img
-    className="dascy__firstPage-images__clouds-img"
-    src={cloudsImage}
-    alt="clouds"
-  />
-</div>
-
-
+        <img
+          className="dascy__firstPage-images__clouds-img"
+          src={cloudsImage}
+          alt="clouds"
+        />
+      </div>
     </div>
-
-   
-
-
   );
 }
 
