@@ -133,7 +133,7 @@ let nb = 0;
                 <div>
                   <h2>{isGameWon() ? "You Win!" : "Game Over!"}</h2>
                   <p className="correctword">The word was: {selectedWord}</p>
-                  <button onClick={restartGame}>
+                  <button className="dascy__hangman-win" onClick={restartGame}>
                     {checkWining ? "Next Quizz" : "Repeat Quizz"}
                   </button>
                 </div>

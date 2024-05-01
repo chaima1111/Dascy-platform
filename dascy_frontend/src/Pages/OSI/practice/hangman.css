@@ -11,7 +11,7 @@
 
 .dascy__hangman-container {
   display: flex;
-  width: 850px;
+  width: 900px;
   /* height: 60vh; */
   gap: 50px;
   padding: 60px 40px;
@@ -66,8 +66,12 @@
   font-family: var(--font-family);
 }
 .correctword {
-  letter-spacing: 1rem;
   color: red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: var(--font-family);
+
 }
 .dascy__hangman-hint {
   text-align: center;
@@ -110,6 +114,17 @@ font-family: var(--font-family);
 background-color: #7e7de4;
 }
 
+.dascy__hangman-win{
+  background-color: var(--color-text2);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  font-family: var(--font-family);
+  font-weight: 500;
+
+
+}
 .dascy__hangman-next {
   border: none;
   background-color: transparent;

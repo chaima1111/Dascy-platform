@@ -19,6 +19,7 @@ const FirstPage = () => {
 
           <div className="dascy__firstPage-content__startbuttom-img">
             <Link to="/chapterOne">
+              {" "}
               <img src={startButtomImage} alt="startbuttom" />
             </Link>
           </div>

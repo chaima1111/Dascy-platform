@@ -49,7 +49,8 @@
 
 .dascy__layers-content-first:hover::after{
   background: linear-gradient(296deg, #EEF0FD 2.49%, #8CA8FF 29.54%, #C987F1 49.92%, #5955B3 99.29%);
-  color: white;
+  color: #ffffff;
+  border: none;
 border: none;
 }
 
