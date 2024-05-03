@@ -186,6 +186,15 @@ const IdTwo = () => {
         <div className="dashed-line5" id='DL5'></div>
         <div className="dashed-line6" id='DL6'></div>
       </div>
+      <div className="numbers" id='nmbr'>
+        <p>0</p>
+        <p>1</p>
+        <p>1</p>
+        <p>0</p>
+        <p>0</p>
+        <p>1</p>
+        <p>0</p>
+      </div> 
       </div>
       </>)}
       </div>
@@ -193,7 +202,7 @@ const IdTwo = () => {
       {showEncoding4 && (<>
       <div className='encoding-3_graph'>
       <div className="arrows">
-        <div className="arrow-x" id='arr3-x'></div>
+        <div className="arrow-x" id='arr4-x'></div>
         <div className="arrow-y"></div>
       </div>
       <div className="dashed-lines">
@@ -205,6 +214,15 @@ const IdTwo = () => {
         <div className="dashed-line5" id='DL5'></div>
         <div className="dashed-line6" id='DL6'></div>
       </div>
+      <div className="numbers" id='nmbr'>
+        <p>0</p>
+        <p>1</p>
+        <p>1</p>
+        <p>0</p>
+        <p>0</p>
+        <p>1</p>
+        <p>0</p>
+      </div> 
       </div>
       </>)}
       </div>
@@ -212,7 +230,7 @@ const IdTwo = () => {
       {showEncoding5 && (<>
       <div className='encoding-3_graph'>
       <div className="arrows">
-        <div className="arrow-x" id='arr3-x'></div>
+        <div className="arrow-x" id='arr5-x'></div>
         <div className="arrow-y"></div>
       </div>
       <div className="dashed-lines">
@@ -224,6 +242,15 @@ const IdTwo = () => {
         <div className="dashed-line5" id='DL5'></div>
         <div className="dashed-line6" id='DL6'></div>
       </div>
+      <div className="numbers" id='nmbr'>
+        <p>0</p>
+        <p>1</p>
+        <p>1</p>
+        <p>0</p>
+        <p>0</p>
+        <p>1</p>
+        <p>0</p>
+      </div> 
       </div>
       </>)}
       </div>
@@ -231,7 +258,7 @@ const IdTwo = () => {
       {showEncoding6 && (<>
       <div className='encoding-3_graph'>
       <div className="arrows">
-        <div className="arrow-x" id='arr3-x'></div>
+        <div className="arrow-x" id='arr6-x'></div>
         <div className="arrow-y"></div>
       </div>
       <div className="dashed-lines">
@@ -243,6 +270,15 @@ const IdTwo = () => {
         <div className="dashed-line5" id='DL5'></div>
         <div className="dashed-line6" id='DL6'></div>
       </div>
+      <div className="numbers" id='nmbr'>
+        <p>0</p>
+        <p>1</p>
+        <p>1</p>
+        <p>0</p>
+        <p>0</p>
+        <p>1</p>
+        <p>0</p>
+      </div> 
       </div>
       </>)}
       </div>
