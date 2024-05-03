@@ -1,17 +1,173 @@
-.dascy__hardware {
+.dascy__hardware{
+    display: flex;
+    margin: 5rem ;
+    z-index: 1;
+
+}
+.dascy__hardware-container{
+   
+   position: relative;
+   z-index: 2;
+}
+.dascy__hardware-container::before{
+    content: "Physical layer";
+    background: url("../../assets/Osi/layers/glitch2.gif");
+    /* background-color: #FFCE9B; */
+    border: 1px solid #FFCE9B;
+color: black;
+padding: 29px;
+font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: var(--font-family);
+position: absolute;
+width: 300px;
+height: 30px;
+top: 110px;
+left: 800px;
+border-radius: 10px;
+
+}
+.dascy__hardware-container::after{
+    content: url("../../assets/Osi/layers/turnArrow.gif");
+    
+    /* border: 1px solid #FFCE9B; */
+color: black;
+
+font-family: var(--font-family);
+position: absolute;
+width: 2px;
+height: 2px;
+top: 15%;
+left: 300px;
+border-radius: 10px;
+
+}
+.dascy__hardware-container-buttom {
   perspective: 1000px;
-  width: 200px;
+  margin: 40px;
+  width: 500px;
   height: 200px;
   position: relative;
+
 }
 
-.layer {
+.dascy__hardware-layer {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: #FFCE9B;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 50%; */
+}
+.dascy__images{
+    width: 100px;
+    height: 100px;
+    margin: 10px ;
+    /* position: absolute;
+   
+    top: 30%; */
+
+}
+.dascy__container-images{
+    display: flex;
+    justify-content: space-between;
+position: absolute;
+top: 75px;
+left: 50px;
+}
+.image-1{
+    position: relative;
+}
+.image-1::before{
+content: "cable ";
+/* transform: translateX(-50%); */
+background-color: #145DA0;
+color: white;
+padding: 10px;
+font-size: 15px;
+text-align: center;
+font-family: var(--font-family);
+position: absolute;
+width: 60px;
+height: 30px;
+top: 90px;
+left: 5px;
+border-radius: 10px;
+display: none;
+
+}
+.image-1:hover::before{
+    display: block;
+}
+.image-2::before{
+content: "bluetooth ";
+/* transform: translateX(-50%); */
+background-color: #145DA0;
+color: white;
+padding: 10px;
+font-size: 15px;
+display: flex;
+justify-content: center;
+text-align: center;
+text-align: center;
+font-family: var(--font-family);
+position: absolute;
+width: 70px;
+height: 30px;
+top: 100px;
+left: 100px;
+border-radius: 10px;
+display: none;
+
+}
+.image-2:hover::before{
+    display: block;
+}
+.image-3::before{
+content: "modem ";
+/* transform: translateX(-50%); */
+background-color: #145DA0;
+color: white;
+padding: 10px;
+font-size: 15px;
+text-align: center;
+font-family: var(--font-family);
+position: absolute;
+width: 60px;
+height: 30px;
+top: 105px;
+left: 240px;
+border-radius: 10px;
+display: none;
+z-index: 100;
+
+}
+.image-3:hover::before{
+    display: block;
+}
+.image-4::before{
+content: "wifi ";
+background-color: #145DA0;
+color: white;
+padding: 10px;
+font-size: 15px;
+text-align: center;
+font-family: var(--font-family);
+position: absolute;
+width: 60px;
+height: 30px;
+top: 110px;
+left: 360px;
+border-radius: 10px;
+display: none;
+z-index: 900;
+
+
+}
+.image-4:hover::before{
+    display: inline-block;
 }
