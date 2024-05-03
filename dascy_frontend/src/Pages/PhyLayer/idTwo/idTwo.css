@@ -8,6 +8,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F0D0FF ;
@@ -99,4 +100,443 @@ input:checked + label .dascy__idTwo-description{
 .dascy__idTwo-card[for='c6'] {
     background-image: url('../../../assets/idTwo/codage6.PNG');
     background-size: 605px 400px;
+}
+.dascy__idTwo-encoding{
+    background-color: #F0D0FF;
+}
+.encoding-1_graph{
+    width: 700px;
+    border-radius: .75rem;
+    margin: 0 240px;
+    margin-bottom: 0px;
+    padding: 20px 0;
+    border-radius: 2rem;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    background-color: #F9F8FD;
+}
+.arrow-x {
+    width: 400px; 
+    height: 1px; 
+    background-color: black; 
+    position: relative;
+    margin-left: 130px;
+    margin-top: 250px;
+    margin-bottom: 60px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .arrow-x::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black; 
+    width: 5px; 
+    height: 5px; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    right: -5px; 
+  }
+  
+  .arrow-y {
+    width: 1px; 
+    height: 280px; 
+    background-color: black; 
+    position: relative;
+    margin-left: 160px;
+    margin-top: -300px;
+  }
+  
+  .arrow-y::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 5px; 
+    height: 5px; 
+    background-color: black; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  }
+  .dashed-line {
+    width: 2px; 
+    height: 250px; 
+    margin-left: 205px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line1 {
+    width: 2px; 
+    height: 250px; 
+    margin-left: 250px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line2 {
+    width: 2px; 
+    height: 250px; 
+    margin-left: 295px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line3 {
+    width: 2px; 
+    height: 250px; 
+    margin-left: 340px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line4 {
+    width: 2px;
+    height: 250px;
+    margin-left: 385px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line5 {
+    width: 2px;  
+    height: 250px; 
+    margin-left: 435px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .dashed-line6 {
+    width: 2px; 
+    height: 250px;
+    margin-left: 483px;
+    margin-top: -250px;
+    border-left: 1.5px dashed black; 
+  }
+  .numbers{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+  .numbers p{
+    font-family: karla;
+    font-size: 17px;
+    margin-right: 38px;
+  }
+  
+.line {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine 2s linear forwards; 
+    margin-top: -42px;
+    margin-left: 162px;
+  }
+  
+  @keyframes stretchLine {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%; 
+    }
+    100% {
+      width: 6.2%;
+    }
+  }
+
+  .line1 {
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    margin-left: 205px;
+    margin-bottom: -271px;
+    animation: stretchLine1 2s linear forwards; 
+    animation-delay: 2s;
+  }
+  
+ @keyframes stretchLine1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.2%;
+    }
+  }
+  .line2 {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine2 2s linear forwards; 
+    margin-left: 205px;
+    margin-top: -40px;
+    animation-delay: 4s;
+  }
+  
+  @keyframes stretchLine2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%; 
+    }
+    100% {
+      width: 6.42%;
+    }
+  }
+  .line3 {
+    width: 0;
+    height: 2px;  
+    background-color: blue;
+    position: relative;
+    animation: stretchLine3 2s linear forwards; 
+    margin-left: 250px;
+    margin-top: -2px;
+    animation-delay: 6s;
+  }
+  
+  @keyframes stretchLine3 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%;  
+    }
+    100% {
+      width: 6.45%;
+    }
+  }
+  .line4 {
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    margin-top: 838px;
+    left: 68px; 
+    margin-left: 467px;
+    margin-bottom: -300px;
+    animation: stretchLine4 2s linear forwards; 
+    animation-delay: 8s;
+  }
+  
+  @keyframes stretchLine4 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.23%;
+    }
+  }
+  .line5 {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine5 2s linear forwards; 
+    margin-left: 296px;
+    margin-top: 36px;
+    animation-delay: 10s;
+  }
+  
+  @keyframes stretchLine5 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%; 
+    }
+    100% {
+      width: 6.3%;
+    }
+  }
+ .line6 {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine6 2s linear forwards; 
+    margin-left: 340px;
+    margin-top: -2px;
+    animation-delay: 12s;
+  }
+  
+  @keyframes stretchLine6 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%; 
+    }
+    100% {
+      width: 6.5%;
+    }
+  }
+  .line7 {
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68px; 
+    margin-left: 557px;
+    margin-bottom: -270px;
+    animation: stretchLine7 2s linear forwards; 
+    animation-delay: 14s;
+  }
+  
+  @keyframes stretchLine7 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.42%;
+    }
+  }
+  .line8 {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine8 2s linear forwards; 
+    margin-left: 385px;
+    margin-top: -40px;
+    animation-delay: 16s;
+  }
+  
+  @keyframes stretchLine8 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%;  
+    }
+    100% {
+      width: 7.3%;
+    }
+  }
+  
+  .line9 {
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    margin-top: 837px;
+    left: 68px; 
+    margin-left: 607px;
+    animation: stretchLine9 2s linear forwards;  
+    animation-delay: 18s;
+  }
+  
+  @keyframes stretchLine9 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.7%;
+    }
+  }
+  .line10 {
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchLine10 2s linear forwards; 
+    margin-left: 435px;
+    margin-top: 37px;
+    animation-delay: 20s;
+  }
+  
+  @keyframes stretchLine10 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 3%; 
+    }
+    100% {
+      width: 6.9%;
+    }
+  }
+
+.encoding-2{
+    background-color: #F0D0FF;
+}
+.encoding-2_graph{
+    width: 700px;
+    border-radius: .75rem;
+    background-size: cover;
+    margin: 0 240px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-radius: 2rem;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    background-color: #F9F8FD;
+}
+#arr-x{
+    margin-top: 180px;
+    margin-bottom: 130px;
+}
+#DL{
+    margin-left: -327px;
+    margin-top: 40px;
+}
+#DL1{
+    margin-left: -282px;
+}
+#DL2{
+    margin-left: -237px;
+}
+#DL3{
+    margin-left: -191px;
+}
+#DL4{
+    margin-left: -145px;
+}
+#DL5{
+    margin-left: -97px;
+}
+#DL6{
+    margin-left: -49px;
+}
+#nmbr{
+    margin-left: -352px;
+    margin-top: 270px;
+}
+.encoding-3_graph{
+    width: 700px;
+    border-radius: .75rem;
+    background-size: cover;
+    margin: 0 240px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-radius: 2rem;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    background-color: #F9F8FD;
+}
+#arr3-x{
+    height: 1px;
 }
