@@ -7,6 +7,7 @@ import {
 import {Navbar} from './components';
 import {NavbarCourse} from './components';
 import {Contact} from './container';
+import { Article } from "./components";
 import FirstPage from "../src/Pages/FirstPage/FirstPage.jsx"
 import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
@@ -117,6 +118,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <AccountDashboard />,
+  },
+  {
+    path: "/article",
+    element: <Article />,
   },
 ]);
 const App = () => {

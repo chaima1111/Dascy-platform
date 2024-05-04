@@ -52,13 +52,13 @@ const Sidebar = () => {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "5px 35px 10px 20px !important",
+          padding: "5px 35px 5px 20px !important",
         },
         "& .pro-inner-item:hover": {
-          color: "#EEF0FD !important",
+          color: "#AA2EE6 !important",
         },
         "& .pro-menu-item.active": {
-          color: "#fff !important",
+          color: "#AA2EE6 !important",
         },
       }}
     >
@@ -142,10 +142,16 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-         
             <Item
               title="FAQ Page"
               to="/faq"
+              icon={<HelpOutlineOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Logout"
+              to="/logout"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

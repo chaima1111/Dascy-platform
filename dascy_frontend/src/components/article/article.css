@@ -1,0 +1,143 @@
+.dascy__article{
+     display: flex;
+      margin: 1rem 3rem;
+      width: fit-content;
+}
+
+.dascy__article-container{
+    width: 90%;
+}
+.dascy__article-container{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.dascy__article-container p{
+   color: rgba(0, 0, 0, 0.37);
+font-family: Karla;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0.4px;
+}
+.dascy__article-container .dascy__article-title{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: aqua;
+border-radius: 15px;
+background: #F7ECFC;
+width: 110%;
+
+}
+.dascy__article-title-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.dascy__article-title-text p{color: #000;
+text-align: center;
+font-family:  karla;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: 0.48px;}
+.dascy__article-title-text h1{color: #000;
+text-align: left;
+font-family: karla;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+letter-spacing: 0.8px;}
+.dascy__article-container .dascy__article-title img{
+    width: 150px;
+    height:150px;
+
+}
+.dascy__article-overview{
+margin-bottom: 2rem;
+}
+.dascy__article-overview h1{
+margin-top: 1rem;
+margin-bottom: 2rem;
+
+}
+.dascy__article-overview .dascy__article-boxes{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+
+}
+.dascy__article-boxes .dascy__article-boxe{
+   display: flex;
+   justify-content: space-evenly;
+padding: 1rem;
+border-radius: 10px;
+
+width: 30%;
+
+color: white;
+margin-bottom: 10px;
+}
+.box1{
+    background: #5955B3;
+}
+.box2{
+    background-color: #AA2EE6;
+}
+.box3{
+    background-color: #FFBA5E
+;
+}
+.box4{
+    background-color: #F1CC5A
+;
+}
+.dascy__article-boxe-text{
+ margin-left: 15px;
+ margin-top: 10px;
+
+}
+.dascy__article-boxe-text p{
+ color: #FFF;
+font-family: Karla;
+text-align: left;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 30px */
+letter-spacing: 0.4px;
+
+}
+.dascy__article-boxe-text h3{
+color: #FFF;
+font-family: Karla;
+
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 150%; /* 30px */
+letter-spacing: 0.4px;
+
+}
+
+
+.dascy__article-courses{
+    margin: 2rem;
+   display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 65%;
+    gap: 2rem;
+    height: 18rem;
+    overflow-x: auto;
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
