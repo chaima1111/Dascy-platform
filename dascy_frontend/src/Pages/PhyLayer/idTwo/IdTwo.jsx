@@ -157,7 +157,6 @@ const IdTwo = () => {
         <div className="dashed-line5" id='DL5'></div>
         <div className="dashed-line6" id='DL6'></div>
       </div>
-      
       <div className="numbers" id='nmbr'>
         <p>0</p>
         <p>1</p>
@@ -166,6 +165,19 @@ const IdTwo = () => {
         <p>0</p>
         <p>1</p>
         <p>0</p>
+      </div>
+      <div className="lines">
+        <div className="line" id='Line'></div>
+        <div className="line1" id='Line1'></div>
+        <div className="line2" id='Line2'></div>
+        <div className="line3" id='Line3'></div>
+        <div className="line4" id='Line4'></div>
+        <div className="line5" id='Line5'></div>
+        <div className="line6" id='Line6'></div>
+        <div className="line7" id='Line7'></div>
+        <div className="line8" id='Line8'></div>
+        <div className="line9" id='Line9'></div>
+        <div className="line10" id='Line10'></div>
       </div> 
       </div>
       </>)}

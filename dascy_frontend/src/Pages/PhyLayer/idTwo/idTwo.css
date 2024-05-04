@@ -290,6 +290,7 @@ input:checked + label .dascy__idTwo-description{
     100% {
       width: 6.42%;
     }
+    /* animation: stretchLine2 2s linear forwards; */
   }
   .line3 {
     width: 0;
@@ -319,8 +320,8 @@ input:checked + label .dascy__idTwo-description{
     background-color: blue;
     position: absolute;
     top: 0;
-    margin-top: 838px;
     left: 68px; 
+    margin-top: 838px;
     margin-left: 467px;
     margin-bottom: -300px;
     animation: stretchLine4 2s linear forwards; 
@@ -435,8 +436,8 @@ input:checked + label .dascy__idTwo-description{
     background-color: blue;
     position: absolute;
     top: 0;
-    margin-top: 837px;
     left: 68px; 
+    margin-top: 837px;
     margin-left: 607px;
     animation: stretchLine9 2s linear forwards;  
     animation-delay: 18s;
@@ -551,4 +552,169 @@ input:checked + label .dascy__idTwo-description{
 #arr6-x{
     margin-top: 180px;
     margin-bottom: 130px;
+}
+#Line{
+  margin-top: 179px;
+  margin-left: -340px;
+  animation: stretchLine11 2s linear forwards;
+}
+@keyframes stretchLine11 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 6%; 
+  }
+  100% {
+    width: 12.5%;
+  }
+}
+#Line1{
+  margin-left: -298px;
+  margin-bottom: -240px;
+}
+#Line2{
+  margin-left: -297px;
+  margin-top: -40px;
+  animation: stretchLine12 2s linear forwards;
+  animation-delay: 4s;
+}
+@keyframes stretchLine12 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 3%; 
+  }
+  100% {
+    width: 13%;
+  }
+}
+#Line3{
+  animation: stretchLine13 2s linear forwards; 
+  margin-left: -252px;
+  margin-top: 75px;
+  animation-delay: 8s;
+}
+
+@keyframes stretchLine13 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 3%;  
+  }
+  100% {
+    width: 13%;
+  }
+}
+#Line4{
+  margin-top: 808px;
+  margin-left: 420px;
+  margin-bottom: -300px;
+  animation: stretchLine14 2s linear forwards; 
+  animation-delay: 6s;
+}
+
+@keyframes stretchLine14 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 6%; 
+  }
+  100% {
+    height: 12.9%;
+  }
+}
+#Line7{
+  margin-left: 465px;
+  margin-bottom: -279px;
+  animation: stretchLine17 2s linear forwards; 
+  animation-delay: 10s;
+}
+
+@keyframes stretchLine17 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 3%; 
+  }
+  100% {
+    height: 6.42%;
+  }
+}
+#Line5{
+  animation: stretchLine15 2s linear forwards; 
+  margin-left: -208px;
+  margin-top: -40px;
+  animation-delay: 12s;
+}
+
+@keyframes stretchLine15 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 13.5%; 
+  }
+  100% {
+    width: 27%;
+  }
+}
+#Line10{
+  animation: stretchLine100 2s linear forwards; 
+  margin-left: -116px;
+  margin-top: -40px;
+  animation-delay: 16s;
+}
+
+@keyframes stretchLine100 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 3%; 
+  }
+  100% {
+    width: 14.8%;
+  }
+}
+#Line9{
+  margin-top: 807px;
+  margin-left: 605px;
+  animation: stretchLine19 2s linear forwards;  
+  animation-delay: 18s;
+}
+
+@keyframes stretchLine19 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 3%; 
+  }
+  100% {
+    height: 6.7%;
+  }
+}
+#Line8{
+  animation: stretchLine18 2s linear forwards; 
+  margin-left: -67px;
+  margin-top: -2px;
+ 
+  animation-delay: 20s;
+}
+
+@keyframes stretchLine18 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 7%;  
+  }
+  100% {
+    width: 14%;
+  }
 }
