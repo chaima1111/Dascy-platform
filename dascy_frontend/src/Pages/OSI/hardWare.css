@@ -1,48 +1,110 @@
-.dascy__hardware{
-    display: flex;
-    margin: 5rem ;
-    z-index: 1;
-
+.dascy__hardware {
+  display: flex;
+  justify-content: column;
+  flex-wrap: wrap;
+  margin: 5rem 2rem;
+  z-index: 1;
 }
-.dascy__hardware-container{
-   
-   position: relative;
-   z-index: 2;
+.dascy__hardware-container,.dascy__hardware-container-two {
+  flex: 5;
+    position: relative;
+  z-index: 2;
 }
-.dascy__hardware-container::before{
-    content: "Physical layer";
-    background: url("../../assets/Osi/layers/glitch2.gif");
-    /* background-color: #FFCE9B; */
-    border: 1px solid #FFCE9B;
-color: black;
-padding: 29px;
-font-size: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: var(--font-family);
-position: absolute;
-width: 300px;
-height: 30px;
-top: 110px;
-left: 800px;
-border-radius: 10px;
-
+.dascy__hardware-container::before {
+  content: "Physical layer ";
+  background: url("../../assets/Osi/layers/glitch2.gif");
+  /* background-color: #FFCE9B; */
+  border: 1px solid #ffce9b;
+  color: black;
+  padding: 29px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  top: 110px;
+  left: 800px;
+  border-radius: 10px;
 }
-.dascy__hardware-container::after{
-    content: url("../../assets/Osi/layers/turnArrow.gif");
-    
-    /* border: 1px solid #FFCE9B; */
-color: black;
 
-font-family: var(--font-family);
-position: absolute;
-width: 2px;
-height: 2px;
-top: 15%;
-left: 300px;
-border-radius: 10px;
+/* .dascy__hardware-container-two::before {
+  content: "Data Link layer"!important;
+  background: url("../../assets/Osi/layers/glitch2.gif");
+  border: 1px solid #c9abc3;
+  color: black;
+  padding: 29px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  top: 110px;
+  left: 800px;
+  border-radius: 10px;
+  
+} */
+.dascy__hardware-container-two::after {
+  content: "it takes packets and breaks them into smaller pieces called frames";
+  /* background-color: #FFCE9B; */
+  border: 1px solid #c9abc3;
+  color: black;
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  top: 250px;
+  left: 100px;
+  border-radius: 10px;
+display: none;
+  
+}
+.dascy__hardware-container-three::after {
+  content: " breaking up segments into network packets and routing by discovering the best path across a physical network.";
+  border: 1px solid #FFBA5E;
+  color: black;
+  padding: 25px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  top: 250px;
+  left: 100px;
+  border-radius: 10px;
+display: none;
+  
+}
+.dascy__hardware-container-two:hover::after{
+    display: block;
+}
 
+.dascy__hardware-container::after {
+  content: url("../../assets/Osi/layers/turnArrow.gif");
+
+  /* border: 1px solid #FFCE9B; */
+  color: black;
+
+  font-family: var(--font-family);
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 15%;
+  left: 300px;
+  border-radius: 10px;
 }
 .dascy__hardware-container-buttom {
   perspective: 1000px;
@@ -50,124 +112,294 @@ border-radius: 10px;
   width: 500px;
   height: 200px;
   position: relative;
-
 }
 
-.dascy__hardware-layer {
+.dascy__hardware-layer ,.dascy__hardware-layer-three ,.dascy__hardware-layer-two {
   width: 100%;
   height: 100%;
-  background-color: #FFCE9B;
+  background-color: #ffce9b;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  /* position: absolute;
-  top: 0;
-  left: 50%; */
+
 }
-.dascy__images{
-    width: 100px;
-    height: 100px;
-    margin: 10px ;
-    /* position: absolute;
+/* second layer */
+.dascy__hardware-layer-two {
+  background-color: #c9abc3;
+}
+/* third */
+.dascy__hardware-layer-three {
+     background-color: #FFBA5E;
+}
+.dascy__images {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+}
+.dascy__images-two {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  /* position: absolute;
    
     top: 30%; */
+}
+.dascy__images-one {
+  width: 200px;
+  height: 200px;
+  margin: 5px ;
+}
+.dascy__images-three {
 
+  width: 90px;
+  height: 90px;
+  transform: rotate(-180deg);
+  margin: 5px;
+  margin-bottom: 10px;
 }
-.dascy__container-images{
-    display: flex;
-    justify-content: space-between;
-position: absolute;
-top: 75px;
-left: 50px;
+.dascy__container-images-layertow {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 65px;
+  left: 60px;
 }
-.image-1{
-    position: relative;
+.dascy__container-images {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 75px;
+  left: 50px;
 }
-.image-1::before{
-content: "cable ";
-/* transform: translateX(-50%); */
-background-color: #145DA0;
-color: white;
-padding: 10px;
-font-size: 15px;
-text-align: center;
-font-family: var(--font-family);
-position: absolute;
-width: 60px;
-height: 30px;
-top: 90px;
-left: 5px;
-border-radius: 10px;
-display: none;
+.image-1 {
+  position: relative;
+}
+.image-31 .dascy__images-three{
+  position: relative;
+  
+left: 20px ;
+top: 20px;
+}
+.image-32 .dascy__images-three{
+  position: relative;
+left: 40px ;
+top: 35px;
+}
+.image-33 .dascy__images-two{
+  position: relative;
 
+left: 55px ;
 }
-.image-1:hover::before{
-    display: block;
+.image-1::before {
+  content: "cable ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 90px;
+  left: 5px;
+  border-radius: 10px;
+  display: none;
 }
-.image-2::before{
-content: "bluetooth ";
-/* transform: translateX(-50%); */
-background-color: #145DA0;
-color: white;
-padding: 10px;
-font-size: 15px;
-display: flex;
-justify-content: center;
-text-align: center;
-text-align: center;
-font-family: var(--font-family);
-position: absolute;
-width: 70px;
-height: 30px;
-top: 100px;
-left: 100px;
-border-radius: 10px;
-display: none;
+.image-1:hover::before {
+  display: block;
+}
+.image-2::before {
+  content: "bluetooth ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  top: 100px;
+  left: 100px;
+  border-radius: 10px;
+  display: none;
+}
+.image-2:hover::before {
+  display: block;
+}
+.image-3::before {
+  content: "modem ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 105px;
+  left: 240px;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+}
+.image-3:hover::before {
+  display: block;
+}
+.image-4::before {
+  content: "wifi ";
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 110px;
+  left: 360px;
+  border-radius: 10px;
+  display: none;
+  z-index: 900;
+}
+.image-4:hover::before {
+  display: inline-block;
+}
 
+.image-21::before {
+  content: "Mac address  ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 90px;
+  left: 5px;
+  border-radius: 10px;
+  display: none;
 }
-.image-2:hover::before{
-    display: block;
+.image-21:hover::before {
+  display: block;
 }
-.image-3::before{
-content: "modem ";
-/* transform: translateX(-50%); */
-background-color: #145DA0;
-color: white;
-padding: 10px;
-font-size: 15px;
-text-align: center;
-font-family: var(--font-family);
-position: absolute;
-width: 60px;
-height: 30px;
-top: 105px;
-left: 240px;
-border-radius: 10px;
-display: none;
-z-index: 100;
+.image-22::before {
+  content: "pcs connected ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: 100px;
+  left: 100px;
+  border-radius: 10px;
+  display: none;
+}
+.image-22:hover::before {
+  display: block;
+}
+.image-23::before {
+  content: "switch ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 105px;
+  left: 300px;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+}
+.image-23:hover::before {
+  display: block;
+}
 
+.image-31::before {
+  content: "Ip address  ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 110px;
+  left: 5px;
+  border-radius: 10px;
+  display: none;
 }
-.image-3:hover::before{
-    display: block;
+.image-31:hover::before {
+  display: block;
 }
-.image-4::before{
-content: "wifi ";
-background-color: #145DA0;
-color: white;
-padding: 10px;
-font-size: 15px;
-text-align: center;
-font-family: var(--font-family);
-position: absolute;
-width: 60px;
-height: 30px;
-top: 110px;
-left: 360px;
-border-radius: 10px;
-display: none;
-z-index: 900;
-
-
+.image-32::before {
+  content: "Routing  ";
+  /* transform: translateX(-50%); */
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: 125px;
+  left: 90px;
+  border-radius: 10px;
+  display: none;
 }
-.image-4:hover::before{
-    display: inline-block;
+.image-32:hover::before {
+  display: block;
+}
+.image-33::before {
+  content: "router ";
+  background-color: #145da0;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 130px;
+  left: 300px;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+}
+.image-33:hover::before {
+  display: block;
 }

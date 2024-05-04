@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Hangman from "./practice/Hangman.jsx";
 import Layers from "./Layers"
-import HardWare from "./HardWare"
+import Hard from "./Hard.jsx"
 import './osi.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -155,7 +155,8 @@ const OSI = () => {
            <Layers />
          </div>
          <div id="box2" className="box">
-           box2
+           <Hard/>
+           
          </div>
          <div id="box3" className="box">
            Box 3
