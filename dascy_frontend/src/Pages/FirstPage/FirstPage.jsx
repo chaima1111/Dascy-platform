@@ -18,8 +18,7 @@ const FirstPage = () => {
           <h2>here we go</h2>
 
           <div className="dascy__firstPage-content__startbuttom-img">
-            <Link to="/chapterOne">
-              {" "}
+            <Link to="/test">
               <img src={startButtomImage} alt="startbuttom" />
             </Link>
           </div>

@@ -1,3 +1,9 @@
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { IoLogOut } from "react-icons/io5";
+import { getMe } from "../../../authfeatures/authSlice";
+import { LogOut, reset } from "../../../authfeatures/authSlice";
 import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
@@ -42,6 +48,25 @@ const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
 
+  // logout
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { isError } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    dispatch(getMe());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (isError) {
+      navigate("/login");
+    }
+  }, [isError, navigate]);
+  const logout = () => {
+    dispatch(LogOut());
+    dispatch(reset());
+    navigate("/start");
+  };
   return (
     <Box
       sx={{
@@ -52,13 +77,13 @@ const Sidebar = () => {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
-          padding: "5px 35px 10px 20px !important",
+          padding: "5px 35px 5px 20px !important",
         },
         "& .pro-inner-item:hover": {
-          color: "#EEF0FD !important",
+          color: "#AA2EE6 !important",
         },
         "& .pro-menu-item.active": {
-          color: "#fff !important",
+          color: "#AA2EE6 !important",
         },
       }}
     >
@@ -142,11 +167,18 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-         
             <Item
               title="FAQ Page"
               to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              onClick={logout}
+              title="Logout"
+              to="/logout"
+              icon={<IoLogOut />}
               selected={selected}
               setSelected={setSelected}
             />

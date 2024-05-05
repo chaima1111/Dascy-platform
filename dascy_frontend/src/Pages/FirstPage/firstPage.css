@@ -27,16 +27,16 @@
 
 .dascy__firstPage-content h1 {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 50px;
   margin-bottom: 10px;
-  font-family: var(--font-family);
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .dascy__firstPage-content h2 {
   font-weight: smaller;
   font-size: 20px;
   margin-bottom: 10px;
-  font-family: var(--font-family);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .dascy__firstPage-images__robot-img {
@@ -60,23 +60,26 @@
 }
 
 .dascy__firstPage-images__city-img {
-  opacity: 0; /* L'image est initialement invisible */
-  animation: fadeInFromBottom 2s forwards; /* Animation pour faire apparaître l'image */
+  opacity: 0; 
+  animation: fadeInFromBottom 2s forwards; 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
-.dascy__firstPage-content__startbuttom-img {
-  
+.dascy__firstPage-content__startbuttom-img img{
+  margin-left: 60px;
   position: absolute;
-  left: 440px;
+  left: 200px;
+  margin-top: -45px; 
   top: 100px;
   cursor: pointer;
+  display: inline-block; 
+  vertical-align: middle; 
 }
 .dascy__firstPage-content__startbuttom-img img{
-width: 80px;
+width: 70px;
 }
 
 @keyframes fadeInFromBottom {
@@ -89,5 +92,14 @@ width: 80px;
   to {
     opacity: 1; 
     transform: translateY(0); 
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Hide the robot and city images on mobile and tablet devices */
+  .dascy__firstPage-images__robot-img,
+  .dascy__firstPage-images__city-img {
+    display: none;
   }
 }
