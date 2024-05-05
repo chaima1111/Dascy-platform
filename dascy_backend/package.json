@@ -2,7 +2,7 @@
   "name": "dascy_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
@@ -11,13 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.40.1",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.18.0",
-    "passport": "^0.7.0"
+    "mysql2": "^3.9.7",
+    "passport": "^0.7.0",
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

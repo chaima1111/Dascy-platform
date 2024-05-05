@@ -1,3 +1,9 @@
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { IoLogOut } from "react-icons/io5";
+import { getMe } from "../../../authfeatures/authSlice";
+import { LogOut, reset } from "../../../authfeatures/authSlice";
 import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
@@ -42,6 +48,25 @@ const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
 
+  // logout
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { isError } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    dispatch(getMe());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (isError) {
+      navigate("/login");
+    }
+  }, [isError, navigate]);
+  const logout = () => {
+    dispatch(LogOut());
+    dispatch(reset());
+    navigate("/start");
+  };
   return (
     <Box
       sx={{
@@ -150,9 +175,10 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
+              onClick={logout}
               title="Logout"
               to="/logout"
-              icon={<HelpOutlineOutlinedIcon />}
+              icon={<IoLogOut />}
               selected={selected}
               setSelected={setSelected}
             />

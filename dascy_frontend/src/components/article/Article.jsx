@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { getMe } from "../../authfeatures/authSlice";
 import { Link } from "react-router-dom";
 import { Feature } from "../../components";
 import iCourse from "../../assets/Course/pic1.png";
@@ -12,6 +15,13 @@ import { PiShootingStarThin } from "react-icons/pi";
 
 import "./article.css";
 const Article = () => {
+     const { isError } = useSelector((state) => state.auth);
+
+    const { user } = useSelector((state) => state.auth);
+
+    
+
+    
  const [date, setDate] = useState(new Date());
 
  useEffect(() => {
@@ -33,7 +43,9 @@ const Article = () => {
         <p> {formattedDate}</p>
         <div className="dascy__article-title">
           <div className="dascy__article-title-text">
-            <h1>Hi, Ally</h1>
+            <h1>
+              Hi, <strong>{user && user.name}</strong>
+            </h1>
             <p>Ready to start your journey to acedamic excelence with DASCY?</p>
           </div>
           <img src={imgdash} alt="" />

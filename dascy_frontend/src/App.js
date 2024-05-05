@@ -51,6 +51,10 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
+        path: "/logout",
+        element: <HomePage />,
+      },
+      {
         path: "/post/:id",
         element: <FirstPage />,
       },
