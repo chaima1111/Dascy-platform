@@ -200,3 +200,35 @@ font-size: 18px;
 color: var(--color-text2);
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+ .dascy__chapterOne-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 700px;
+  height: 450px;
+    flex-wrap: wrap;
+
+
+}
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+
+ .dascy__chapterOne-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 450px;
+  height: 1000px;
+}
+}

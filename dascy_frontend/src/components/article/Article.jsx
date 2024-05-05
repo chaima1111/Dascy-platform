@@ -87,7 +87,7 @@ const Article = () => {
           <h1>My Courses</h1>
 
           <div className="dascy__article-courses">
-            <Link to="/startNetworking">
+            <Link to="/contents">
               {" "}
               <Feature
                 imgCourse={net}

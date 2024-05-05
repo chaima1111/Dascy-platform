@@ -40,7 +40,7 @@
 }
 
 .dascy__firstPage-images__robot-img {
-  position: fixed;
+  position: absolute;
   top: 40%;
   right: 0;
   transform: translate(0, -50%);
@@ -97,9 +97,33 @@ width: 70px;
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-  /* Hide the robot and city images on mobile and tablet devices */
-  .dascy__firstPage-images__robot-img,
+  /* Hide city*/
+  .dascy__firstPage-images__robot-img{
+     position: fixed;
+     width: 40%;
+     height: 40%;
+  top: 80%;
+  right: 0;
+  transform: translate(0, -50%);
+  }
   .dascy__firstPage-images__city-img {
     display: none;
   }
+  .dascy__firstPage-images__satellite-img {
+  position: fixed;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+.dascy__firstPage-images__clouds-img {
+  position: fixed;
+  top: -130px;
+  left: -220px;
+}
 }

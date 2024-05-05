@@ -1,6 +1,6 @@
 .dascy__hardware {
   display: flex;
-  justify-content: column;
+  justify-content: row;
   flex-wrap: wrap;
   margin: 5rem 2rem;
   z-index: 1;
@@ -11,46 +11,26 @@
   z-index: 2;
 }
 .dascy__hardware-container::before {
-  content: "Physical layer ";
-  background: url("../../assets/Osi/layers/glitch2.gif");
-  /* background-color: #FFCE9B; */
+  content: "Physical layer endcode and decode digital data into electrical  ";
   border: 1px solid #ffce9b;
   color: black;
-  padding: 29px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
+  font-size: 20px;
   font-family: var(--font-family);
   position: absolute;
   width: 300px;
-  height: 30px;
-  top: 110px;
-  left: 800px;
+  height: 70px;
+  top: 270px;
+  left: 100px;
   border-radius: 10px;
+  display: none;
+}
+.dascy__hardware-container:hover::before{
+display: block;
 }
 
-/* .dascy__hardware-container-two::before {
-  content: "Data Link layer"!important;
-  background: url("../../assets/Osi/layers/glitch2.gif");
-  border: 1px solid #c9abc3;
-  color: black;
-  padding: 29px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-family);
-  position: absolute;
-  width: 300px;
-  height: 30px;
-  top: 110px;
-  left: 800px;
-  border-radius: 10px;
-  
-} */
 .dascy__hardware-container-two::after {
-  content: "it takes packets and breaks them into smaller pieces called frames";
+  content: "Data Link layer takes packets and breaks them into smaller pieces called frames";
   /* background-color: #FFCE9B; */
   border: 1px solid #c9abc3;
   color: black;
@@ -70,18 +50,18 @@ display: none;
   
 }
 .dascy__hardware-container-three::after {
-  content: " breaking up segments into network packets and routing by discovering the best path across a physical network.";
+  content: " Network layer breaking up segments into network packets and routing by discovering the best path across a physical network.";
   border: 1px solid #FFBA5E;
   color: black;
-  padding: 25px;
+  padding: 25px 25px 30px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
   position: absolute;
-  width: 300px;
-  height: 80px;
+  width: 380px;
+  height: 50px;
   top: 250px;
   left: 100px;
   border-radius: 10px;
@@ -92,20 +72,7 @@ display: none;
     display: block;
 }
 
-.dascy__hardware-container::after {
-  content: url("../../assets/Osi/layers/turnArrow.gif");
 
-  /* border: 1px solid #FFCE9B; */
-  color: black;
-
-  font-family: var(--font-family);
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  top: 15%;
-  left: 300px;
-  border-radius: 10px;
-}
 .dascy__hardware-container-buttom {
   perspective: 1000px;
   margin: 40px;
