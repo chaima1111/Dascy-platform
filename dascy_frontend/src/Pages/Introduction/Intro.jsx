@@ -19,14 +19,14 @@ const Intro = () => {
       boxesRef.current[index] = box;
 
       gsap.to(box, {
-        x: 300,
+        x: 500,
         scrollTrigger: {
           trigger: box,
           scrub: true,
         },
       });
     });
-  }, []); // Run once on component mount
+  }, []); 
 
   return (
     <div className="dascy__intro">
@@ -52,53 +52,60 @@ const Intro = () => {
         </div>
       </div>
       {/* second */}
-      <div
-        className=" box  dascy__intro-content-info section__padding section__margin"
-      >
+      <div className=" box dascy__intro-content-info section__padding section__margin">
         <div
-          className=" box dascy__intro-content section__padding section__margin"
-          ref={(ref) => (boxesRef.current[3] = ref)}
+          className="box dascy__intro-content section__padding section__margin"
+          ref={(ref) => (boxesRef.current[2] = ref)}
         >
-          <h1>And another one </h1>
+          <h1>AND another PC </h1>
           <div className="dascy__intro-content-img">
             <img src={pc2} alt="imageofdata" />
           </div>
         </div>
-        </div>
-        {/* third */}
+      </div>
+
+      {/* third */}
+      <div className=" box dascy__intro-content-info section__padding section__margin">
         <div
-          className=" box dascy__intro-content section__padding section__margin"
+          className="box dascy__intro-content section__padding section__margin"
+          ref={(ref) => (boxesRef.current[3] = ref)}
         >
           <h1>we link them by </h1>
           <div className="dascy__intro-content-img">
             <img src={cabl} alt="imageofdata" />
           </div>
         </div>
+      </div>
+      {/* fouth */}
+      <div className=" box dascy__intro-content-info section__padding section__margin">
         <div
-          className=" box dascy__intro-content section__padding section__margin"
-          ref={(ref) => (boxesRef.current[5] = ref)}
+          className="box dascy__intro-content section__padding section__margin"
+          ref={(ref) => (boxesRef.current[4] = ref)}
         >
           <h1>Or </h1>
           <div className="dascy__intro-content-img">
             <img src={wifi} alt="imageofdata" />
           </div>
         </div>
+      </div>
+      {/* fifth */}
+      <div className=" box dascy__intro-content-info section__padding section__margin">
         <div
-          className=" box dascy__intro-content section__padding section__margin"
-          ref={(ref) => (boxesRef.current[6] = ref)}
+          className="box dascy__intro-content section__padding section__margin"
+          ref={(ref) => (boxesRef.current[5] = ref)}
         >
           <h1>To send </h1>
           <div className="dascy__intro-content-img">
             <img src={folde} alt="imageofdata" />
           </div>
         </div>
-
-        <div className="dascy__intro-buttom">
-          <Link to="/courseOne">
-            <button className="dascy__intro-next">Next</button>
-          </Link>
-        </div>
-    
+      </div>
+     
+      <div className="dascy__intro-buttom">
+        <Link to="/courseOne">
+          <button className="dascy__intro-next">Next</button>
+        </Link>
+      </div>
     </div>
   );
 };
