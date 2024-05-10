@@ -13,6 +13,7 @@ import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
 import OSI from  "./Pages/OSI/OSI.jsx"
+import Topo from  "./Pages/OSI/Topology/Topo"
 import HardWare from "./Pages/OSI/HardWare.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
@@ -94,6 +95,14 @@ const router = createBrowserRouter([
       {
         path: "/courseOne",
         element: <FirstChapter />,
+      },
+      {
+        path: "/contents/osi",
+        element: <OSI />,
+      },
+      {
+        path: "/topo",
+        element: <Topo />,
       },
       {
         path: "/contents/osi",

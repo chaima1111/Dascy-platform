@@ -5,7 +5,7 @@
     font-family: karla;
    
 }
-.dascy__intro{
+.dascy__topo{
     width: 100%;
     height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@
   background-color: #F0D0FF;
 
 }
-.dascy__intro-container{
+.dascy__topo-container{
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
@@ -33,7 +33,7 @@ h1{
     }
 
 
-.dascy__intro-card{
+.dascy__topo-card{
     width: 80px;
     border-radius: .75rem;
     background-size: cover;
@@ -46,12 +46,12 @@ h1{
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
-.dascy__intro-card > .dascy__intro-row{
+.dascy__topo-card > .dascy__topo-row{
     color: white;
     display: flex;
     flex-wrap: nowrap;
 }
-.dascy__intro-card > .dascy__intro-row > .dascy__intro-icon{
+.dascy__topo-card > .dascy__topo-row > .dascy__topo-icon{
     background-color: #110218;
     color: white;
     border-radius: 50%;
@@ -62,7 +62,7 @@ h1{
     margin: 15px;
 
 }
-.dascy__intro-card > .dascy__intro-row > .dascy__intro-description{
+.dascy__topo-card > .dascy__topo-row > .dascy__topo-description{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -74,26 +74,26 @@ h1{
     transition-delay: .3s;
     transition: all .3s ease;
 }
-.dascy_intro-description p{
+.dascy_topo-description p{
     color: #b0b0ba;
     padding-top: 5px;
 }
-.dascy__intro-description h4{
+.dascy__topo-description h4{
     text-transform: uppercase;
     color: #223;
 }
-.dascy__intro-container input{
+.dascy__topo-container input{
     display: none;
 }
 input:checked + label{
     width: 600px;
 }
-input:checked + label .dascy__intro-description{
+input:checked + label .dascy__topo-description{
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
-.dascy__intro-card[for='c3'] {
+.dascy__topo-card[for='c3'] {
   background-image: url("../../../assets/Osi/topo/pc-5.gif");
   background-size: 610px 400px;      
   background-color: aliceblue;
@@ -102,7 +102,7 @@ input:checked + label .dascy__intro-description{
   background-position: center;
 
 }
-.dascy__intro-card[for='c4'] {
+.dascy__topo-card[for='c4'] {
   background-image: url('../../../assets/Osi/topo/pc-4.gif');
   background-size: 610px 350px;
   background-color: aliceblue;
@@ -111,12 +111,12 @@ input:checked + label .dascy__intro-description{
   background-position: center;
 
 }
-.dascy__intro-card[for='c1'] {
+.dascy__topo-card[for='c1'] {
   background-image: url('../../../assets/Osi/topo/pc-2.gif');
   background-size: 620px 370px;  
   background-color: aliceblue;
 }
-.dascy__intro-card[for='c2'] {
+.dascy__topo-card[for='c2'] {
   background-image: url('../../../assets/Osi/topo/ppppppppppppp.gif');
   background-color: aliceblue;
   background-size: 605px 400px;

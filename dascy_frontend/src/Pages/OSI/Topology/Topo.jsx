@@ -32,48 +32,47 @@ const Topo = () => {
 
   return (
     
-    <div>
-      {/* Votre contenu JSX */}
-      <div ref={nextSectionRef}> {/* Assignez la référence à l'élément cible */}
-        <div className='dascy__intro'>
-          <div className='dascy__intro-title'>
+    <div >
+      <div ref={nextSectionRef}> 
+        <div className='dascy__topo'>
+          <div className='dascy__topo-title'>
             <h1>How networks communicate with different devices?</h1>
           </div>
-          <div className='dascy__intro-container'>
+          <div className='dascy__topo-container'>
             <input type="radio" name='slide' id='c1' checked />
-            <label htmlFor="c1" className='dascy__intro-card' onClick={() => handleCardClick("MESH TOPOLOGY")}>
-              <div className='dascy__intro-row'>
-                <div className='dascy__intro-icon'>1</div>
-                <div className='dascy__intro-description'>
+            <label htmlFor="c1" className='dascy__topo-card' onClick={() => handleCardClick("MESH TOPOLOGY")}>
+              <div className='dascy__topo-row'>
+                <div className='dascy__topo-icon'>1</div>
+                <div className='dascy__topo-description'>
                   <h4>MESH TOPOLOGY</h4>
                 </div>
               </div>
             </label>
         <input type="radio" name='slide' id='c2' checked/>
-        <label htmlFor="c2" className='dascy__intro-card'onClick={() => handleCardClick("STAR TOPOLOGY")}>
-          <div className='dascy__intro-row'>
-            <div className='dascy__intro-icon'>2</div>
-            <div className='dascy__intro-description'>
+        <label htmlFor="c2" className='dascy__topo-card'onClick={() => handleCardClick("STAR TOPOLOGY")}>
+          <div className='dascy__topo-row'>
+            <div className='dascy__topo-icon'>2</div>
+            <div className='dascy__topo-description'>
               <h4>STAR TOPOLOGY</h4>
               
             </div>
           </div>
         </label>
         <input type="radio" name='slide' id='c3' checked/>
-        <label htmlFor="c3" className='dascy__intro-card'onClick={() => handleCardClick("RING TOPOLOGY")}>
-          <div className='dascy__intro-row'>
-            <div className='dascy__intro-icon'>3</div>
-            <div className='dascy__intro-description'>
+        <label htmlFor="c3" className='dascy__topo-card'onClick={() => handleCardClick("RING TOPOLOGY")}>
+          <div className='dascy__topo-row'>
+            <div className='dascy__topo-icon'>3</div>
+            <div className='dascy__topo-description'>
               <h4>RING TOPOLOGY</h4>
               
             </div>
           </div>
         </label>
         <input type="radio" name='slide' id='c4' checked/>
-        <label htmlFor="c4" className='dascy__intro-card'onClick={() => handleCardClick("BUS TOPOLOGY")}>
-          <div className='dascy__intro-row'>
-            <div className='dascy__intro-icon'>4</div>
-            <div className='dascy__intro-description'>
+        <label htmlFor="c4" className='dascy__topo-card'onClick={() => handleCardClick("BUS TOPOLOGY")}>
+          <div className='dascy__topo-row'>
+            <div className='dascy__topo-icon'>4</div>
+            <div className='dascy__topo-description'>
               <h4>BUS TOPOLOGY</h4>
              
             </div>
