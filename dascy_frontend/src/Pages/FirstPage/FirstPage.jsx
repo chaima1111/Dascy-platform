@@ -6,6 +6,7 @@ import cloudsImage from "../../assets/startPage/clouds.png";
 
 import satelliteImage from "../../assets/startPage/satellite.png";
 import startButtomImage from "../../assets/startPage/startButtom.png";
+import { MdNotStarted } from "react-icons/md";
 
 import "./firstPage.css"
 
@@ -17,11 +18,9 @@ const FirstPage = () => {
         <div className="dascy__firstPage-content-text">
           <h2>here we go</h2>
 
-          <div className="dascy__firstPage-content__startbuttom-img">
-            <Link to="/test">
-              <img src={startButtomImage} alt="startbuttom" />
-            </Link>
-          </div>
+          <Link to="/contents">
+            <MdNotStarted size={70} color="#FFDF6B" />
+          </Link>
         </div>
       </div>
 

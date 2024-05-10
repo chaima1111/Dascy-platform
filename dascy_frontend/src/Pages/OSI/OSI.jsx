@@ -1,11 +1,12 @@
 import React from 'react'
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { Contact } from "../../container";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Hangman from "./practice/Hangman.jsx";
 import Layers from "./Layers"
-import Hard from "./Hard.jsx"
+import Hard from "./HardWare.jsx"
 import './osi.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -34,7 +35,7 @@ const OSI = () => {
        )
        .to(".title", {
          y: 45,
-         delay: 0.7,
+         delay: 0.5,
        })
       //  .to(".letter", {
       //    margin: "0 5vw",
@@ -67,7 +68,7 @@ const OSI = () => {
        .to(".letter", {
          x: 0,
          delay: 1,
-         duration: 4,
+         duration: 3,
        });
    };
 
@@ -155,11 +156,7 @@ const OSI = () => {
            <Layers />
          </div>
          <div id="box2" className="box">
-           <Hard/>
-           
-         </div>
-         <div id="box3" className="box">
-           Box 3
+           <Hard />
          </div>
          <div id="box4" className="box">
            <Hangman />
@@ -170,10 +167,9 @@ const OSI = () => {
          <div
            id="box5"
            className="box"
-           onMouseEnter={onEnter}
            onMouseLeave={onLeave}
          >
-           Last section
+           <Contact />
          </div>
        </section>
      </div>

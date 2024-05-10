@@ -13,6 +13,7 @@ import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
 import OSI from  "./Pages/OSI/OSI.jsx"
+import Topo from  "./Pages/OSI/Topology/Topo"
 import HardWare from "./Pages/OSI/HardWare.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
@@ -21,6 +22,8 @@ import './App.css';
 import Hangman from './Pages/OSI/practice/Hangman.jsx';
 import Quizzes from './Pages/OSI/practice/Quizzes.jsx';
 import FirstChapter from "./Pages/OSI/FirstChapter.jsx";
+import Introdu from "./Pages/Introduction/Intro.jsx"
+import NetContents from "./Pages/NetContents/NetContents.jsx";
 import AccountDashboard from "./Main/AccountDashboard.jsx";
 
 const Layout = () =>{
@@ -39,6 +42,15 @@ const Layout2 = () =>{
         <Outlet/>
         
         </>
+    );
+}
+const Layout3 = () =>{
+    return (
+      <>
+        <NavbarCourse />
+        <Outlet />
+        <Contact />
+      </>
     );
 }
 const router = createBrowserRouter([
@@ -62,15 +74,51 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
+    element: <Layout3 />,
+    children: [
+      {
+        path: "/contents",
+        element: <NetContents />,
+      },
+    ],
+  },
+  {
+    path: "/",
     element: <Layout2 />,
     children: [
+      // path of the content of networking course
+
+      {
+        path: "/intro",
+        element: <Introdu />,
+      },
       {
         path: "/courseOne",
         element: <FirstChapter />,
       },
       {
-        path: "/chapter",
+        path: "/contents/osi",
         element: <OSI />,
+      },
+      {
+        path: "/topo",
+        element: <Topo />,
+      },
+      {
+        path: "/contents/osi",
+        element: <OSI />,
+      },
+      {
+        path: "/chapterTwo/second",
+        element: <IdeaTwoFirst />,
+      },
+      {
+        path: "/chapterTwo/three",
+        element: <IdeaThreeFirst />,
+      },
+      {
+        path: "/chapterTwo/laws",
+        element: <IdeaThreeFirst />,
       },
     ],
   },
@@ -99,14 +147,7 @@ const router = createBrowserRouter([
     path: "/chapterTwo/first",
     element: <IdeaOneFirst />,
   },
-  {
-    path: "/chapterTwo/second",
-    element: <IdeaTwoFirst />,
-  },
-  {
-    path: "/chapterTwo/three",
-    element: <IdeaThreeFirst />,
-  },
+
   {
     path: "/hangman",
     element: <Hangman />,
@@ -114,10 +155,6 @@ const router = createBrowserRouter([
   {
     path: "/quizz",
     element: <Quizzes />,
-  },
-  {
-    path: "/test",
-    element: <FirstChapter />,
   },
   {
     path: "/dashboard",

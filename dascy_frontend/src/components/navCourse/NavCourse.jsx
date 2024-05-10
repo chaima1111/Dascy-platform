@@ -11,7 +11,7 @@ const Menu = () => (
     <Link to="dashboard">
       <p>Dashboard</p>
     </Link>
-    <Link to="/startNetworking">
+    <Link to="/contents">
       <p>Go to course</p>
     </Link>
   </>

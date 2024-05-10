@@ -1,0 +1,1097 @@
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: karla;
+   
+}*/
+.dascy__topo{
+    width: 100%;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0D0FF;
+
+}
+.dascy__topo-container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+.dascy__topo-title h1{
+    
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center; /* Centrer horizontalement */
+    position: absolute;
+    display: flex;
+    top:200px;
+    left: 500px;
+    }
+
+
+.dascy__topo-card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.dascy__topo-card > .dascy__topo-row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.dascy__topo-card > .dascy__topo-row > .dascy__topo-icon{
+    background-color: #110218;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+.dascy__topo-card > .dascy__topo-row > .dascy__topo-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.dascy_topo-description p{
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+.dascy__topo-description h4{
+    text-transform: uppercase;
+    color: #223;
+}
+.dascy__topo-container input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+}
+input:checked + label .dascy__topo-description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.dascy__topo-card[for='c3'] {
+  background-image: url("../../../assets/Osi/topo/pc-5.gif");
+  background-size: 610px 400px;      
+  background-color: aliceblue;
+  background-position-x: -50px;
+  justify-content: center;
+  background-position: center;
+
+}
+.dascy__topo-card[for='c4'] {
+  background-image: url('../../../assets/Osi/topo/pc-4.gif');
+  background-size: 610px 350px;
+  background-color: aliceblue;
+  background-position-x: 50px;
+  justify-content: center;
+  background-position: center;
+
+}
+.dascy__topo-card[for='c1'] {
+  background-image: url('../../../assets/Osi/topo/pc-2.gif');
+  background-size: 620px 370px;  
+  background-color: aliceblue;
+}
+.dascy__topo-card[for='c2'] {
+  background-image: url('../../../assets/Osi/topo/ppppppppppppp.gif');
+  background-color: aliceblue;
+  background-size: 605px 400px;
+  justify-content: center;
+}
+/*.animated-photo {*/
+    /*background-color: #d3d0ff ;*/
+    /*display:inline-flex; /* Permet à l'arrière-plan de s'étendre autour de l'image */
+  /*  padding: 10px; 
+}
+.
+.animated-photo-container  {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    .animated-photo{
+      background-color: #F0D0FF;
+      width: 100%; 
+        height:100%;
+        }
+      /*  .animated-photo-container{
+            width: 100%; 
+            height:100%;
+           
+            }
+  
+ /*.animated-photo img{
+    margin-right: 10px;; /* Ajoute de l'espace à droite de chaque image */
+   /*margin-left: 350px;
+   }
+    */
+   .image-large2 {
+    margin-right: 10px;; /* Ajoute de l'espace à droite de chaque image */
+    margin-left: 350px;
+    margin-top: 40px;
+ 
+}
+  .image-large {
+    height: 50px;
+  margin-left: 330px; 
+  margin-top:630px;
+  transform: translateX(520px); /* Déplace l'image de 20 pixels vers la droite */
+}
+
+  .image-small {
+    margin-top: -727px; 
+    margin-left: 331.5px; 
+    transform: translateX(620px);
+    padding-right: -100px; /* Ajustez la valeur selon votre besoin */
+    display: flex;
+    animation: appear s;
+  }
+
+  .image-smaller {
+  margin-top: -678px; 
+  margin-left: -208px; 
+  transform: translateX(620px);
+  padding-right: -110px; /* Ajustez la valeur selon votre besoin */
+  display:flex;
+  animation: appear 2s;
+}
+
+
+.image-smallest {
+    margin-top: -658px; 
+    margin-left: 366px; 
+    transform: translateX(620px);
+    padding-right: -110px; /* Ajustez la valeur selon votre besoin */
+    animation:disappearImage 5s infinite forwards;
+    animation: appear 2s;
+    display:flex;
+    animation:appear 2s forwards,disappearImage 5s forwards ;
+   
+  }
+  .image-larger {
+    display: flex;
+    position: absolute;
+    height: 50px;
+    top: 100px; /* Déplacer l'image vers le bas de 100 pixels */
+    margin-top: 1600px;
+    margin-left: 980px;
+    animation: appear 1s,moveImage 3s forwards; /* Activation de l'animation */
+}
+
+.image-larger2{
+    display:flex;
+    height: 50px;
+    position: absolute;
+    left: 61rem;
+    margin-top: -30px;
+    transform: translateY(-100vh); /* Assurez-vous que l'image est hors de la vue en haut */
+    animation: appear 1s,moveImage3 5s forwards; /* Activation de l'animation */
+}
+.writing-square {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 9vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 109.30vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 15s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+ 
+ 
+
+ .writing-square1 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 67vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 109.30vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 25s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square1::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+ .writing-square2 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:38vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 109.30vh; /* Set th top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 20s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square2::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+ .animated-photo2{
+  background-color:#F0D0FF;
+    width: 100%;
+    height: 100%;
+ }
+ .ring1{
+
+    position  :absolute;
+    display: flex;
+    top: 950px;
+    right: 730px;
+ }
+
+ .ring2{
+
+    position  :absolute;
+    display:flex;
+   bottom:-835px;
+    right: 730px;
+ }
+ .ring3{
+
+    position  :absolute;
+    display: flex;
+    top: 1288px;
+    right: 255px;
+ }
+
+ .ring4{
+
+    position  :absolute;
+    display: flex;
+    top: 1287px;
+    left: 450px;
+ }
+
+ .ring5{
+
+    position  :absolute;
+    display: flex;
+    top: 1380px;
+    left: 635px;
+    transform: rotate(90deg);
+    animation: appear 3s,disappearImage 5s linear forwards;    ;
+
+ }
+
+ .ring6{
+    position  :absolute;
+    display: flex;
+    top: 1380px;
+    right: 440px;
+    transform: rotate(90deg);
+    animation: appear 7s,;
+
+ }
+
+ .ring7{
+   height: 50px;
+   position  :absolute;
+   display: flex;
+   top: 1415px;
+   right: 800px;
+   animation:circle 4s linear infinite,disappearImage 3s linear forwards;
+ }
+ .cercle{
+    position  :absolute;
+    display: block;
+    top: 1100px;
+    right: 500px;
+    animation: appear 1s;
+
+ }
+
+
+ .animated-photo3{
+  background-color:#F0D0FF;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Pour maintenir les proportions de l'image tout en la remplissant */
+
+ }
+ 
+ .animated-photo3 img{
+    margin-left: 140px;
+    margin-right: 80px;
+    margin-top: 420px; 
+ }
+
+ .bus1{
+ 
+  position  :absolute;
+  top: 920px;
+  right:230px;
+ }
+
+ .bus2{
+ 
+  position  :absolute;
+  top: 920px;
+  right:650px;
+ }
+
+ .bus3{
+ 
+  position  :absolute;
+  top: 920px;
+  right:1050px;
+ }
+
+ .bus4{
+ 
+  position  :absolute;
+  top: 920px;
+  right:1460px;
+ }
+
+ .image1{
+    position  :absolute;
+    top: 780px;
+    left:-70px;
+    animation: appear 2s;
+ }
+
+ .image2{
+    position  :absolute;
+    top: 810px;
+    left:90px;
+    animation: appear 3s;
+ }
+
+ .image3{
+    position  :absolute;
+    top: 810px;
+    left:500px;
+    animation: appear 1s;
+ }
+
+ .image4{
+    position  :absolute;
+    top: 810px;
+    left:900px;
+    animation: appear 1s;
+ }
+ .image5{
+    position  :absolute;
+    top: 810px;
+    left:1310px;
+    animation: appear 1s,disappearImage 5s linear forwards;;
+ }
+
+ .image6{
+    height: 50px;
+    position  :absolute;
+    top: 790px;
+    left:10px;
+    animation:moveImage2 5s linear infinite, disappearImage 8s linear forwards;
+    
+ }
+
+ .image7{
+    height: 50px;
+    position  :absolute;
+    top: 790px;
+    left:1000px;
+    animation: moveImage2 5s linear infinite, disappearImage 8s linear forwards;
+   
+ }
+
+ .image8{
+    height: 50px;
+    position  :absolute;
+    top: 790px;
+    left: 500px;
+    animation: moveImage2 5s linear infinite, disappearImage 8s linear forwards;
+   
+ }
+
+ .image9{
+    height: 50px;
+    position  :absolute; 
+    top: 890px;
+    left:81px;
+    animation: moveDown 2s linear forwards, disappearImage 5s linear forwards;
+ }
+
+ .image10{
+    height: 50px;
+    position  :absolute; 
+    top: 890px;
+    left:890px;
+    animation: moveDown 2s linear forwards, disappearImage 5s linear forwards;
+ }
+
+ .image11{
+    height: 50px;
+    position  :absolute; 
+    top: 890px;
+    left:490px;
+    animation: moveDown 2s linear forwards, disappearImage 5s linear forwards;
+ }
+
+ .image12{
+    height: 50px;
+    position  :absolute; 
+    top: 890px;
+    left:1300px;
+    animation: moveDown 2s linear forwards, disappearImage 5s linear forwards;
+
+ }
+
+ .animated-photo4{
+  background-color:#F0D0FF;
+    width: 100%;
+    height: 100%;
+    
+ }
+.mesh1{
+    margin-right: 15px;; /* Ajoute de l'espace à droite de chaque image */
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+.mesh14{
+  margin-right: 15px;; /* Ajoute de l'espace à droite de chaque image */
+  margin-left: 500px;
+  margin-top: 280px;
+}
+.mesh2{
+  position  :absolute; 
+  top: 1358px;
+  left:590px;
+}
+
+.mesh3{
+  position  :absolute; 
+  top: 1355px;
+  right:566px;
+}
+
+.mesh4{
+  position  :absolute; 
+  top: 1272px;
+  right:655px;
+  animation: disappearImage 5s linear forwards;
+}
+
+.mesh5{
+  position  :absolute; 
+  top: 1712px;
+  right:655px;
+
+
+}
+
+.mesh6{
+  position  :absolute; 
+  top: 1275px;
+  right:653px;
+
+}
+.mesh7{
+  position  :absolute; 
+  top: 1275px;
+  right:655px;
+}
+
+.mesh8{
+  height: 50px;
+  position  :absolute; 
+  top: 1260px;
+  right:1120px;
+  animation: moveImage1 4s linear infinite; /* Animation de descente inclinée */
+}
+
+.mesh9{
+  height: 50px;
+    position  :absolute; 
+    top: 1275px;
+    right:655px;
+    animation: moveImage5 4s infinite linear;
+
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+.mesh10{
+  height: 50px;
+  position  :absolute; 
+  top: 1590px;
+  right:555px;
+  animation: moveUp 3s linear infinite;
+
+}
+.mesh11{
+  height: 50px;
+  position  :absolute; 
+  top: 1693px;
+  right:1158px;
+  animation: moveImage4 4s infinite linear;
+}
+.mesh12{
+  height: 50px;
+  position  :absolute; 
+  top: 1590px;
+  left: 580px;
+  animation: moveUp 3s linear infinite;
+
+}
+.mesh13{
+  height: 50px;
+  height: 50px;
+  position  :absolute; 
+  top: 1250px;
+  left: 670px;
+  animation: moveImage4 4s infinite linear,disappearImage 5s linear forwards;
+
+}
+
+
+.writing-square3 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 54vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 129vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 15s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square3::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+}
+
+   .writing-square4 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 63vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 142vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 25s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square4::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+ .writing-square5 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 41vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 142vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 25s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square5::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+
+ .writing-square6 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 19.5vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 142vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+    animation: appear 20s;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square6::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+ .writing-square7 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 14.5vw; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 136vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+  animation: customAnimation 7s ease-in-out forwards;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square7::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+ .writing-square8 {
+    position: absolute;
+    width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+    min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+    background-color: white;
+    padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+    font-size: 12px;
+    border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+    border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 950px; /* Set the left position to 50% viewport width */
+    transform: translateX(-30%);
+    top: 101vh; /* Set the top position to 50% viewport height */
+  transform: translateY(-10%); /* Center the element vertically */
+  animation: customAnimation 10s ease-in-out forwards;
+  /* New properties */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+  text-align: center; /* Center the text within the bubble */
+}
+.writing-square8::before {
+    content: '';
+    position: absolute;
+    width: 0px; /* Largeur de la flèche */
+    height: 0px; /* Hauteur de la flèche */
+    border-left: 36px solid white; /* Bordure de la flèche */
+    border-top: 13px solid transparent; /* Bordure de la flèche */
+    top: 36px; /* Positionnement vertical */
+   left: 100%;
+   
+ } 
+
+ .writing-square9 {
+  position: absolute;
+  width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+  min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+  background-color: white;
+  padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+  font-size: 12px;
+  border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+  border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 14.5vw; /* Set the left position to 50% viewport width */
+  transform: translateX(-30%);
+  top: 136vh; /* Set the top position to 50% viewport height */
+transform: translateY(-10%); /* Center the element vertically */
+animation: appear 25s;
+/* New properties */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+text-align: center; /* Center the text within the bubble */
+}
+.writing-square9::before {
+  content: '';
+  position: absolute;
+  width: 0px; /* Largeur de la flèche */
+  height: 0px; /* Hauteur de la flèche */
+  border-left: 36px solid white; /* Bordure de la flèche */
+  border-top: 13px solid transparent; /* Bordure de la flèche */
+  top: 36px; /* Positionnement vertical */
+ left: 100%;
+ 
+} 
+
+.writing-square10 {
+  position: absolute;
+  width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+  min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+  background-color: white;
+  padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+  font-size: 12px;
+  border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+  border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 935px; /* Set the left position to 50% viewport width */
+  transform: translateX(-30%);
+  top: 170vh; /* Set the top position to 50% viewport height */
+transform: translateY(-10%); /* Center the element vertically */
+animation: appear 23s;
+/* New properties */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+text-align: center; /* Center the text within the bubble */
+}
+.writing-square10::before {
+  content: '';
+  position: absolute;
+  width: 0px; /* Largeur de la flèche */
+  height: 0px; /* Hauteur de la flèche */
+  border-left: 36px solid white; /* Bordure de la flèche */
+  border-top: 13px solid transparent; /* Bordure de la flèche */
+  top: 36px; /* Positionnement vertical */
+ left: 100%;
+ 
+} 
+ 
+/* Définissez l'animation */
+.image-larger2:animation-end {
+    animation: disappear 5s linear forwards; /* Animation de disparition après la fin de l'animation moveImage3 */
+  }
+@keyframes myAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes appear {
+    0% { opacity: 0; } /* Au début de l'animation, le carré est invisible */
+    25%{opacity: 0;}
+    100% {
+        opacity: 1; /* Atteint une opacité complète à 100% */
+      }
+  }
+
+  @keyframes moveImage1 {
+    0% {
+      opacity: 0;
+        transform: translateX(0) translateY(0); /* Départ au point de départ */
+    }
+    25% {
+      opacity: 1;
+        transform: translateX(50px) translateY(80px); /* Première étape du mouvement */
+    }
+    50% {
+        transform: translateX(200px) translateY(200px); /* Deuxième étape du mouvement */
+    }
+    75% {
+        transform: translateX(300px) translateY(280px); /* Troisième étape du mouvement */
+    }
+    100% {
+        transform: translateX(400px) translateY(380px); /* Arrivée au point final */
+    }
+}
+
+@keyframes moveImage5 {
+  0% {
+    opacity: 0;
+      transform: translateX(0) translateY(0); /* Départ au point de départ */
+  }
+  25% {
+    opacity: 1;
+      transform: translateX(-150px) translateY(100px); /* Première étape du mouvement */
+  }
+  50% {
+      transform: translateX(-250px) translateY(190px); /* Deuxième étape du mouvement */
+  }
+  75% {
+      transform: translateX(-350px) translateY(290px); /* Troisième étape du mouvement */
+  }
+  100% {
+      transform: translateX(-450px) translateY(380px); /* Arrivée au point final */
+  }
+}
+  @keyframes moveImage {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0); /* Départ au point de départ */
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(-150px) translateY(-150px); /* Première étape du mouvement */
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-250px) translateY(-250px); /* Deuxième étape du mouvement */
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(-300px) translateY(-300px); /* Troisième étape du mouvement */
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-400px) translateY(-400px); /* Arrivée au point final */
+    }
+}
+
+@keyframes animateelec{
+    0% {
+        opacity: 0; /* Début de l'animation, l'image est invisible */
+        transform: rotate(0deg) scale(.8);
+    }
+    100% {
+        opacity: 1; /* Fin de l'animation, l'image est complètement visible */
+        transform: rotate(-360deg);
+    }
+}
+@keyframes moveImage2 {
+    0% {
+        opacity: 0;
+        transform: translateX(0); /* Départ au point de départ */
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(100px); /* Première étape du mouvement */
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(200px); /* Deuxième étape du mouvement */
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(300px); /* Troisième étape du mouvement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(400px) }}
+
+
+        @keyframes moveImage4 {
+          0% {
+              transform: translateX(0); /* Départ au point de départ */
+          }
+          25% {
+              transform: translateX(100px); /* Première étape du mouvement */
+          }
+          50% {
+              transform: translateX(200px); /* Deuxième étape du mouvement */
+          }
+          75% {
+              transform: translateX(300px); /* Troisième étape du mouvement */
+          }
+          100% {
+              transform: translateX(400px) }}
+      
+        @keyframes moveImage3 {
+            0% {
+                opacity: 1;
+                transform: translateY(0); /* Départ au point de départ */
+            }
+          
+            
+            25% {
+                opacity: 1;
+                transform: translateY(-200px); /* Première étape du mouvement */
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(-400px); /* Deuxième étape du mouvement */
+            }
+            75% {
+                opacity: 0;
+                transform: translateY(-500px); /* Troisième étape du mouvement */}
+            100% {
+                opacity: 0;
+                transform: translateY(-700px); /* Arrivée au point final */
+                display: none; /* Disparition totale de l'élément */
+            }
+        }
+        @keyframes disappearImage {
+            0% {
+                opacity: 1; /* Image complètement visible */
+            }
+            100% {
+                opacity: 0;
+                display: none;
+                /* Image complètement invisible */
+            }
+        }
+
+        @keyframes moveDown {
+            from {
+                
+              transform: translateY(-100%);
+            }
+            to {
+              
+              transform: translateY(0);
+            }
+          }
+          @keyframes customAnimation {
+            0% { opacity: 0; } /* Étape d'apparition */
+            50% { opacity: 1; } /* Étape de maintien de l'opacité */
+            100% { opacity: 0; } /* Étape de disparition */
+          }
+
+          @keyframes circle {
+            0% {
+              transform: rotate(0deg) translateX(300px) rotate(0deg); /* Position de départ */
+          }
+          100% {
+              transform: rotate(360deg) translateX(380px) rotate(-360deg); /* Position finale (360 degrés de rotation) */
+          }
+      }
