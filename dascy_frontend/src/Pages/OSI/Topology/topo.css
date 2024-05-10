@@ -1,10 +1,10 @@
-* {
+/** {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: karla;
    
-}
+}*/
 .dascy__topo{
     width: 100%;
     height: 100vh;
@@ -22,7 +22,7 @@
     justify-content: start;
     
 }
-h1{
+.dascy__topo-title h1{
     
     font-family:'Times New Roman', Times, serif;
     justify-content: center; /* Centrer horizontalement */
@@ -223,7 +223,7 @@ input:checked + label .dascy__topo-description{
     position: absolute;
     left: 9vw; /* Set the left position to 50% viewport width */
     transform: translateX(-30%);
-    top: 101.30vh; /* Set the top position to 50% viewport height */
+    top: 109.30vh; /* Set the top position to 50% viewport height */
   transform: translateY(-10%); /* Center the element vertically */
     animation: appear 15s;
   /* New properties */
@@ -259,7 +259,7 @@ input:checked + label .dascy__topo-description{
     position: absolute;
     left: 67vw; /* Set the left position to 50% viewport width */
     transform: translateX(-30%);
-    top: 101.30vh; /* Set the top position to 50% viewport height */
+    top: 109.30vh; /* Set the top position to 50% viewport height */
   transform: translateY(-10%); /* Center the element vertically */
     animation: appear 25s;
   /* New properties */
@@ -292,7 +292,7 @@ input:checked + label .dascy__topo-description{
     position: absolute;
     left:38vw; /* Set the left position to 50% viewport width */
     transform: translateX(-30%);
-    top: 101.30vh; /* Set th top position to 50% viewport height */
+    top: 109.30vh; /* Set th top position to 50% viewport height */
   transform: translateY(-10%); /* Center the element vertically */
     animation: appear 20s;
   /* New properties */
@@ -399,6 +399,35 @@ input:checked + label .dascy__topo-description{
     margin-right: 80px;
     margin-top: 420px; 
  }
+
+ .bus1{
+ 
+  position  :absolute;
+  top: 920px;
+  right:230px;
+ }
+
+ .bus2{
+ 
+  position  :absolute;
+  top: 920px;
+  right:650px;
+ }
+
+ .bus3{
+ 
+  position  :absolute;
+  top: 920px;
+  right:1050px;
+ }
+
+ .bus4{
+ 
+  position  :absolute;
+  top: 920px;
+  right:1460px;
+ }
+
  .image1{
     position  :absolute;
     top: 780px;
@@ -500,11 +529,16 @@ input:checked + label .dascy__topo-description{
     
  }
 .mesh1{
-    margin-right: 10px;; /* Ajoute de l'espace à droite de chaque image */
+    margin-right: 15px;; /* Ajoute de l'espace à droite de chaque image */
     margin-left: 500px;
-    margin-top: 280px;
+    margin-top: 200px;
 }
 
+.mesh14{
+  margin-right: 15px;; /* Ajoute de l'espace à droite de chaque image */
+  margin-left: 500px;
+  margin-top: 280px;
+}
 .mesh2{
   position  :absolute; 
   top: 1358px;

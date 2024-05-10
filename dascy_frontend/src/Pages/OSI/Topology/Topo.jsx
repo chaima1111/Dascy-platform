@@ -94,8 +94,8 @@ const Topo = () => {
                 <h2>Nothing can seperate us</h2>
                </div>
                
-              <img src={photo1} alt="MESH Topology" className="mesh1"/>
-              <img src={photo1} alt="MESH Topology" className="mesh1"/>
+              <img src={photo1} alt="MESH Topology" className="mesh14"/>
+              <img src={photo1} alt="MESH Topology" className="mesh14"/>
 
               <img src={Ligne4} alt="MESH Topology" className="mesh2"/>
               <img src={Ligne4} alt="MESH Topology" className="mesh3"/>
@@ -179,19 +179,19 @@ const Topo = () => {
         <div className="animated-photo3"    ref={nextSectionRef}>
           {/* Utilisez la photo animée correspondant à la topologie sélectionnée */}
           {selectedTopology === "BUS TOPOLOGY" && (<>
-            <img src={photo1} alt="BUS Topology"className="bus"  />
+            <img src={photo1} alt="BUS Topology"className="bus1"  />
             <div className="writing-square4">
                 <h2>Oops sorry!</h2>
                </div>
-            <img src={photo1} alt="BUS Topology"className="bus"  />
+            <img src={photo1} alt="BUS Topology"className="bus2"  />
             <div className="writing-square5">
                 <h2>we can't communicate anymore</h2>
                </div>
-            <img src={photo1} alt="BUS Topology" className="bus" />
+            <img src={photo1} alt="BUS Topology" className="bus3" />
             <div className="writing-square6">
                 <h2>What's wrong?</h2>
                </div>
-            <img src={photo1} alt="BUS Topology"className="bus"  />
+            <img src={photo1} alt="BUS Topology"className="bus4"  />
             
             <img src={Ligne8} alt="BUS Topology"className="image1" />
             <img src={Ligne9} alt="BUS Topology"className="image2" />
