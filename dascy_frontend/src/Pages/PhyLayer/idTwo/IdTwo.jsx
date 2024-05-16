@@ -121,6 +121,19 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
+                  <div className="lines2">
+                    <div className="line" id='LN'></div>
+                    <div className="line1" id='LN1'></div>
+                    <div className="line2" id='LN2'></div>
+                    <div className="line3" id='LN3'></div>
+                    <div className="line4" id='LN4'></div>
+                    <div className="line5" id='LN5'></div>
+                    <div className="line6" id='LN6'></div>
+                    <div className="line7" id='LN7'></div>
+                    <div className="line8" id='LN8'></div>
+                    <div className="line9" id='LN9'></div>
+                    <div className="line10" id='LN10'></div>
+                  </div>
                   <div className='nmbrs' id='nbr'>
                     <p>0</p>
                     <p>1</p>
@@ -137,11 +150,11 @@ const IdTwo = () => {
         <label htmlFor="c3" className='dascy__idTwo-card' onClick={handleClick3}>
           <div className='dascy__idTwo-row'>
             <div className='dascy__idTwo-graph'>
-                  <div className="arrows2">
+                  <div className="arrows3">
                     <div className="arrow-x" id='arr2-x'></div>
                     <div className="arrow-y" id='arr2-y'></div>
                   </div>
-                  <div className="dashed-lines2">
+                  <div className="dashed-lines3">
                     <div className="dashed-line" id='dash-line'></div>
                     <div className="dashed-line1" id='dash-line1'></div>
                     <div className="dashed-line2" id='dash-line2'></div>
@@ -150,7 +163,7 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
-                  <div className='nmbrs' id='nbr'>
+                  <div className='nmbrs' >
                     <p>0</p>
                     <p>1</p>
                     <p>1</p>
@@ -176,11 +189,11 @@ const IdTwo = () => {
         <label htmlFor="c5" className='dascy__idTwo-card' onClick={handleClick5}>
           <div className='dascy__idTwo-row'>
           <div className='dascy__idTwo-graph'>
-                  <div className="arrows2">
+                  <div className="arrows5">
                     <div className="arrow-x" id='arr2-x'></div>
                     <div className="arrow-y" id='arr2-y'></div>
                   </div>
-                  <div className="dashed-lines2">
+                  <div className="dashed-lines5">
                     <div className="dashed-line" id='dash-line'></div>
                     <div className="dashed-line1" id='dash-line1'></div>
                     <div className="dashed-line2" id='dash-line2'></div>
@@ -189,7 +202,7 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
-                  <div className='nmbrs' id='nbr'>
+                  <div className='nmbrs' >
                     <p>0</p>
                     <p>1</p>
                     <p>1</p>
@@ -205,11 +218,11 @@ const IdTwo = () => {
         <label htmlFor="c6" className='dascy__idTwo-card' onClick={handleClick6}>
           <div className='dascy__idTwo-row'>
           <div className='dascy__idTwo-graph'>
-                  <div className="arrows2">
+                  <div className="arrows6">
                     <div className="arrow-x" id='arr2-x'></div>
                     <div className="arrow-y" id='arr2-y'></div>
                   </div>
-                  <div className="dashed-lines2">
+                  <div className="dashed-lines6">
                     <div className="dashed-line" id='dash-line'></div>
                     <div className="dashed-line1" id='dash-line1'></div>
                     <div className="dashed-line2" id='dash-line2'></div>
@@ -218,7 +231,7 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
-                  <div className='nmbrs' id='nbr'>
+                  <div className='nmbrs' >
                     <p>0</p>
                     <p>1</p>
                     <p>1</p>
