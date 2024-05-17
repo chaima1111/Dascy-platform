@@ -200,7 +200,7 @@ input:checked + label .dascy__idTwo-description{
 }
 #LN1{
   margin-left: 155px;
-  margin-bottom: 216px;
+  margin-bottom: 136px;
   animation: stretchline1 2s linear forwards; 
   animation-delay: 2s;
 }
@@ -239,8 +239,8 @@ input:checked + label .dascy__idTwo-description{
   height: 0px;
 }
 #LN4{
-  margin-top: 354px;
-  margin-left: 243px;
+  margin-top: 434px;
+  margin-left: 238px;
   margin-bottom: -300px;
   animation: stretchline4 2s linear forwards; 
   animation-delay: 6s;
@@ -279,8 +279,8 @@ input:checked + label .dascy__idTwo-description{
   height: 0px;
 }
 #LN7{
-  margin-left: 337px;
-  margin-bottom: 217px;
+  margin-left: 333px;
+  margin-bottom: 136px;
   animation: stretchline7 2s linear forwards; 
   animation-delay: 10s;
 }
@@ -293,7 +293,7 @@ input:checked + label .dascy__idTwo-description{
     height: 3%; 
   }
   100% {
-    height: 6.42%;
+    height: 6.35%;
   }
 }
 #LN8{
@@ -315,8 +315,8 @@ input:checked + label .dascy__idTwo-description{
   }
 }
 #LN9{
-  margin-top: 350px;
-  margin-left: 387px;
+  margin-top: 430px;
+  margin-left: 382px;
   animation: stretchline9 2s linear forwards;  
   animation-delay: 14s;
 }
@@ -344,7 +344,7 @@ input:checked + label .dascy__idTwo-description{
     width: 0;
   }
   50% {
-    width: 3%; 
+    width: 5%; 
   }
   100% {
     width: 10%;
@@ -373,7 +373,24 @@ input:checked + label .dascy__idTwo-description{
   display: block;
 }
 
+.LN0{
+  animation: stretchline 2s linear forwards; 
+  
+  margin-left: 110px;
+  margin-bottom: 0px;
+}
 
+@keyframes stretchline {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 4.6%; 
+  }
+  100% {
+    width: 9.2%;
+  }
+}
 
 
 
