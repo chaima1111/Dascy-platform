@@ -12,8 +12,9 @@ import { IoMdBookmarks } from "react-icons/io";
 import { MdOutlineTaskAlt } from "react-icons/md";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { PiShootingStarThin } from "react-icons/pi";
-
+import axios from "axios";
 import "./article.css";
+
 const Article = () => {
      const { isError } = useSelector((state) => state.auth);
 
@@ -27,7 +28,7 @@ const Article = () => {
  useEffect(() => {
    const intervalId = setInterval(() => {
      setDate(new Date());
-   }, 1000); // Update every second
+   }, 1000); 
 
    // Clean up the interval on unmount
    return () => clearInterval(intervalId);
@@ -37,6 +38,23 @@ const Article = () => {
  const formattedDate = `${date.getDate()} ${date.toLocaleString("default", {
    month: "long",
  })} ${date.getFullYear()}`;
+ 
+ //creation of a course for the user
+  const createCourse = async () => {
+    try {
+      const response = await axios.post("http://localhost:5000/courses", {
+        name: "network",
+        progress: 0,
+      });
+      alert(response.data.msg);
+    } catch (error) {
+      alert(error.response.data.msg);
+    }
+  };
+
+  const handleCourseClick = () => {
+    createCourse();
+  };
   return (
     <div className="dascy__article ">
       <div className="dascy__article-container">
@@ -56,28 +74,28 @@ const Article = () => {
             <div className="dascy__article-boxe box1">
               <IoMdBookmarks size={50} />
               <div className="dascy__article-boxe-text">
-                <p>3</p>
+                <p>1</p>
                 <h3>Courses</h3>
               </div>
             </div>
             <div className="dascy__article-boxe box2">
               <MdOutlineTaskAlt size={50} />
               <div className="dascy__article-boxe-text">
-                <p>30%</p>
+                <p>0%</p>
                 <h3>Complete</h3>
               </div>
             </div>
             <div className="dascy__article-boxe box3">
               <IoCheckmarkDoneCircleOutline size={50} />
               <div className="dascy__article-boxe-text">
-                <p>3</p>
+                <p>0</p>
                 <h3>Passed tests</h3>
               </div>
             </div>
             <div className="dascy__article-boxe box4">
               <PiShootingStarThin size={50} />
               <div className="dascy__article-boxe-text">
-                <p>50%</p>
+                <p>0%</p>
                 <h3>Score</h3>
               </div>
             </div>
@@ -87,12 +105,12 @@ const Article = () => {
           <h1>My Courses</h1>
 
           <div className="dascy__article-courses">
-            <Link to="/contents">
+            <Link to="/contents" onClick={handleCourseClick}>
               {" "}
               <Feature
                 imgCourse={net}
                 title="Networking"
-                desc="Intelligence demonstrated by machines, unlike the natural intelligence displayed by human beings..."
+                desc="Learn how computers devices can exchange data and share resources..."
                 cont={contP}
               />
             </Link>
@@ -109,4 +127,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default Article

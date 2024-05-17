@@ -33,7 +33,7 @@ const Register = () => {
           // Optionally, redirect to login page or display a success message
         } catch (error) {
           console.error("Registration error:", error.response.data);
-          // Handle error, display error message to user, etc.
+          // Handle error, display error message to user.
         }
       };
 

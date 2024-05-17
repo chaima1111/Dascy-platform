@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./quizz.css";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 const Quizzes = () => {
+  //  const { id } = useParams();
+   const [course, setCourse] = useState(null);
+   const [id, setId] = useState(0);
   const questions = [
     {
       question: "What is the capital of France?",
@@ -57,6 +62,105 @@ const Quizzes = () => {
     setSelectedOption(null);
     setQuizCompleted(false);
   };
+
+  //add progress
+//  useEffect(() => {
+//    const fetchCourse = async () => {
+//      try {
+//        const response = await axios.get(`http://localhost:5000/courses`);
+//        setId(response.data.uuid);
+//        setScore(response.data.progress);
+//      } catch (error) {
+//        console.error("Error fetching course:", error);
+//      }
+//    };
+
+//    fetchCourse();
+//  }, [id]);
+const [courseId, setCourseId] = useState("");
+const [userUUID, setUserUUID] = useState("");
+const [courseUUID, setCourseUUID] = useState("");
+const [error, setError] = useState(null);
+  // useEffect(() => {
+  //   const fetchUserData = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:5000/me");
+  //       setUserUUID(response.data.uuid);
+  //       setError(null);
+  //     } catch (error) {
+  //       setUserUUID("");
+  //       setError(error.response ? error.response.data.msg : error.message);
+  //     }
+  //   };
+
+  //   fetchUserData();
+  // }, []);
+  useEffect(() => {
+    const fetchCoursData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/courses");
+        setCourseUUID(response.data.uuid);
+        setError(null);
+      } catch (error) {
+        setCourseUUID("");
+        setError(error.response ? error.response.data.msg : error.message);
+      }
+    };
+
+    fetchCoursData();
+  }, []);
+// const fetchuserById = async () => {
+//   try {
+//     const response = await axios.get(`http://localhost:5000/me`);
+//     const userData = response.data;
+//     setUserUUID(userData.uuid); // Assuming courseData contains the course details with UUID
+//     setError(null);
+//   } catch (error) {
+//     setCourseUUID(null);
+//     setError(error.response ? error.response.data.msg : error.message);
+//   }
+// };
+// const fetchCourseById = async () => {
+//   try {
+//     const response = await axios.get(
+//       `http://localhost:5000/courses`
+//     );
+//     const courseData = response.data;
+//     setCourseUUID(courseData.uuid); // Assuming courseData contains the course details with UUID
+//     setError(null);
+//   } catch (error) {
+//     setCourseUUID(null);
+//     setError(error.response ? error.response.data.msg : error.message);
+//   }
+// };
+  const handleScoreChange = (e) => {
+    setScore(e.target.value);
+  };
+
+  const updateCourse = async () => {
+    try {
+      //  fetchCourseById();
+    //  score = score+progress;
+      const response = await axios.patch(
+        `http://localhost:5000/courses/aa0a716c-68d4-45ed-b5ca-a9b758bc9198`,
+        {
+          name: "network",
+          progress:  score,
+        }
+      );
+
+      if (response.status === 200) {
+        alert('Course updated successfully!');
+      }
+    } catch (error) {
+      console.log({ userUUID });
+      console.log({ courseUUID });
+      console.error('Error updating course:', error);
+      alert('Failed to update course.');
+    }
+  };
+
+ 
   return (
     <div>
       {quizCompleted ? (
@@ -69,10 +173,10 @@ const Quizzes = () => {
               <button className="dascy__quizz-btn" onClick={handleRestartQuiz}>
                 Restart Quiz
               </button>
-              <Link to="/chapterTwo/second">
+              <Link to="/chapterTwo/second" onClick={updateCourse}>
                 <button
                   className="dascy__quizz-btn"
-                  onClick={handleNextQuestion}
+                  // onClick={handleNextQuestion}
                 >
                   Next Chapter
                 </button>
