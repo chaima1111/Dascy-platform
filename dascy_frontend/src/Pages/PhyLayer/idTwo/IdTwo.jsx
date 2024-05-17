@@ -122,7 +122,7 @@ const IdTwo = () => {
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
                   <div className="lines2">
-                    <div className="line" id='LN'></div>
+                    <div className="line LN0" id='LN'></div>
                     <div className="line1" id='LN1'></div>
                     <div className="line2" id='LN2'></div>
                     <div className="line3" id='LN3'></div>
