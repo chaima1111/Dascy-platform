@@ -96,27 +96,30 @@ const Topo = () => {
           {/* Utilisez la photo animée correspondant à la topologie sélectionnée */}
           {selectedTopology === "MESH TOPOLOGY" && (
             <>
-              <img src={photo1} alt="MESH Topology" className="mesh1" />
-              <img src={photo1} alt="MESHR Topology" className="mesh1" />
-              <div className="writing-square3">
-                <h2>Nothing can seperate us</h2>
+              <div className="dascy__topo-Pc">
+                <img src={photo1} alt="MESH Topology" className="mesh1" />
+                <img src={photo1} alt="MESHR Topology" className="mesh1" />
+                <div className="writing-square3">
+                  <h2>Nothing can seperate us</h2>
+                </div>
+
+                <img src={photo1} alt="MESH Topology" className="mesh14" />
+                <img src={photo1} alt="MESH Topology" className="mesh14" />
               </div>
-
-              <img src={photo1} alt="MESH Topology" className="mesh14" />
-              <img src={photo1} alt="MESH Topology" className="mesh14" />
-
-              <img src={Ligne4} alt="MESH Topology" className="mesh2" />
-              <img src={Ligne4} alt="MESH Topology" className="mesh3" />
-              <img src={Ligne6} alt="MESH Topology" className="mesh6" />
-              <img src={Ligne7} alt="MESH Topology" className="mesh7" />
-              <img src={Ligne10} alt="MESH Topology" className="mesh4" />
-              <img src={Ligne10} alt="MESH Topology" className="mesh5" />
-              <img src={Electric} alt="MESH Topology" className="mesh12" />
-              <img src={Electric} alt="MESH Topology" className="mesh13" />
-              <img src={Electric} alt="MESH Topology" className="mesh8" />
-              <img src={Electric} alt="MESH Topology" className="mesh9" />
-              <img src={Electric} alt="MESH Topology" className="mesh10" />
-              <img src={Electric} alt="MESH Topology" className="mesh11" />
+              <div className="dascy__topo-lines">
+                <img src={Ligne4} alt="MESH Topology" className="mesh2" />
+                <img src={Ligne4} alt="MESH Topology" className="mesh3" />
+                <img src={Ligne6} alt="MESH Topology" className="mesh6" />
+                <img src={Ligne7} alt="MESH Topology" className="mesh7" />
+                <img src={Ligne10} alt="MESH Topology" className="mesh4" />
+                <img src={Ligne10} alt="MESH Topology" className="mesh5" />
+                <img src={Electric} alt="MESH Topology" className="mesh12" />
+                <img src={Electric} alt="MESH Topology" className="mesh13" />
+                <img src={Electric} alt="MESH Topology" className="mesh8" />
+                <img src={Electric} alt="MESH Topology" className="mesh9" />
+                <img src={Electric} alt="MESH Topology" className="mesh10" />
+                <img src={Electric} alt="MESH Topology" className="mesh11" />
+              </div>
             </>
           )}
         </div>

@@ -1199,12 +1199,106 @@ left: 100%;
 }
 }
 
-@media screen and (max-width: 992px) {
-.animated-photo img {
-  margin-left: 100px;
-  margin-right: 60px;
-  position:fixed;
+@media screen and (max-width: 1370px) {
+  .animated-photo4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.dascy__topo-Pc {
+    background-color: #F0D0FF;
+    width: 90vm;
+    height:90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 400px;
+position: relative;
+
 }
+
+.dascy__topo-lines{
+
+}
+.mesh1 {
+    margin-right: 0;
+    margin-left: 0;
+    /* margin-top: 200px; */
+    /* margin-bottom: 220px; */
+}
+
+.mesh14{
+margin-right: 0;; /* Ajoute de l'espace à droite de chaque image */
+margin-left: 0;
+margin-top: 0;
+
+}
+.mesh2{
+position  :absolute; 
+top: 130px;
+left:190px;
+
+}
+
+    .mesh3 {
+        position: absolute;
+        top: 1100px;
+        left: 531px;
+
+}
+
+.mesh4{
+position  :absolute; 
+top: 1272px;
+right:655px;
+animation: disappearImage 5s linear forwards;
+
+}
+
+.mesh5{
+position  :absolute; 
+top: 1712px;
+right:655px;
+
+
+}
+
+.mesh6{
+position  :absolute; 
+top: 1275px;
+right:653px;
+
+}
+.mesh7{
+position  :absolute; 
+top: 1275px;
+right:655px;
+
+}
+
+.mesh8{
+height: 50px;
+position  :absolute; 
+top: 1260px;
+right:1120px;
+animation: moveImage1 4s linear infinite; /* Animation de descente inclinée */
+}
+
+.mesh9{
+height: 50px;
+  position  :absolute; 
+  top: 1275px;
+  right:655px;
+  animation: moveImage5 4s infinite linear;
+ 
+
+}
+.mesh14 {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
