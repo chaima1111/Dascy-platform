@@ -1,0 +1,59 @@
+.dascy__idThree{
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0D0FF;
+}
+.vertical-timeline-element{
+    animation: movedown 1s linear forwards;
+    opacity:0;
+    position:relative;
+}
+
+@keyframes movedown{
+    0%{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+.first{
+    animation-delay: 0s;
+    
+}
+.second{
+    animation-delay: 3s;
+}
+.third{
+    animation-delay: 6s;
+}
+/* idThree.css */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #fff;
+    animation: expandLine 8s ease forwards;
+  }
+  
+  @keyframes expandLine {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+  .custom-icon-placeholder { 
+    border: 2px solid black !important; /* Add a white border around the placeholder */
+  }
+  
