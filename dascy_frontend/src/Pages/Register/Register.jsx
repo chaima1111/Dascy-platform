@@ -48,7 +48,9 @@ const Register = () => {
                 type="text"
                 name="name"
                 value={name}
+                placeholder="your name"
                 onChange={handleChange}
+                required
               />
 
               

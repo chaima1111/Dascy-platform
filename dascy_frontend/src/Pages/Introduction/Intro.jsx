@@ -4,10 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./intro.css";
 import img1 from "../../assets/Contents/intro/introImg.gif";
 import cabl from "../../assets/Contents/intro/introcable.png";
-import folde from "../../assets/Contents/intro/introFolder.gif";
+import folde from "../../assets/Osi/fold.gif";
 import pc1 from "../../assets/Contents/intro/introPc.gif";
 import pc2 from "../../assets/Contents/intro/introPc2.gif";
-import wifi from "../../assets/Contents/intro/introwifi.png";
+import wifi from "../../assets/Osi/wif.gif";
 import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 const Intro = () => {
@@ -31,7 +31,7 @@ const Intro = () => {
   return (
     <div className="dascy__intro">
       <div
-        className=" box dascy__intro-content section__margin"
+        className=" box dascy__intro-content "
         ref={(ref) => (boxesRef.current[0] = ref)}
       >
         <h1>What is a network? </h1>

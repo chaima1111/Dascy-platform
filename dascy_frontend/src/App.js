@@ -7,7 +7,8 @@ import {
 import {Navbar} from './components';
 import {NavbarCourse} from './components';
 import {Contact} from './container';
-import { Article, UserCourses } from "./components";
+import { Article } from "./components";
+
 import FirstPage from "../src/Pages/FirstPage/FirstPage.jsx"
 import Login from "../src/Pages/Login/Login.jsx"
 import Register from "../src/Pages/Register/Register.jsx"
@@ -21,10 +22,12 @@ import IdeaThreeFirst from  "./Pages/PhyLayer/idThree/IdThree"
 import './App.css';
 import Hangman from './Pages/OSI/practice/Hangman.jsx';
 import Quizzes from './Pages/OSI/practice/Quizzes.jsx';
+import IntroQ from "./Pages/Introduction/IntroQ.jsx"
 import FirstChapter from "./Pages/OSI/FirstChapter.jsx";
 import Introdu from "./Pages/Introduction/Intro.jsx"
 import NetContents from "./Pages/NetContents/NetContents.jsx";
 import AccountDashboard from "./Main/AccountDashboard.jsx";
+import AllcourseDash from "./Main/AllcourseDash.jsx";
 
 const Layout = () =>{
     return(
@@ -157,12 +160,16 @@ const router = createBrowserRouter([
     element: <Quizzes />,
   },
   {
+    path: "/introQuizz",
+    element: <IntroQ />,
+  },
+  {
     path: "/dashboard",
     element: <AccountDashboard />,
   },
   {
     path: "/allcourses",
-    element: <UserCourses />,
+    element: <AllcourseDash />,
   },
   {
     path: "/article",
