@@ -81,30 +81,7 @@ input:checked + label .dascy__idTwo-description{
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-/*.dascy__idTwo-card[for='c1'] {
-    /*background-image: url('../../../assets/idTwo/codage1.PNG');
-    background-size: 600px 400px;
-}
-.dascy__idTwo-card[for='c2'] {
-    /*background-image: url('../../../assets/idTwo/codage2.PNG');
-    background-size: 650px 400px;
-}
-.dascy__idTwo-card[for='c3'] {
-   /* background-image: url('../../../assets/idTwo/codage3.PNG');
-    background-size: 610px 400px;
-}
-.dascy__idTwo-card[for='c4'] {
-    /*background-image: url('../../../assets/idTwo/codage4.PNG');
-    background-size: 620px 400px;
-}
-.dascy__idTwo-card[for='c5'] {
-    /*background-image: url('../../../assets/idTwo/codage5.PNG');
-    background-size: 615px 400px;
-}
-.dascy__idTwo-card[for='c6'] {
-    /*background-image: url('../../../assets/idTwo/codage6.PNG');
-    background-size: 605px 400px;
-}*/
+
 #aar1-x{
   margin-left: 90px;
   margin-bottom: 90px;
@@ -112,53 +89,43 @@ input:checked + label .dascy__idTwo-description{
 #arr1-y{
   margin-left: 110px;
   margin-top: -300px;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
   height: 250px; 
 }
-#arr2-x{
-  margin-left: 90px;
-  margin-bottom: 150px;
-}
-#arr2-y{
-  margin-left: 110px;
-  margin-top: -300px;
-  margin-bottom: 70px;
-  height: 250px; 
-}
-#dash-line{
+.dash-line{
   height: 230px; 
-  margin-left: 155px;
+  margin-left: -290px;
   margin-top: -300px;
-  margin-bottom: 20px;
+  margin-bottom: -200px;
 }
-#dash-line1 {
+.dash-line1 {
   height: 230px; 
   margin-left: 200px;
-  margin-bottom: 20px;
+  margin-bottom: -200px;
 }
-#dash-line2 {
+.dash-line2 {
   height: 230px; 
   margin-left: 245px;
-  margin-bottom: 20px;
+  margin-bottom: -200px;
 }
-#dash-line3 {
+.dash-line3 {
   height: 230px; 
   margin-left: 292px;
-  margin-bottom: 20px;
+  margin-bottom: -200px;
 }
-#dash-line4 {
+.dash-line4 {
   height: 230px;
   margin-left: 340px;
-  margin-bottom: 20px;
+  margin-bottom: -200px;
 }
-#dash-line5 {
+.dash-line5 {
   height: 230px; 
   margin-left: 389px;
-  margin-bottom: 20px;
+  margin-bottom: -250px;
 }
-#dash-line6 {
+.dash-line6 {
   height: 230px;
-  margin-left: 438px;
+  margin-left: -3038px;
   margin-bottom: -30px;
 }
 .dashed-lines2{
@@ -178,9 +145,7 @@ input:checked + label .dascy__idTwo-description{
   margin-right: 38px;
   color: black;
 }
-#nbr{
-  margin-top: -90px;
-}
+
 #LN{
   animation: stretchline 2s linear forwards; 
   margin-top: -41px;
@@ -372,28 +337,730 @@ input:checked + label .dascy__idTwo-description{
 #c2:checked ~ .dascy__idTwo-card .arrows2 {
   display: block;
 }
-
-.LN0{
-  animation: stretchline 2s linear forwards; 
-  
+#arr2-x{
+  margin-left: 90px;
+  margin-bottom: 154px;
+  margin-top: -200px;
+}
+#arr2-y{
   margin-left: 110px;
+  margin-top: -300px;
+  margin-bottom: -420px;
+  height: 260px; 
+}
+
+#dash-line{
+  height: 250px; 
+  margin-top: 170px;
+}
+
+#nbr{
+  margin-top: 90px;
+}
+.graph2_Line-1{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine 2s linear forwards; 
+    margin-top: -225.5px;
+    margin-left: 110px;
+  }
+  
+  @keyframes stretchGLine {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.6%; 
+    }
+    100% {
+      width: 9.2%;
+    }
+}
+.graph2_Line-2{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchGLine1 2s linear forwards; 
+    animation-delay: 2s;
+    margin-left: 155px;
+    margin-bottom: 221.5px;
+  }
+  
+ @keyframes stretchGLine1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.2%;
+    }
+}
+.graph2_Line-3{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine2 2s linear forwards; 
+    animation-delay: 4s;
+    margin-left: 155px;
+    margin-top: -38px;
+  }
+  
+  @keyframes stretchGLine2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.6%; 
+    }
+    100% {
+      width: 9.2%;
+    }
+}
+.graph2_Line-4{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 68px; 
+    animation: stretchGLine4 2s linear forwards; 
+    animation-delay: 6s;
+    margin-top: 346.9px;
+    margin-left: 292px;
+    margin-bottom: -300px;
+  }
+  
+  @keyframes stretchGLine4 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 6.1%; 
+    }
+    100% {
+      height: 12.2%;
+    }
+}
+.graph2_Line-5{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine5 2s linear forwards; 
+    animation-delay: 8s;
+    margin-left: 200px;
+    margin-bottom: -40px;
+    margin-top: 70px;
+  }
+  
+  @keyframes stretchGLine5 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.6%; 
+    }
+    100% {
+      width: 9.3%;
+    }
+}
+.graph2_Line-6{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68px; 
+    animation: stretchGLine7 2s linear forwards; 
+    animation-delay: 10s;
+    margin-left: 337px;
+    margin-bottom: 185.5px;
+  }
+  
+  @keyframes stretchGLine7 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6%;
+    }
+}
+.graph2_Line-7{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchGLine8 2s linear forwards; 
+    animation-delay: 10s;
+    margin-left: 245px;
+    margin-bottom: 185.5px;
+  }
+  
+ @keyframes stretchGLine8 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3%; 
+    }
+    100% {
+      height: 6.2%;
+    }
+  
+}
+.graph2_Line-8{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine7 2s linear forwards; 
+    animation-delay: 12s;
+    margin-left: 245px;
+    margin-top: 2px;
+  }
+  
+  @keyframes stretchGLine7 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 9.75%; 
+    }
+    100% {
+      width: 19.5%;
+    }
+}
+.graph2_Line-9{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchGLine9 2s linear forwards; 
+    animation-delay: 14s;
+    margin-left: 340px;
+    margin-bottom: 221.5px;
+  }
+  
+ @keyframes stretchGLine9 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3.1%; 
+    }
+    100% {
+      height: 6.2%;
+    }
+}
+.graph2_Line-10{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine10 2s linear forwards; 
+    animation-delay: 16s;
+    margin-left: 340px;
+    margin-top: -38px;
+  }
+  
+  @keyframes stretchGLine10 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 5%; 
+    }
+    100% {
+      width: 10%;
+    } 
+}
+.graph2_Line-11{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 68px; 
+    animation: stretchGLine11 2s linear forwards; 
+    animation-delay: 18s;
+    margin-top: 346.9px;
+    margin-left: 482px;
+    margin-bottom: -300px;
+  }
+  
+  @keyframes stretchGLine11 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3.1%; 
+    }
+    100% {
+      height: 6.2%;
+    }
+}
+.graph2_Line-12{
+  width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchGLine12 2s linear forwards; 
+    animation-delay: 20s;
+    margin-left: 390px;
+    margin-top: 34px;
+  }
+  
+  @keyframes stretchGLine12 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.6%; 
+    }
+    100% {
+      width: 9.2%;
+    }
+}
+
+#arr3-x{
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+#arr3-y{
+  margin-left: 110px;
+  margin-top: -300px;
+  margin-bottom: 70px;
+  height: 250px; 
+}
+#nbr1{
+  margin-top: 55px;
   margin-bottom: 0px;
 }
-
-@keyframes stretchline {
-  0% {
+.graph3_line-1{
     width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG3Line 2s linear forwards; 
+    margin-top: -78px;
+    margin-left: 110px;
   }
-  50% {
-    width: 4.6%; 
+  
+  @keyframes stretchG3Line {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.6%; 
+    }
+    100% {
+      width: 9.3%;
+    }
+}
+.graph3_line-2{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchG3Line1 2s linear forwards; 
+    animation-delay: 2s;
+    margin-left: 155px;
+    margin-bottom: 185px;
   }
-  100% {
-    width: 9.2%;
+  
+ @keyframes stretchG3Line1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 6.2%; 
+    }
+    100% {
+      height: 12.4%;
+    }
+}
+.graph3_line-3{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG3Line2 2s linear forwards; 
+    animation-delay: 4s;
+    margin-left: 155px;
+    margin-top: -78px;
   }
+  
+  @keyframes stretchG3Line2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 9.2%; 
+    }
+    100% {
+      width: 18.4%;
+    }
+}
+.graph3_line-4{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 68px; 
+    animation: stretchG3Line4 2s linear forwards; 
+    animation-delay: 6s;
+    margin-top: 344px;
+    margin-left: 438px;
+    margin-bottom: -300px;
+  }
+  
+  @keyframes stretchG3Line4 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 6.2%; 
+    }
+    100% {
+      height: 12.4%;
+    }
+}
+.graph3_line-5{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG3Line5 2s linear forwards; 
+    margin-top: 73px;
+    margin-left: 245px;
+    animation-delay: 8s;
+  }
+  
+  @keyframes stretchG3Line5 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 9.75%; 
+    }
+    100% {
+      width: 19.5%;
+    }
+}
+.graph3_line-6{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchG3Line6 2s linear forwards; 
+    animation-delay: 10s;
+    margin-left: 340px;
+    margin-bottom: 185px;
+  }
+  
+ @keyframes stretchG3Line6 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 6.2%; 
+    }
+    100% {
+      height: 12.5%;
+    }
+}
+.graph3_line-7{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG3Line7 2s linear forwards; 
+    animation-delay: 12s;
+    margin-left: 340px;
+    margin-top: -78px;
+  }
+  
+  @keyframes stretchG3Line7 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 5%; 
+    }
+    100% {
+      width: 10%;
+    }
+}
+.graph3_line-8{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 68px; 
+    animation: stretchG3Line8 2s linear forwards; 
+    animation-delay: 14s;
+    margin-top: 344px;
+    margin-left: 581px;
+    margin-bottom: -300px;
+  }
+  
+  @keyframes stretchG3Line8 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 6.2%; 
+    }
+    100% {
+      height: 12.4%;
+    }
+}
+.graph3_line-9{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG3Line9 2s linear forwards; 
+    margin-top: 73px;
+    margin-left: 388px;
+    animation-delay: 16s;
+  }
+  
+  @keyframes stretchG3Line9 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.9%; 
+    }
+    100% {
+      width: 9.8%;
+    }
+}
+
+.lines3, .dashed-lines3, .arrows3 {
+  display: none;
+}
+
+/* Show lines when the radio button is checked */
+#c3:checked ~ .dascy__idTwo-card .lines3,
+#c3:checked ~ .dascy__idTwo-card .dashed-lines3,
+#c3:checked ~ .dascy__idTwo-card .arrows3 {
+  display: block;
+}
+
+.graph4_line-1{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchG4Line1 2s linear forwards; 
+    margin-left: 155px;
+    margin-bottom: 147.5px;
+  }
+  
+ @keyframes stretchG4Line1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3.2%; 
+    }
+    100% {
+      height: 6.4%;
+    }
+}
+.graph4_line-2{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG4Line2 2s linear forwards; 
+    animation-delay: 2s;
+    margin-left: 155px;
+    margin-top: -82px;
+    margin-bottom: 64px;
+  }
+  
+  @keyframes stretchG4Line2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 2%; 
+    }
+    100% {
+      width: 4%;
+    }
+}
+.graph4_line-4{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchG4Line4 2s linear forwards; 
+    animation-delay: 6s;
+    margin-left: 199px;
+    margin-bottom: 147.5px;
+  }
+  
+ @keyframes stretchG4Line4 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3.2%; 
+    }
+    100% {
+      height: 6.6%;
+    }
+}
+.graph4_line-5{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG4Line5 2s linear forwards; 
+    animation-delay: 8s;
+    margin-left: 199px;
+    margin-top: -66px;
+    margin-bottom: 64px;
+  }
+  
+  @keyframes stretchG4Line5 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 2%; 
+    }
+    100% {
+      width: 4%;
+    }
+}
+.graph4_line-7{
+    width: 2px; 
+    height: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 68;
+    animation: stretchG4Line7 2s linear forwards; 
+    animation-delay: 12s;
+    margin-left: 340px;
+    margin-bottom: 147.5px;
+  }
+  
+ @keyframes stretchG4Line7 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 3.2%; 
+    }
+    100% {
+      height: 6.4%;
+    }
+}
+.graph4_line-8{
+    width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG4Line8 2s linear forwards; 
+    animation-delay: 14s;
+    margin-left: 340px;
+    margin-top: -66px;
+    margin-bottom: 64px;
+  }
+  
+  @keyframes stretchG4Line8 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 2%; 
+    }
+    100% {
+      width: 4%;
+    }
+}
+
+.lines4, .dashed-lines4, .arrows4 {
+  display: none;
+}
+
+/* Show lines when the radio button is checked */
+#c4:checked ~ .dascy__idTwo-card .lines4,
+#c4:checked ~ .dascy__idTwo-card .dashed-lines4,
+#c4:checked ~ .dascy__idTwo-card .arrows4 {
+  display: block;
+}
+
+
+#arr5-x{
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+#arr5-y{
+  margin-left: 110px;
+  margin-top: -300px;
+  margin-bottom: 70px;
+  height: 250px; 
+}
+#nbr5{
+  margin-top: -20px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+#arr6-x{
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+#arr6-y{
+  margin-left: 110px;
+  margin-top: -300px;
+  margin-bottom: 70px;
+  height: 250px; 
+}
+#nbr6{
+  margin-top: -20px;
+}
 
 
 
@@ -469,49 +1136,49 @@ input:checked + label .dascy__idTwo-description{
   .dashed-line {
     width: 2px; 
     height: 250px; 
-    margin-left: 205px;
+    margin-left: 155px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line1 {
     width: 2px; 
     height: 250px; 
-    margin-left: 250px;
+    margin-left: 199px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line2 {
     width: 2px; 
     height: 250px; 
-    margin-left: 295px;
+    margin-left: 245px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line3 {
     width: 2px; 
     height: 250px; 
-    margin-left: 340px;
+    margin-left: 292px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line4 {
     width: 2px;
     height: 250px;
-    margin-left: 385px;
+    margin-left: 340px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line5 {
     width: 2px;  
     height: 250px; 
-    margin-left: 435px;
+    margin-left: 389px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
   .dashed-line6 {
     width: 2px; 
     height: 250px;
-    margin-left: 483px;
+    margin-left: 435px;
     margin-top: -250px;
     border-left: 1.5px dashed black; 
   }
