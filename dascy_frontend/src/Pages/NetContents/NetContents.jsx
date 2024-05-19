@@ -13,7 +13,9 @@ const NetContents = () => {
       <div className="dascy__netContents-boxes">
         <div className="dascy__netContents-boxe dascy__netContents-boxe1">
           <img src={intro} alt="" />
-          <h3>Introduction</h3>
+          <Link to="/intro">
+            <h3>Introduction</h3>
+          </Link>
         </div>
 
         <div className="dascy__netContents-boxe dascy__netContents-boxe2">

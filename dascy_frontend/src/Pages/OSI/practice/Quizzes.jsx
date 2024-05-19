@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./quizz.css";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 const Quizzes = () => {
   //  const { id } = useParams();
@@ -77,10 +76,11 @@ const Quizzes = () => {
 
 //    fetchCourse();
 //  }, [id]);
-const [courseId, setCourseId] = useState("");
+const [coursePro, setCoursePro] = useState(0);
 const [userUUID, setUserUUID] = useState("");
 const [courseUUID, setCourseUUID] = useState("");
 const [error, setError] = useState(null);
+let pr = 0;
   // useEffect(() => {
   //   const fetchUserData = async () => {
   //     try {
@@ -98,8 +98,9 @@ const [error, setError] = useState(null);
   useEffect(() => {
     const fetchCoursData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/courses");
+        const response = await axios.get("http://localhost:5000/courseNet");
         setCourseUUID(response.data.uuid);
+        setCoursePro(response.data.progress);
         setError(null);
       } catch (error) {
         setCourseUUID("");
@@ -109,48 +110,25 @@ const [error, setError] = useState(null);
 
     fetchCoursData();
   }, []);
-// const fetchuserById = async () => {
-//   try {
-//     const response = await axios.get(`http://localhost:5000/me`);
-//     const userData = response.data;
-//     setUserUUID(userData.uuid); // Assuming courseData contains the course details with UUID
-//     setError(null);
-//   } catch (error) {
-//     setCourseUUID(null);
-//     setError(error.response ? error.response.data.msg : error.message);
-//   }
-// };
-// const fetchCourseById = async () => {
-//   try {
-//     const response = await axios.get(
-//       `http://localhost:5000/courses`
-//     );
-//     const courseData = response.data;
-//     setCourseUUID(courseData.uuid); // Assuming courseData contains the course details with UUID
-//     setError(null);
-//   } catch (error) {
-//     setCourseUUID(null);
-//     setError(error.response ? error.response.data.msg : error.message);
-//   }
-// };
+
   const handleScoreChange = (e) => {
     setScore(e.target.value);
   };
 
   const updateCourse = async () => {
     try {
-      //  fetchCourseById();
-    //  score = score+progress;
+      //  fetchCoursData();
+     pr = score + coursePro;
       const response = await axios.patch(
-        `http://localhost:5000/courses/aa0a716c-68d4-45ed-b5ca-a9b758bc9198`,
+        `http://localhost:5000/courses/${courseUUID}`,
         {
           name: "network",
-          progress:  score,
+          progress: pr,
         }
       );
 
       if (response.status === 200) {
-        alert('Course updated successfully!');
+        alert('Your progress has been updated successfully!');
       }
     } catch (error) {
       console.log({ userUUID });

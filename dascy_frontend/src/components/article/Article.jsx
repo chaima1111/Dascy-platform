@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { getMe } from "../../authfeatures/authSlice";
 import { Link } from "react-router-dom";
 import { Feature } from "../../components";
-import iCourse from "../../assets/Course/pic1.png";
+import OSp from "../../assets/Course/OpS.png";
 import net from "../../assets/Course/network.png";
 import contP from "../../assets/next.png";
 import imgdash from "../../assets/dashImg.png";
@@ -13,13 +13,27 @@ import { MdOutlineTaskAlt } from "react-icons/md";
 import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
 import { PiShootingStarThin } from "react-icons/pi";
 import axios from "axios";
+// import ProgressBar from "react-bootstrap/ProgressBar";
+import { styled } from '@mui/material/styles';
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 import "./article.css";
 
 const Article = () => {
      const { isError } = useSelector((state) => state.auth);
 
     const { user } = useSelector((state) => state.auth);
-
+    const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+      height: 10,
+      width:420,
+      borderRadius: 5,
+      [`&.${linearProgressClasses.colorPrimary}`]: {
+        backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+      },
+      [`& .${linearProgressClasses.bar}`]: {
+        borderRadius: 5,
+        backgroundColor: theme.palette.mode === 'light' ? '#fcb603' : '#308fe8',
+      },
+    }));
     
 
     
@@ -39,22 +53,23 @@ const Article = () => {
    month: "long",
  })} ${date.getFullYear()}`;
  
- //creation of a course for the user
-  const createCourse = async () => {
-    try {
-      const response = await axios.post("http://localhost:5000/courses", {
-        name: "network",
-        progress: 0,
-      });
-      alert(response.data.msg);
-    } catch (error) {
-      alert(error.response.data.msg);
-    }
-  };
+ const [coursePro, setCoursePro] = useState(0);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    const fetchCoursData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/courseNet");
+        setCoursePro(response.data.progress);
+        setError(null);
+      } catch (error) {
+        setError(error.response ? error.response.data.msg : error.message);
+      }
+    };
 
-  const handleCourseClick = () => {
-    createCourse();
-  };
+    fetchCoursData();
+  }, []);
+
+ let now = coursePro *100/15;
   return (
     <div className="dascy__article ">
       <div className="dascy__article-container">
@@ -105,7 +120,7 @@ const Article = () => {
           <h1>My Courses</h1>
 
           <div className="dascy__article-courses">
-            <Link to="/contents" onClick={handleCourseClick}>
+            <Link to="/contents">
               {" "}
               <Feature
                 imgCourse={net}
@@ -113,13 +128,17 @@ const Article = () => {
                 desc="Learn how computers devices can exchange data and share resources..."
                 cont={contP}
               />
+              <div className="dascy__progress-line">
+                  <BorderLinearProgress variant="determinate" value={now} />
+              </div >
+              
             </Link>
-            <Feature
-              imgCourse={iCourse}
+            {/* <Feature
+              imgCourse={OSp}
               title="Operating System"
               desc="Learn the basic operating system abstractions, mechanisms and their implementation..."
               cont={contP}
-            />
+            /> */}
           </div>
         </div>
       </div>

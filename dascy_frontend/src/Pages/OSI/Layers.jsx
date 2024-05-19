@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import pc1 from "../../assets/Osi/pc2.png";
 import arrow from "../../assets/Osi/arrowCurved.png";
@@ -12,13 +12,29 @@ import { RiCornerRightUpLine } from "react-icons/ri";
 import "./layers.css";
 const Layers = () => {
  const [animate, setAnimate] = useState(false);
+ const [text, setText] = useState('Data ');
+    
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setText("001");
+
+      const timer2 = setTimeout(() => {
+        setText(" Data");
+      }, 1500);
+
+      // Clean up the second timer if the component unmounts
+      return () => clearTimeout(timer2);
+    }, 4000);
+
+    // Clean up the first timer if the component unmounts
+    return () => clearTimeout(timer1);
+  }, [1000]);
 
   const handleButtonClick = () => {
     setAnimate(!animate); // Toggle animate state on each click
   };
    return (
      <div className="dascy__layers ">
-     
        <div className="dascy__layers-content  dascy__layers-content-first dascy__layers-content-first-arrow ">
          {/* sender part */}
          <div className="dascy__layers-content__first">
@@ -29,7 +45,7 @@ const Layers = () => {
              >
                HELLO!
              </div>
-             <div className={`circle ${animate ? "animate" : ""}`}>011</div>
+             <div className={`circle ${animate ? "animate" : ""}`}>{text}</div>
              <img src={pc1} alt="pc" />
              <img
                className="dascy__layers-content__first-sender"

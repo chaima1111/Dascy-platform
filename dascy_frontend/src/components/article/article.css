@@ -57,6 +57,15 @@ letter-spacing: 0.8px;}
     height:150px;
 
 }
+.dascy__progress-line{
+    position:absolute;
+    top: 230px;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .dascy__article-overview{
 margin-bottom: 2rem;
 }
@@ -139,5 +148,6 @@ letter-spacing: 0.4px;
 
     scrollbar-width: none;
     -ms-overflow-style: none;
+    position: relative;
 }
 

@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../OSI/practice/quizz.css";
-const Quizzes = () => {
+import axios from "axios";
+
+const IntroQ = () => {
   const questions = [
     {
       question: "What is a network",
-      options: ["building connection", "destroy connection", "devices", "Nothing"],
+      options: [
+        "building connection",
+        "destroy connection",
+        "devices",
+        "Nothing",
+      ],
       correctAnswer: "building connection",
     },
     {
@@ -15,12 +22,7 @@ const Quizzes = () => {
     },
     {
       question: "Do ew need three parts to build network?",
-      options: [
-        "True",
-        "We need two",
-        "We need four",
-        "We need one ",
-      ],
+      options: ["True", "We need two", "We need four", "We need one "],
       correctAnswer: "We need two",
     },
   ];
@@ -57,6 +59,52 @@ const Quizzes = () => {
     setSelectedOption(null);
     setQuizCompleted(false);
   };
+  const [coursePro, setCoursePro] = useState(0);
+  const [courseUUID, setCourseUUID] = useState("");
+  const [error, setError] = useState(null);
+  let pr = 0;
+  useEffect(() => {
+    const fetchCoursData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/courseNet");
+        setCourseUUID(response.data.uuid);
+        setCoursePro(response.data.progress);
+        setError(null);
+      } catch (error) {
+        setCourseUUID("");
+        setError(error.response ? error.response.data.msg : error.message);
+      }
+    };
+
+    fetchCoursData();
+  }, []);
+
+  const handleScoreChange = (e) => {
+    setScore(e.target.value);
+  };
+
+  const updateCourse = async () => {
+    try {
+      //  fetchCoursData();
+      pr = score + coursePro;
+      const response = await axios.patch(
+        `http://localhost:5000/courses/${courseUUID}`,
+        {
+          name: "network",
+          progress: pr,
+        }
+      );
+
+      if (response.status === 200) {
+        alert("Your progress has been updated successfully!");
+      }
+    } catch (error) {
+      console.log({ courseUUID });
+      console.error("Error updating course:", error);
+      alert("Failed to update course.");
+    }
+  };
+
   return (
     <div>
       {quizCompleted ? (
@@ -70,10 +118,7 @@ const Quizzes = () => {
                 Restart Quiz
               </button>
               <Link to="/chapterTwo/second">
-                <button
-                  className="dascy__quizz-btn"
-                  onClick={handleNextQuestion}
-                >
+                <button className="dascy__quizz-btn" onClick={updateCourse}>
                   Next Chapter
                 </button>
               </Link>
@@ -124,4 +169,4 @@ const Quizzes = () => {
   );
 };
 
-export default Quizzes;
+export default IntroQ;
