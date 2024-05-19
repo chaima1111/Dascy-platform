@@ -1203,12 +1203,13 @@ left: 100%;
 }
 }
 */
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1370px ) {
   .animated-photo4{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
 .dascy__topo-Pc4 {
     background-color: #F0D0FF;
     width: 90vm;
@@ -1228,7 +1229,7 @@ left: 100%;
 .mesh1 {
     margin-right: 210px;
     margin-left: 0;
-     margin-top: 115px; 
+     margin-top: 30px; 
 }
 
 .mesh14{
@@ -1239,14 +1240,14 @@ margin-top:0px;
 }
 .mesh2{
 position  :absolute; 
-top:-144px;
+top:-105px;
 left:-303px;
 
 }
 
     .mesh3 {
         position: absolute;
-        top: -144px;
+        top: -105px;
         right:987px;
 
 }
@@ -1301,7 +1302,7 @@ height: 50px;
 .mesh10{
   height: 50px;
   position  :absolute; 
-  top: 60px;
+  top: 120px;
   right:288px;
   animation: moveUp 3s linear infinite;
   
@@ -1317,7 +1318,7 @@ height: 50px;
   .mesh12{
     height: 50px;
     position  :absolute; 
-    top: 50px;
+    top: 120px;
     left: -1000px;
     animation: moveUp 3s linear infinite;
     
@@ -1404,7 +1405,7 @@ height: 50px;
     
       position  :absolute;
       display: flex;
-      top: 1350px;
+      top: 1110px;
       right: -150px;
     }
     
@@ -1447,10 +1448,11 @@ height: 50px;
      animation:circle 4s linear infinite,disappearImage 3s linear forwards;
     }
     .cercle{
+      height: 420px;
       position  :absolute;
       display: block;
       top: 1100px;
-      right: 270px;
+      right: 380px;
       animation: appear 1s;}
 
       /*.ring1{
@@ -1679,7 +1681,7 @@ height: 50px;
 
       .dascy__topo-lines3{
         position: relative;
-        bottom: 1645px;
+        bottom: 1520px;
         right: 670px;     
  }
         
@@ -1819,7 +1821,7 @@ height: 50px;
           position: absolute;
           left: 22.5vw; /* Set the left position to 50% viewport width */
           transform: translateX(-30%);
-          top: -38vh; /* Set the top position to 50% viewport height */
+          top: -55vh; /* Set the top position to 50% viewport height */
         transform: translateY(-10%); /* Center the element vertically */
           animation: appear 25s;
         /* New properties */
@@ -1853,7 +1855,7 @@ height: 50px;
           position: absolute;
           left: -2vw; /* Set the left position to 50% viewport width */
           transform: translateX(-30%);
-          top: -38vh; /* Set the top position to 50% viewport height */
+          top: -55vh; /* Set the top position to 50% viewport height */
         transform: translateY(-10%); /* Center the element vertically */
           animation: appear 25s;
         /* New properties */
@@ -1888,7 +1890,7 @@ height: 50px;
           position: absolute;
           left: -29vw; /* Set the left position to 50% viewport width */
           transform: translateX(-30%);
-          top: -38vh; /* Set the top position to 50% viewport height */
+          top: -55vh; /* Set the top position to 50% viewport height */
         transform: translateY(-10%); /* Center the element vertically */
           animation: appear 20s;
         /* New properties */
