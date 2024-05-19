@@ -4,7 +4,7 @@ import Users from "./UserModel.js";
 
 const { DataTypes } = Sequelize;
 
-const Products = db.define(
+const Courses = db.define(
   "course",
   {
     uuid: {
@@ -43,7 +43,7 @@ const Products = db.define(
   }
 );
 
-Users.hasMany(Products);
-Products.belongsTo(Users, { foreignKey: "userId" });
+Users.hasMany(Courses);
+Courses.belongsTo(Users, { foreignKey: "userId" });
 
-export default Products;
+export default Courses;
