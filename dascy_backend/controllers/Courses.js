@@ -77,6 +77,85 @@ export const getCourseById = async (req, res) => {
   }
 };
 
+// get one course
+export const getCourse = async (req, res) => {
+  try {
+        let response;
+if (req.role === "admin") {
+  response = await Course.findOne({
+    attributes: ["uuid", "name", "progress"],
+    include: [
+      {
+        model: User,
+        attributes: ["name", "email"],
+      },
+    ],
+  });
+}else{
+   response = await Course.findOne({
+     attributes: ["uuid", "name", "progress"],
+     where: {
+       userId: req.userId,
+     },
+     include: [
+       {
+         model: User,
+         attributes: ["name", "email"],
+       },
+     ],
+     order: [["createdAt", "ASC"]],
+   });
+       }
+    res.status(200).json(response);
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
+//get network course
+
+export const getNetworkCourse = async (req, res) => {
+  try {
+    let response;
+    if (req.role === "admin") {
+      response = await Course.findOne({
+        attributes: ["uuid", "name", "progress"],
+        where: {
+          name: "network",
+        },
+        include: [
+          {
+            model: User,
+            attributes: ["name", "email"],
+          },
+        ],
+        order: [["createdAt", "ASC"]], // Assuming there is a createdAt field to determine the first course
+      });
+    } else {
+      response = await Course.findOne({
+        attributes: ["uuid", "name", "progress"],
+        where: {
+          userId: req.userId,
+          name: "network",
+        },
+        include: [
+          {
+            model: User,
+            attributes: ["name", "email"],
+          },
+        ],
+        order: [["createdAt", "ASC"]], 
+      });
+    }
+    if (!response) {
+      res.status(404).json({ msg: "No course found with the name 'network'" });
+    } else {
+      res.status(200).json(response);
+    }
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+  }
+};
+
 export const createCourse = async (req, res) => {
   const { name, progress } = req.body;
   try {
