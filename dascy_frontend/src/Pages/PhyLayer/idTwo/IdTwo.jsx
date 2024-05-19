@@ -199,7 +199,7 @@ const IdTwo = () => {
               </div>
           </div>
         </label>
-        <input type="radio" name='slide' id='c5' />
+        <input type="radio" name='slide' id='c5' checked/>
         <label htmlFor="c5" className='dascy__idTwo-card' >
           <div className='dascy__idTwo-row'>
           <div className='dascy__idTwo-graph'>
@@ -215,6 +215,26 @@ const IdTwo = () => {
                     <div className="dashed-line4" id='dash-line4'></div>
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
+                  </div>
+                  <div className="lines5">
+                    <div className="graph5_line-1"></div>
+                    <div className="graph5_line-2"></div>
+                    <div className="graph5_line-3"></div>
+                    <div className="graph5_line-4"></div>
+                    <div className="graph5_line-5"></div>
+                    <div className="graph5_line-6"></div>
+                    <div className="graph5_line-7"></div>
+                    <div className="graph5_line-8"></div>
+                    <div className="graph5_line-9"></div>
+                    <div className="graph5_line-10"></div>
+                    <div className="graph5_line-11"></div>
+                    <div className="graph5_line-12"></div>
+                    <div className="graph5_line-13"></div>
+                    <div className="graph5_line-14"></div>
+                    <div className="graph5_line-15"></div>
+                    <div className="graph5_line-16"></div>
+                    <div className="graph5_line-17"></div>
+                    <div className="graph5_line-18"></div>
                   </div>
                   <div className='nmbrs' id='nbr5'>
                     <p>0</p>
@@ -245,6 +265,21 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
+                  <div className="lines6">
+                    <div className="graph6_line-1"></div>
+                    <div className="graph6_line-2"></div>
+                    <div className="graph6_line-3"></div>
+                    <div className="graph6_line-4"></div>
+                    <div className="graph6_line-5"></div>
+                    <div className="graph6_line-6"></div>
+                    <div className="graph6_line-7"></div>
+                    <div className="graph6_line-8"></div>
+                    <div className="graph6_line-9"></div>
+                    <div className="graph6_line-10"></div>
+                    <div className="graph6_line-11"></div>
+                    <div className="graph6_line-12"></div>
+                    <div className="graph6_line-13"></div>
+                  </div>
                   <div className='nmbrs' id='nbr6'>
                     <p>0</p>
                     <p>1</p>
@@ -259,11 +294,6 @@ const IdTwo = () => {
         </label>
       </div>
     </div>
-
-    
-
-    
-    
     </>
   )
 }

@@ -916,6 +916,49 @@ input:checked + label .dascy__idTwo-description{
       width: 4%;
     }
 }
+.graph4_line-3 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    top: 0;
+    margin-left: 174px;
+    margin-top: 418px;
+    margin-bottom: 0px;
+    animation: stretchG4Line3 2s linear forwards; 
+    animation-delay: 4s;
+  }
+  
+  .graph4_line-3::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow 0.5s forwards;
+    animation-delay: 6s;
+  }
+@keyframes stretchG4Line3 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 37px; 
+    }
+}
+@keyframes showArrow {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
 .graph4_line-4{
     width: 2px; 
     height: 0;
@@ -962,6 +1005,49 @@ input:checked + label .dascy__idTwo-description{
     100% {
       width: 4%;
     }
+}
+  .graph4_line-6 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    top: 0;
+    margin-top: 418px;
+    margin-left: 218px;
+    margin-bottom: 0px;
+    animation: stretchG4Line6 2s linear forwards; 
+    animation-delay: 10s;
+  }
+  
+  .graph4_line-6::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow6 0.5s forwards;
+    animation-delay: 12s;
+  }
+@keyframes stretchG4Line6 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 37px; 
+    }
+}
+@keyframes showArrow6 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
 }
 .graph4_line-7{
     width: 2px; 
@@ -1010,7 +1096,49 @@ input:checked + label .dascy__idTwo-description{
       width: 4%;
     }
 }
-
+.graph4_line-9 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    margin-left: 359px;
+    top: 0;
+    margin-top: 418px;
+    margin-bottom: 0px;
+    animation: stretchG4Line9 2s linear forwards; 
+    animation-delay: 16s;
+  }
+  
+  .graph4_line-9::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow6 0.5s forwards;
+    animation-delay: 18s;
+  }
+@keyframes stretchG4Line9 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 37px; 
+    }
+}
+@keyframes showArrow9 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
 .lines4, .dashed-lines4, .arrows4 {
   display: none;
 }
@@ -1021,7 +1149,6 @@ input:checked + label .dascy__idTwo-description{
 #c4:checked ~ .dascy__idTwo-card .arrows4 {
   display: block;
 }
-
 
 #arr5-x{
   margin-left: 90px;
@@ -1036,15 +1163,188 @@ input:checked + label .dascy__idTwo-description{
 #nbr5{
   margin-top: -20px;
 }
+.lines5, .dashed-lines5, .arrows5 {
+  display: none;
+}
 
-
-
-
-
-
-
-
-
+#c5:checked ~ .dascy__idTwo-card .lines5,
+#c5:checked ~ .dascy__idTwo-card .dashed-lines5,
+#c5:checked ~ .dascy__idTwo-card .arrows5 {
+  display: block;
+}
+/*2 10 14 18*/
+.graph5_line-2{
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 130px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG5Line2 2s linear forwards; 
+    animation-delay: 2s;
+  }
+  
+  .graph5_line-2::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow52 0.5s forwards;
+    animation-delay: 4s;
+  }
+@keyframes stretchG5Line2 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow52 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph5_line-10{
+   width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 267px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG5Line10 2s linear forwards; 
+    animation-delay: 18s;
+  }
+  
+  .graph5_line-10::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow510 0.5s forwards;
+    animation-delay: 20s;
+  }
+@keyframes stretchG5Line10 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow510 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph5_line-14{
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 315px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG5Line14 2s linear forwards; 
+    animation-delay: 26s;
+  }
+  
+  .graph5_line-14::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow514 0.5s forwards;
+    animation-delay: 28s;
+  }
+@keyframes stretchG5Line14 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow514 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph5_line-18{
+   width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 411px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG5Line18 2s linear forwards; 
+    animation-delay: 34s;
+  }
+  
+  .graph5_line-18::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow518 0.5s forwards;
+    animation-delay: 36s;
+  }
+@keyframes stretchG5Line18 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow518 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
 
 
 
@@ -1061,31 +1361,459 @@ input:checked + label .dascy__idTwo-description{
 #nbr6{
   margin-top: -20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.dascy__idTwo-encoding{
-    background-color: #F0D0FF;
+.lines6, .dashed-lines6, .arrows6 {
+  display: none;
 }
-.encoding-1_graph{
-    width: 700px;
-    border-radius: .75rem;
-    margin: 0 240px;
+
+#c6:checked ~ .dascy__idTwo-card .lines6,
+#c6:checked ~ .dascy__idTwo-card .dashed-lines6,
+#c6:checked ~ .dascy__idTwo-card .arrows6 {
+  display: block;
+}
+.graph6_line-1 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 110px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG6Line1 2s linear forwards; 
+  }
+  
+  .graph6_line-1::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow1 0.5s forwards;
+    animation-delay: 2s;
+  }
+@keyframes stretchG6Line1 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow1 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-2{
+   width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line2 2s linear forwards; 
+    animation-delay: 2s;
+    margin-left: 110px;
+    margin-top: -162px;
+    margin-bottom: 160px;
+  }
+  
+  @keyframes stretchG6Line2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 6.65%; 
+    }
+    100% {
+      width: 13.3%;
+    }
+}
+.graph6_line-3 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    top: 0;
+    margin-left: 174px;
+    margin-top: 336px;
     margin-bottom: 0px;
-    padding: 20px 0;
-    border-radius: 2rem;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
-    background-color: #F9F8FD;
+    animation: stretchG6Line3 2s linear forwards; 
+    animation-delay: 4s;
+  }
+  
+  .graph6_line-3::after {
+    content: '';
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow63 0.5s forwards;
+    animation-delay: 6s;
+  }
+@keyframes stretchG6Line3 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
 }
+@keyframes showArrow63 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-4{
+     width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line4 2s linear forwards; 
+    margin-top: -72px;
+    margin-bottom: 72px;
+    margin-left: 175px;
+    animation-delay: 6s;
+  }
+  
+  @keyframes stretchG6Line4 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.25%; 
+    }
+    100% {
+      width: 9.5%;
+    }
+}
+.graph6_line-5 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 220px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG6Line5 2s linear forwards; 
+    animation-delay: 8s;
+  }
+  
+  .graph6_line-5::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow5 0.5s forwards;
+    animation-delay: 10s;
+  }
+@keyframes stretchG6Line5 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow5 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-6{
+   width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line6 2s linear forwards; 
+    animation-delay: 10s;
+    margin-left: 220px;
+    margin-top: -164px;
+    margin-bottom: 160px;
+  }
+  
+  @keyframes stretchG6Line6 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 2.65%; 
+    }
+    100% {
+      width: 5.3%;
+    }
+}
+ .graph6_line-7 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    top: 0;
+    margin-left: 244px;
+    margin-top: 336px;
+    margin-bottom: 0px;
+    animation: stretchG6Line7 2s linear forwards; 
+    animation-delay: 12s;
+  }
+  
+  .graph6_line-7::after {
+    content: '';
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow7 0.5s forwards;
+    animation-delay: 14s;
+  }
+@keyframes stretchG6Line7 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow7 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-8{
+     width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line8 2s linear forwards; 
+    margin-top: -72px;
+    margin-bottom: 72px;
+    margin-left: 245px;
+    animation-delay: 14s;
+  }
+  
+  @keyframes stretchG6Line8 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 4.85%; 
+    }
+    100% {
+      width: 9.7%;
+    }
+}
+.graph6_line-9 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 292px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG6Line9 2s linear forwards; 
+    animation-delay: 16s;
+  }
+  
+  .graph6_line-9::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow9 0.5s forwards;
+    animation-delay: 18s;
+  }
+@keyframes stretchG6Line9 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow9 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-10 {
+   width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line10 2s linear forwards; 
+    animation-delay: 18s;
+    margin-left: 292px;
+    margin-top: -164px;
+    margin-bottom: 162px;
+  }
+  
+  @keyframes stretchG6Line10 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 6.65%; 
+    }
+    100% {
+      width: 14.9%;
+    }
+}
+.graph6_line-11 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    top: 0;
+    margin-left: 364px;
+    margin-top: 336px;
+    margin-bottom: 0px;
+    animation: stretchG6Line11 2s linear forwards; 
+    animation-delay: 20s;
+  }
+  
+  .graph6_line-11::after {
+    content: '';
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow11 0.5s forwards;
+    animation-delay: 22s;
+  }
+@keyframes stretchG6Line11 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow11 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+.graph6_line-12{
+     width: 0;
+    height: 2px; 
+    background-color: blue;
+    position: relative;
+    animation: stretchG6Line12 2s linear forwards; 
+    margin-top: -74px;
+    margin-bottom: 74px;
+    margin-left: 365px;
+    animation-delay: 22s;
+  }
+  
+  @keyframes stretchG6Line12 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 2.25%; 
+    }
+    100% {
+      width: 5%;
+    }
+}
+.graph6_line-13 {
+    width: 2px; 
+    height: 0; 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 389px;
+    margin-top: 0px;
+    margin-bottom: 178px;
+    animation: stretchG6Line13 2s linear forwards; 
+    animation-delay: 24s;
+  }
+  
+  .graph6_line-13::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); 
+    width: 6px; 
+    height: 6px; 
+    background-color: blue; 
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    opacity: 0; 
+    animation: showArrow13 0.5s forwards;
+    animation-delay: 26s;
+  }
+@keyframes stretchG6Line13 {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 87px; 
+    }
+}
+@keyframes showArrow13 {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+
+
+
+
+
+
 .arrow-x {
     width: 400px; 
     height: 1px; 
@@ -1470,45 +2198,10 @@ input:checked + label .dascy__idTwo-description{
     margin-top: 180px;
     margin-bottom: 130px;
 }
-#DL{
-    margin-left: -327px;
-    margin-top: 40px;
-}
-#DL1{
-    margin-left: -282px;
-}
-#DL2{
-    margin-left: -237px;
-}
-#DL3{
-    margin-left: -191px;
-}
-#DL4{
-    margin-left: -145px;
-}
-#DL5{
-    margin-left: -97px;
-}
-#DL6{
-    margin-left: -49px;
-}
+
 #nmbr{
     margin-left: -352px;
     margin-top: 270px;
-}
-.encoding-3_graph{
-    width: 700px;
-    border-radius: .75rem;
-    background-size: cover;
-    margin: 0 240px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    border-radius: 2rem;
-    display: flex;
-    align-items: flex-start;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
-    background-color: #F9F8FD;
 }
 #arr3-x{
     height: 1px;
