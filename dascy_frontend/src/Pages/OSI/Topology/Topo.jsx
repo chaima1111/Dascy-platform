@@ -96,7 +96,7 @@ const Topo = () => {
           {/* Utilisez la photo animée correspondant à la topologie sélectionnée */}
           {selectedTopology === "MESH TOPOLOGY" && (
             <>
-              <div className="dascy__topo-Pc">
+              <div className="dascy__topo-Pc4">
                 <img src={photo1} alt="MESH Topology" className="mesh1" />
                 <img src={photo1} alt="MESHR Topology" className="mesh1" />
                 <div className="writing-square3">
@@ -106,7 +106,7 @@ const Topo = () => {
                 <img src={photo1} alt="MESH Topology" className="mesh14" />
                 <img src={photo1} alt="MESH Topology" className="mesh14" />
               </div>
-              <div className="dascy__topo-lines">
+              <div className="dascy__topo-lines4">
                 <img src={Ligne4} alt="MESH Topology" className="mesh2" />
                 <img src={Ligne4} alt="MESH Topology" className="mesh3" />
                 <img src={Ligne6} alt="MESH Topology" className="mesh6" />
@@ -129,17 +129,19 @@ const Topo = () => {
           {/* Utilisez les photos correspondantes à la topologie sélectionnée */}
           {selectedTopology === "STAR TOPOLOGY" && (
             <>
+             <div className="dascy__topo-Pc">
               <img src={photo1} alt="STAR Topology" className="image-large2" />
-              <div className="writing-square">
+              {/*<div className="writing-square">
                 <h2>What happened??</h2>
-              </div>
+          </div>*/}
               <img src={photo1} alt="STAR Topology" className="image-large2" />
               <div className="writing-square1">
                 <h2>Dont blame me!</h2>
               </div>
               <img src={photo1} alt="STAR Topology" className="image-large2" />
               <div className="writing-square2">
-                <h2>The cable is broken</h2>
+                <h2>The cable is broken!!</h2>
+              </div>
               </div>
 
               <img src={tl} alt="STAR Topology" className="image-large" />
@@ -160,9 +162,10 @@ const Topo = () => {
                 alt="STAR Topology"
                 className="image-larger2"
               />
+
             </>
           )}
-          {/* Ajoutez d'autres conditions pour d'autres topologies si nécessaire */}
+       
         </div>
       )}
 
@@ -170,6 +173,8 @@ const Topo = () => {
         <div className="animated-photo2" ref={nextSectionRef}>
           {selectedTopology === "RING TOPOLOGY" && (
             <>
+                         <div className="dascy__topo-Pc2">
+
               <img src={photo1} alt="RINGTopology" className="ring1" />
               <div className="writing-square8">
                 <h2>No, we're old</h2>
@@ -186,11 +191,16 @@ const Topo = () => {
               <div className="writing-square10">
                 <h2>Who broke the cable?</h2>
               </div>
+              </div>
+              <div className="dascy__topo-lines2">
+
               <img src={Cercle} alt="RINGTopology" className="cercle" />
 
               <img src={Ligne9} alt="RINGTopology" className="ring5" />
               <img src={Ligne9} alt="RINGTopology" className="ring6" />
               <img src={Electric} alt="BUS Topology" className="ring7" />
+              </div>
+
             </>
           )}
         </div>
@@ -201,6 +211,7 @@ const Topo = () => {
           {/* Utilisez la photo animée correspondant à la topologie sélectionnée */}
           {selectedTopology === "BUS TOPOLOGY" && (
             <>
+             <div className="dascy__topo-Pc3">
               <img src={photo1} alt="BUS Topology" className="bus1" />
               <div className="writing-square4">
                 <h2>Oops sorry!</h2>
@@ -214,7 +225,8 @@ const Topo = () => {
                 <h2>What's wrong?</h2>
               </div>
               <img src={photo1} alt="BUS Topology" className="bus4" />
-
+              </div>
+              <div className="dascy__topo-lines3">
               <img src={Ligne8} alt="BUS Topology" className="image1" />
               <img src={Ligne9} alt="BUS Topology" className="image2" />
               <img src={Ligne9} alt="BUS Topology" className="image3" />
@@ -227,6 +239,7 @@ const Topo = () => {
               <img src={Electric} alt="BUS Topology" className="image10" />
               <img src={Electric} alt="BUS Topology" className="image11" />
               <img src={Electric} alt="BUS Topology" className="image12" />
+              </div>
             </>
           )}
         </div>
