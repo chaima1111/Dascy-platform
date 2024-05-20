@@ -181,8 +181,8 @@ animation: appear 2s;
   animation:disappearImage 5s infinite forwards;
   animation: appear 2s;
   display:flex;
-  animation:appear 2s forwards,disappearImage 5s forwards ;
- 
+ /* animation:appear 2s forwards,disappearImage 5s forwards ;
+ */
 }
 .image-larger {
   display: flex;
@@ -191,7 +191,7 @@ animation: appear 2s;
   top: 100px; /* Déplacer l'image vers le bas de 100 pixels */
   margin-top: 1590px;
   margin-left: 910px;
- animation: appear 1s,moveImage 3s forwards; /* Activation de l'animation */
+ /*animation: appear 1s,moveImage 3s forwards; /* Activation de l'animation */
 }
 
 .image-larger2{
@@ -201,7 +201,7 @@ animation: appear 2s;
   left: 61rem;
   margin-top: -30px;
   transform: translateY(-100vh); 
-  animation: appear 1s,moveImage3 5s forwards; /* Activation de l'animation */
+  /*animation: appear 1s,moveImage3 5s forwards; /* Activation de l'animation */
 }
 .writing-square {
   position: absolute;
@@ -369,8 +369,8 @@ background-color:#F0D0FF;
  display: flex;
  top: 1415px;
  right: 800px;
- animation:circle 4s linear infinite,disappearImage 3s linear forwards;
-}
+/* animation:circle 4s linear infinite,disappearImage 3s linear forwards;
+*/}
 .cercle{
   position  :absolute;
   display: block;
@@ -794,7 +794,7 @@ text-align: center; /* Center the text within the bubble */
   transform: translateX(-30%);
   top: 136vh; /* Set the top position to 50% viewport height */
 transform: translateY(-10%); /* Center the element vertically */
-animation: customAnimation 7s ease-in-out forwards;
+/*animation: customAnimation 7s ease-in-out forwards;
 /* New properties */
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
 text-align: center; /* Center the text within the bubble */
@@ -828,7 +828,7 @@ text-align: center; /* Center the text within the bubble */
   transform: translateX(-30%);
   top: 101vh; /* Set the top position to 50% viewport height */
 transform: translateY(-10%); /* Center the element vertically */
-animation: customAnimation 10s ease-in-out forwards;
+/*animation: customAnimation 10s ease-in-out forwards;
 /* New properties */
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
 text-align: center; /* Center the text within the bubble */
@@ -1094,10 +1094,10 @@ left: 100%;
 
         @keyframes circle {
           0% {
-            transform: rotate(0deg) translateX(300px) rotate(0deg); 
+            transform: rotate(0deg) translateX(220px) rotate(0deg); 
         }
         100% {
-            transform: rotate(360deg) translateX(380px) rotate(-360deg); 
+            transform: rotate(360deg) translateX(280px) rotate(-360deg); 
         }
     }
 
@@ -1204,6 +1204,16 @@ left: 100%;
 }
 */
 @media screen and (max-width: 1370px ) {
+ 
+  .dascy__topo-title h1{
+  
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center; /* Centrer horizontalement */
+    position: absolute;
+    display: flex;
+    top:150px;
+    left: 450px;
+    }
   .animated-photo4{
     display: flex;
     justify-content: center;
@@ -1229,7 +1239,7 @@ left: 100%;
 .mesh1 {
     margin-right: 210px;
     margin-left: 0;
-     margin-top: 30px; 
+     margin-top: 23px; 
 }
 
 .mesh14{
@@ -1390,8 +1400,8 @@ height: 50px;
       
       position  :absolute;
       display: flex;
-      top: 1038px;
-      right: 343px;
+      top: 919px;
+      right: 210px;
     }
     
     .ring2{
@@ -1413,8 +1423,8 @@ height: 50px;
     
       position  :absolute;
       display: flex;
-      top: 1038px;
-      left: 438px;
+      top: 919px;
+      left: 330px;
     
   }
     
@@ -1422,8 +1432,8 @@ height: 50px;
     
       position  :absolute;
       display: flex;
-      top: 1380px;
-      left:-992px;
+      top: 1260px;
+      left:-860px;
       transform: rotate(90deg);
       animation: appear 3s,disappearImage 5s linear forwards;    ;
     
@@ -1432,8 +1442,8 @@ height: 50px;
     .ring6{
       position  :absolute;
       display: flex;
-      top: 1380px;
-      right: 212px;
+      top: 1260px;
+      right: 320px;
       transform: rotate(90deg);
       animation: appear 7s,;
     
@@ -1443,8 +1453,8 @@ height: 50px;
      height: 50px;
      position  :absolute;
      display: flex;
-     top: 1415px;
-     right: 590px;
+     top: 1252px;
+     right: 535px;
      animation:circle 4s linear infinite,disappearImage 3s linear forwards;
     }
     .cercle{
@@ -1453,7 +1463,9 @@ height: 50px;
       display: block;
       top: 1100px;
       right: 380px;
-      animation: appear 1s;}
+      animation: appear 1s;
+    
+    }
 
       /*.ring1{
       
@@ -1538,9 +1550,9 @@ height: 50px;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: -50vw; /* Set the left position to 50% viewport width */
+        left: -15vw; /* Set the left position to 50% viewport width */
         transform: translateX(-30%);
-        top: 108vh; /* Set the top position to 50% viewport height */
+        top: 105vh; /* Set the top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
       animation: customAnimation 7s ease-in-out forwards;
       /* New properties */
@@ -1572,11 +1584,11 @@ height: 50px;
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 65px; /* Set the left position to 50% viewport width */
+        right: 420px; /* Set the left position to 50% viewport width */
         transform: translateX(-30%);
-        top: 72vh; /* Set the top position to 50% viewport height */
+        top: 140vh; /* Set the top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
-      animation: customAnimation 10s ease-in-out forwards;
+     animation: customAnimation 10s ease-in-out forwards;
       /* New properties */
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
       text-align: center; /* Center the text within the bubble */
@@ -1606,9 +1618,9 @@ height: 50px;
       justify-content: center;
       align-items: center;
       position: absolute;
-      left: -50vw; /* Set the left position to 50% viewport width */
+      left: -42vw; /* Set the left position to 50% viewport width */
       transform: translateX(-30%);
-      top: 108vh; /* Set the top position to 50% viewport height */
+      top: 140vh; /* Set the top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
       animation: appear 25s;
       /* New properties */
@@ -1640,9 +1652,9 @@ height: 50px;
       justify-content: center;
       align-items: center;
       position: absolute;
-      right: 53px; /* Set the left position to 50% viewport width */
+      right: 60px; /* Set the left position to 50% viewport width */
       transform: translateX(-30%);
-      top: 142.5vh; /* Set the top position to 50% viewport height */
+      top: 105.5vh; /* Set the top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
       animation: appear 23s;
       /* New properties */
@@ -1923,13 +1935,14 @@ height: 50px;
               grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes de taille égale */
               grid-template-rows: 1fr ; /* Une seule ligne */
               position: relative;
-              gap:350px;
+              gap:300px;
+              bottom: 10px;
               /*right: 220px;
           */
           }
 
           .image-large2 {
-            margin-right: -500px;
+            margin-right: -600px;
             margin-left:500px;
              margin-top: 0px; 
           }
@@ -1964,14 +1977,15 @@ height: 50px;
       .image-large {
         height: 50px;
       left: 0px; 
-      margin-top:800px;
-      transform: translateX(-600px); /* Déplace l'image de 20 pixels vers la droite */
+      margin-top:580px;
+      transform: translateX(-350px); /* Déplace l'image de 20 pixels vers la droite */
    }
       
       .image-small {
-        margin-top: 90px; 
-        margin-left: 30px; 
-        transform: translateX(-780px);
+        height: 430px;
+        margin-top: 110px; 
+        margin-left: 72px; 
+        transform: translateX(-560px);
         padding-right: -100px; /* Ajustez la valeur selon votre besoin */
         display: flex;
         animation: appear s;
@@ -1979,18 +1993,21 @@ height: 50px;
       
       
       .image-smaller {
-      margin-top: 105px; 
-      margin-left: -200px; 
-      transform: translateX(-1195px);
+        height: 440px;
+      margin-top: 110px; 
+      margin-left: -75px; 
+      transform: translateX(-880px);
       display:flex;
       animation: appear 2s;
       }
       
       
       .image-smallest {
-        margin-top: 110px; 
-        margin-left: -740px; 
-        transform: translateX(-480px);
+        height: 410px;
+
+        margin-top:120px; 
+        margin-left: -395px; 
+        transform: translateX(-500px);
         padding-right: -110px; /* Ajustez la valeur selon votre besoin */
        animation:disappearImage 5s infinite forwards;
         animation: appear 2s;
@@ -2002,10 +2019,10 @@ height: 50px;
         display: flex;
         position: absolute;
         height: 50px;
-        top: 100px; /* Déplacer l'image vers le bas de 100 pixels */
-        margin-top: 1650px;
-        margin-left: 103px;
-      animation: appear 1s,moveImage 3s forwards; /* Activation de l'animation */
+        top: 80px; /* Déplacer l'image vers le bas de 100 pixels */
+        margin-top: 1150px;
+        margin-left: 80px;
+       animation: appear 1s,moveImage 3s forwards; /* Activation de l'animation */
     }
       
       .image-larger2{
@@ -2013,13 +2030,46 @@ height: 50px;
         height: 50px;
         position: absolute;
         top: -900px; /* Déplacer l'image vers le bas de 100 pixels */
-        left: 44.7rem;
-        margin-top: 2480px;
+        left: 45.7rem;
+        margin-top: 2100px;
         transform: translateY(-100vh); 
        animation: appear 1s,moveImage3 5s forwards; /* Activation de l'animation */
       }
       
       
+      .writing-square {
+        position: absolute;
+        width: 150px; /* Augmentez la largeur pour mieux s'adapter au contenu de la bulle */
+        min-height: 80px; /* Utilisez min-height pour permettre à la bulle de s'agrandir selon le contenu */
+        background-color: white;
+        padding: 20px; /* Ajoutez un peu de rembourrage pour séparer le contenu de la bordure */
+        font-size: 12px;
+        border-radius: 20px; /* Augmentez le rayon pour rendre les coins plus arrondis */
+        border: 2px solid #c9abc3; /* Augmentez l'épaisseur de la bordure */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left:23vw; /* Set the left position to 50% viewport width */
+        transform: translateX(-30%);
+        top: 0vh; /* Set the top position to 50% viewport height */
+      transform: translateY(-10%); /* Center the element vertically */
+        animation: appear 15s;
+      /* New properties */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
+      text-align: center; /* Center the text within the bubble */
+      }
+      .writing-square::before {
+        content: '';
+        position: absolute;
+        width: 0px; /* Largeur de la flèche */
+        height: 0px; /* Hauteur de la flèche */
+        border-left: 36px solid white; /* Bordure de la flèche */
+        border-top: 13px solid transparent; /* Bordure de la flèche */
+        top: 36px; /* Positionnement vertical */
+       left: 100%;
+       
+      } 
       
       
       .writing-square1 {
@@ -2035,9 +2085,9 @@ height: 50px;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 101.3vw; /* Set the left position to 50% viewport width */
+        left: 80.3vw; /* Set the left position to 50% viewport width */
         transform: translateX(-30%);
-        top:0.5vh; /* Set the top position to 50% viewport height */
+        top:0vh; /* Set the top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
         animation: appear 25s;
       /* New properties */
@@ -2068,9 +2118,9 @@ height: 50px;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left:62vw; /* Set the left position to 50% viewport width */
+        left:52vw; /* Set the left position to 50% viewport width */
         transform: translateX(-30%);
-        top: 0.5vh; /* Set th top position to 50% viewport height */
+        top: 0vh; /* Set th top position to 50% viewport height */
       transform: translateY(-10%); /* Center the element vertically */
         animation: appear 20s;
       /* New properties */
