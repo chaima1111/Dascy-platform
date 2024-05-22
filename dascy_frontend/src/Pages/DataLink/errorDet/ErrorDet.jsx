@@ -1,5 +1,4 @@
-import  { useState } from 'react';
-
+import React, { useState } from "react";
 import "./errDet.css"
 import pc from "../../../assets/DatTwo/pc2.png"
 import arrow from "../../../assets/DatTwo/arrowDa2.png"

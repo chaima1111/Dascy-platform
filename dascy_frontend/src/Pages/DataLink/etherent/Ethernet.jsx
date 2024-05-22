@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./flow.css";
+import "./ethernet.css";
 import curlyba from "../../../assets/DatTwo/curly.png"
 import arrowLi from "../../../assets/DatTwo/arrowLink.png"
 const Flow = () => {

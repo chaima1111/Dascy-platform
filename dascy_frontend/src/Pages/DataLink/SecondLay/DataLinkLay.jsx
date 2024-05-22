@@ -1,7 +1,5 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 import "./datalink.css";
-// import "../test.css"
 const DataLinkLay = () => {
   const [showAnotherBox, setShowAnotherBox] = useState(false);
 
