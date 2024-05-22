@@ -70,6 +70,15 @@ const handleMouseEnter4 = (message) => {
 const handleMouseLeave4 = () => {
   setHoverMessage4('');
 };
+const [hoverMessage6, setHoverMessage6] = useState('');
+
+const handleMouseEnter6 = (message) => {
+  setHoverMessage6(message);
+};
+
+const handleMouseLeave6 = () => {
+  setHoverMessage6('');
+};
   return (
     <>
     <div className='dascy__idTwo'>
@@ -439,19 +448,47 @@ const handleMouseLeave4 = () => {
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
                   <div className="lines6">
-                    <div className="graph6_line-1"></div>
+                    <div 
+                      className="graph6_line-1"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front montant au debut = 0')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-2"></div>
-                    <div className="graph6_line-3"></div>
+                    <div 
+                      className="graph6_line-3"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front descendant au milieu = 1')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-4"></div>
-                    <div className="graph6_line-5"></div>
+                    <div 
+                      className="graph6_line-5"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front montant au milieu = 1')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-6"></div>
-                    <div className="graph6_line-7"></div>
+                    <div 
+                      className="graph6_line-7"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front descendant au debut = 0')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-8"></div>
-                    <div className="graph6_line-9"></div>
+                    <div 
+                      className="graph6_line-9"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front montant au debut = 0')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-10"></div>
-                    <div className="graph6_line-11"></div>
+                    <div 
+                      className="graph6_line-11"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front descendant au milieu = 1')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                     <div className="graph6_line-12"></div>
-                    <div className="graph6_line-13"></div>
+                    <div 
+                      className="graph6_line-13"
+                      onMouseEnter={() => handleMouseEnter6('(Par fois ) Front montant au debut = 0')}
+                      onMouseLeave={handleMouseLeave6}
+                    ></div>
                   </div>
                   <div className='nmbrs' id='nbr6'>
                     <p>0</p>
@@ -463,6 +500,7 @@ const handleMouseLeave4 = () => {
                     <p>0</p>
                     <p className='temps2'>Temps</p>
                   </div> 
+                  {hoverMessage6 && <div className="hover-message3" id='hover-message6'>{hoverMessage6}</div>}
                   <div className='icon-description'>
                 <div className='icon6'>6</div>
                 <div className='description'>
@@ -474,6 +512,9 @@ const handleMouseLeave4 = () => {
           </div>
         </label>
       </div>
+    </div>
+    <div className='dascy__idTwo-button'>
+      <button>Next</button>
     </div>
     </>
   )

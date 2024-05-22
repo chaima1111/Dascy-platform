@@ -1787,6 +1787,18 @@ input:checked + label .description{
 #c6:checked ~ .dascy__idTwo-card .arrows6 {
   display: block;
 }
+
+#hover-message6{
+  position: absolute;
+  top: 260px; /* Adjust as needed */
+  left: 660px; /* Adjust as needed */
+  background-color: #000;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 .graph6_line-1 {
     width: 2px; 
     height: 0; 
@@ -2594,4 +2606,55 @@ input:checked + label .description{
     }
   }
 
+.dascy__idTwo-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #F0D0FF;
+}
+.dascy__idTwo-button button{
+    width: 80px;
+    min-height: 40px;
+    background: var(--color-text2);
+    font-family: karla;
+    color: #FFF;
+    border-radius: 10px;
+    background: #AA2EE6;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    border: none;
+    margin: 0px 25px 15px 0;
+}
 
+/*@media screen and (max-width:1370px ) {
+  #LN1{
+    margin-bottom: 156px;
+    margin-left: 154px;
+  }
+  #LN4{
+    margin-top: 451px;
+    margin-left: 310px;
+    margin-bottom: -300px;
+  }
+  #LN7{
+    margin-left: 406px;
+    margin-bottom: 155px;
+  }
+  #LN9{
+    margin-top: 449px;
+    margin-left: 454px;
+  }
+  .graph2_Line-2{
+    margin-left: 155px;
+    margin-bottom: 241.5px;
+  }
+  .graph2_Line-4{
+    margin-top: 361.9px;
+    margin-left: 363px;
+    margin-bottom: -300px;
+  }
+}*/
