@@ -21,7 +21,7 @@ const IntroQ = () => {
       correctAnswer: "true",
     },
     {
-      question: "Do ew need three parts to build network?",
+      question: "Do we need three parts to build network?",
       options: ["True", "We need two", "We need four", "We need one "],
       correctAnswer: "We need two",
     },

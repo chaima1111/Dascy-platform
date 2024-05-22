@@ -6,17 +6,17 @@ import axios from "axios";
 const AddressClasses = () => {
   const questions = [
     {
-      question: "What is a network",
+      question: "NRZ is ",
       options: [
-        "building connection",
-        "destroy connection",
-        "devices",
-        "Nothing",
+        "Positive 1 Negative 0",
+        "Up 1 down 0",
+        "Positive 0 Negative 1",
+        "Up 0 down 1",
       ],
-      correctAnswer: "building connection",
+      correctAnswer: "Positive 1 Negative 0",
     },
     {
-      question: "Is cable trasmit data?",
+      question: "Return Zero is ",
       options: ["true", "false ", "", ""],
       correctAnswer: "true",
     },

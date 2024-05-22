@@ -1,13 +1,13 @@
 import  { useState } from 'react';
-import { Link } from "react-router-dom";
 
 import "./errDet.css"
-import pc from "../assets/pc2.png"
-import arrow from "../assets/arrowDa2.png"
-import arrowinv from "../assets/arrowDaInv.png"
+import pc from "../../../assets/DatTwo/pc2.png"
+import arrow from "../../../assets/DatTwo/arrowDa2.png"
+import arrowinv from "../../../assets/DatTwo/arrowDaInv.png"
 
 const errorDet = () => {
   const [step, setStep] = useState(0);
+
   const handleKeyPress = () => {
     setStep(prevStep => Math.min(prevStep + 1, 17));  
   };
@@ -162,12 +162,10 @@ const errorDet = () => {
                 ) }
         </div>
       </div>
-      <Link to="">
+    </div>
       <div className="dascy__errorDet-button">
         <button>  Next</button>
       </div>
-      </Link>
-    </div>
     </>
   )
 }

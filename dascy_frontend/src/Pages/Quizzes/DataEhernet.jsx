@@ -6,24 +6,34 @@ import axios from "axios";
 const DataEhernet = () => {
   const questions = [
     {
-      question: "What is a network",
+      question: "What is the min Data of trame Ethernet ?",
       options: [
-        "building connection",
-        "destroy connection",
-        "devices",
-        "Nothing",
+        "64 B",
+        "70 B",
+        "80 B",
+        "60 B",
       ],
-      correctAnswer: "building connection",
+      correctAnswer: "64 B",
     },
     {
-      question: "Is cable trasmit data?",
-      options: ["true", "false ", "", ""],
-      correctAnswer: "true",
+      question: "What is the size of Preamble ?",
+      options: ["6B", "7B ", "8B", "5B"],
+      correctAnswer: "7B",
     },
     {
-      question: "Do ew need three parts to build network?",
-      options: ["True", "We need two", "We need four", "We need one "],
-      correctAnswer: "We need two",
+      question: "What is the Max Data of trame Ethernet ?",
+      options: ["1530 B", "6533 B", "1500 B", "1518 B "],
+      correctAnswer: "1518 B",
+    },
+    {
+      question: "The size of MAC address ?",
+      options: ["6 B", "8 B", "7 B", "4 B "],
+      correctAnswer: "6 B",
+    },
+    {
+      question: "What is the first Destination or source address",
+      options: ["Destination", "Source", "", ""],
+      correctAnswer: "Destination",
     },
   ];
 

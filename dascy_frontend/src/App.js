@@ -38,6 +38,7 @@ import DataEhernet from './Pages/Quizzes/DataEhernet.jsx';
 import LawsPhy from './Pages/Quizzes/LawsPhy.jsx';
 import Numeriqu from "./Pages/Quizzes/Numeriq.jsx"
 import NetwRoute from './Pages/Quizzes/NetwRoute.jsx';
+import ErrorDetQuizz from './Pages/Quizzes/ErrorDetQuizz.jsx';
 
 const Layout = () =>{
     return(
@@ -189,6 +190,10 @@ const router = createBrowserRouter([
   {
     path: "/dllQuizz",
     element: <DataEhernet />,
+  },
+  {
+    path: "/ErrQuizz",
+    element: <ErrorDetQuizz />,
   },
   {
     path: "/lawsQuizz",

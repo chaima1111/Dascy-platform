@@ -1,5 +1,10 @@
 .dascy__errorDet-title{
     color: balck;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    
 
 }
 .dascy__errorDet{
@@ -224,8 +229,8 @@ align-items: center;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.7;
-    background-color: white;
-    color: balck;
+    background-color: rgb(209, 127, 33);
+    color: wheat;
     border: none;
     border-radius: 20px;
     letter-spacing: 0.1em;
