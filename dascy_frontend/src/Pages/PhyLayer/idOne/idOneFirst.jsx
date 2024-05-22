@@ -1,11 +1,11 @@
 import './idOneFirst.css';
 import BitAnimation from './BitAnimation';
-import img from ".//assets/cylin.jpg";
-import pc2 from ".//assets/Osi/pc2.png";
-import sender from ".//assets/Osi/sender.gif";
-import receiver from ".//assets/Osi/receiver.gif";
-import linearr from ".//assets/linearr.png";
-import line from ".//assets/line.png";
+import img from "../../../assets/cylin.jpg";
+import pc2 from "../../../assets/Osi/pc2.png";
+import sender from "../../../assets/Osi/sender.gif";
+import receiver from "../../../assets/Osi/receiver.gif";
+import linearr from "../../../assets/linearr.png";
+import line from "../../../assets/line.png";
 import ProgressBar from './ProgressBar';
 import SineWaveCanvas from './SineWaveCanvas';
 import AnalogDigitalCharts from './AnalogDigitalCharts';
