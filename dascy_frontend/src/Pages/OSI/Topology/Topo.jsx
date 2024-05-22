@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react"; //ajouter
+import React, { useState, useRef } from "react"; 
+import { Link } from "react-router-dom";
 import "./topo.css";
 import photo1 from "../../../assets/Osi/pc2.png";
 import tl from "../../../assets/Osi/topo/tl.png";
@@ -244,6 +245,12 @@ const Topo = () => {
           )}
         </div>
       )}
+            <Link to="/introQuizz">
+
+       <div className="dascy__flow-container-button">
+        <button> Practice </button>
+      </div>
+      </Link>
     </div>
   );
 };

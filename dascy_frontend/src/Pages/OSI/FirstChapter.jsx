@@ -84,7 +84,7 @@ function App() {
       </div>
       <Link to="/firstChapter/topo">
         {" "}
-        <p className="para">practise</p>
+        <p className="para">Next</p>
         <IoIosCheckmarkCircleOutline className="btn" />
       </Link>
     </div>
