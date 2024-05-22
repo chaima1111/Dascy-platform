@@ -31,6 +31,13 @@ import AllcourseDash from "./Main/AllcourseDash.jsx";
 import Ethernet from "./Pages/DataLink/etherent/Ethernet.jsx"
 import DataLinkLay from "./Pages/DataLink/SecondLay/DataLinkLay.jsx"
 import ErrorDet from './Pages/DataLink/errorDet/ErrorDet.jsx';
+// quizzes
+import AddressClasses from './Pages/Quizzes/AddressClasses.jsx';
+import Analog from './Pages/Quizzes/Analog.jsx';
+import DataEhernet from './Pages/Quizzes/DataEhernet.jsx';
+import LawsPhy from './Pages/Quizzes/LawsPhy.jsx';
+import Numeriqu from "./Pages/Quizzes/Numeriq.jsx"
+import NetwRoute from './Pages/Quizzes/NetwRoute.jsx';
 
 const Layout = () =>{
     return(
@@ -168,12 +175,32 @@ const router = createBrowserRouter([
     element: <Hangman />,
   },
   {
-    path: "/quizz",
-    element: <Quizzes />,
-  },
-  {
     path: "/introQuizz",
     element: <IntroQ />,
+  },
+  {
+    path: "/ipQuizz",
+    element: <AddressClasses />,
+  },
+  {
+    path: "/AnalogQuizz",
+    element: <Analog />,
+  },
+  {
+    path: "/dllQuizz",
+    element: <DataEhernet />,
+  },
+  {
+    path: "/lawsQuizz",
+    element: <LawsPhy />,
+  },
+  {
+    path: "/numerQuizz",
+    element: <Numeriqu />,
+  },
+  {
+    path: "/netwQuizz",
+    element: <NetwRoute />,
   },
   {
     path: "/dashboard",
