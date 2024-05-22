@@ -28,6 +28,9 @@ import Introdu from "./Pages/Introduction/Intro.jsx"
 import NetContents from "./Pages/NetContents/NetContents.jsx";
 import AccountDashboard from "./Main/AccountDashboard.jsx";
 import AllcourseDash from "./Main/AllcourseDash.jsx";
+import Ethernet from "./Pages/DataLink/etherent/Ethernet.jsx"
+import DataLinkLay from "./Pages/DataLink/SecondLay/DataLinkLay.jsx"
+import ErrorDet from './Pages/DataLink/errorDet/ErrorDet.jsx';
 
 const Layout = () =>{
     return(
@@ -104,12 +107,8 @@ const router = createBrowserRouter([
         element: <OSI />,
       },
       {
-        path: "/topo",
+        path: "/firstChapter/topo",
         element: <Topo />,
-      },
-      {
-        path: "/contents/osi",
-        element: <OSI />,
       },
       {
         path: "/chapterTwo/second",
@@ -122,6 +121,19 @@ const router = createBrowserRouter([
       {
         path: "/chapterTwo/laws",
         element: <IdeaThreeFirst />,
+      },
+      // Second Layer
+      {
+        path: "/contents/DataLink",
+        element: < Ethernet />,
+      },
+      {
+        path: "/contents/DataLink/ethernet",
+        element: <DataLinkLay />,
+      },
+      {
+        path: "/contents/DataLink/errorDetecte",
+        element: <ErrorDet />,
       },
     ],
   },

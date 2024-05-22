@@ -54,3 +54,18 @@ color: #fff;
 .dascy__netContents-boxe32{
         background-color:#a1d6ef ; 
 }
+.dascy__netContents-boxe-img2 img {
+width: 70px;
+height: 50px;
+margin-right: 1rem;
+}
+.dascy__netContents-boxe-img3 img {
+width: 90px;
+height: 90px;
+margin-right: 2rem;
+}
+.dascy__netContents-boxe-img4 img {
+width: 200px;
+height: 200px;
+/* margin-right: 1rem; */
+}

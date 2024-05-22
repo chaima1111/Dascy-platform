@@ -1,0 +1,239 @@
+.dascy__errorDet-title{
+    color: balck;
+
+}
+.dascy__errorDet{
+    background: var(--color-text2);
+    min-height: 80vh;
+    width: 85vm;
+    box-sizing: border-box;
+      position: relative;
+    padding: 5px 10px;
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+      border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.dascy__errorDet .dascy__errorDet-sender{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dascy__errorDet-sender-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.dascy__errorDet-sender-img img{
+width: 120px;
+height: 120px;
+
+}
+.dascy__errorDet-sender-data{
+
+    padding: 20px  ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    border-radius:20px ;
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+    letter-spacing: 0.7em;
+   
+
+}
+.dascy__errorDet-sender-data-detecte{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.dascy__errorDet-sender-data-sent{
+    padding: 20px ; 
+    
+       background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    letter-spacing: 0.8em;
+}
+.dascy__errorDet-sender-data-add{
+    padding: 10px ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px groove red;
+    display: flex;
+justify-content: center;
+align-items: center;  
+}
+.dascy__errorDet-sender-arrow{
+    transform: rotate(90deg);
+
+}
+
+.dascy__errorDet-sender-arrow img{
+width:90px;
+height: 50px;
+margin:15px 0 ;
+
+}
+.dascy__errorDet-sender-transmissio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dascy__errorDet-tra-arrow{
+    
+}
+.dascy__errorDet-tra-arrow img{
+    width:110px;
+height: 50px;
+margin: 0 20px;
+}
+.dascy__errorDet-receiver-arrow{
+    transform: rotate(-90deg);
+
+}
+.dascy__errorDet-receiver-arrow img{
+    width:90px;
+
+    height: 50px;
+    margin:15px 0 ;
+}
+.dascy__errorDet-receiver-arrow-rec{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-180deg);
+
+}
+.dascy__errorDet-receiver-arrow-rec img{   
+     width:40px;
+    height: 40px;
+
+    margin:15px 2px ;}
+    .dascy__errorDet-receiver-arrow-rec2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dascy__errorDet-receiver-arrow-rec2 img{
+        transform: rotate(-180deg);
+
+        width:40px;
+    height: 40px;
+    margin:15px 2px ;
+    }
+
+.dascy__errorDet-sender-parite{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #F7D01C;
+    border-radius:20px ;
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+}
+
+
+
+.dascy__errorDet-sender-data-add{
+    
+}
+
+.dascy__errorDet-sender-data-trs{
+flex: 2;
+    display: grid;
+   grid-template-rows:278px 250px 1fr ;
+  
+
+}
+
+.dascy__errorDet-sender-data-trs_box{
+    padding: 20px  ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    border-radius:20px ;
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+}
+.dascy__errorDet-sender-data-receiver{
+    display: grid;
+   grid-template-columns:1fr 1fr 1fr 1fr 1fr  ;
+ 
+}
+
+
+.dascy__errorDet-sender-data1{
+    padding: 20px  ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    border-radius:20px ;
+    text-align: center;
+    font: 600;
+    font-size: 20px;
+}
+.dascy__errorDet-sender-data1:first-of-type span{
+    color:#ff0800;
+}
+.dascy__errorDet-sender-data1:last-of-type span{
+    color:#4cbb17;
+}
+.dascy__errorDet-sender-data2{
+    padding: 10px  ;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 110, 230);
+    border-radius:20px ;
+display: flex;
+justify-content: center;
+align-items: center;  
+  font: 600;
+    font-size: 20px;
+
+}
+
+.dascy__errorDet-sender-data-add{
+   
+}
+.dascy__errorDet-button{
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.dascy__errorDet-button button{
+    width: 160px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+    background-color: white;
+    color: balck;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    transition: 0.5s;
+    position: relative;
+}
+.dascy__errorDet-button button:hover{ 
+    letter-spacing: 0.12em;
+    box-shadow: 0 0 35px rgba(); 
+}

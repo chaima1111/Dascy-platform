@@ -6,6 +6,11 @@ import osigi from "../../assets/Contents/Cnetw/osiGi.gif"
 import analog from "../../assets/Contents/Cnetw/analogbal.gif"
 import mux from "../../assets/Contents/Cnetw/mux.gif"
 import num from "../../assets/Contents/Cnetw/graph.gif"
+import errorRob from "../../assets/Contents/intro/errorRobo.gif"
+import ipImg from "../../assets/Contents/intro/ipPhot.png"
+import networ from "../../assets/Contents/intro/networkLa.png"
+import ackimg from "../../assets/Contents/intro/ackImg.png"
+import Linklay from "../../assets/Osi/second/hub3.png"
 import "./netContents.css"
 const NetContents = () => {
   return (
@@ -48,37 +53,29 @@ const NetContents = () => {
             <h3>Physical Layer Laws </h3>
           </Link>
         </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe21">
+        {/* <div className="dascy__netContents-boxe dascy__netContents-boxe21">
           <img src={mux} alt="" />
           <h3>MUX</h3>
-        </div>
-        <div className="dascy__netContents-boxe  ">
-          {/* <img src="" alt="" /> */}
+        </div> */}
+        <div className="dascy__netContents-boxe dascy__netContents-boxe-img2  ">
+          <img src={Linklay} alt="" />
           <h3>Data Link Layer</h3>
         </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe2">
-          {/* <img src="" alt="" /> */}
-          <h3>Flux</h3>
+        <div className="dascy__netContents-boxe dascy__netContents-boxe2 dascy__netContents-boxe-img3">
+          <img src={ackimg} alt="" />
+          <h3>Flow</h3>
         </div>
         <div className="dascy__netContents-boxe dascy__netContents-boxe2">
-          {/* <img src="" alt="" /> */}
+          <img src={errorRob} alt="" />
           <h3>Error detection</h3>
         </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe4">
-          {/* <img src="" alt="" /> */}
-          <h3>Access</h3>
-        </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe1">
-          {/* <img src="" alt="" /> */}
+        <div className="dascy__netContents-boxe dascy__netContents-boxe1 dascy__netContents-boxe-img4">
+          <img src={networ} alt="" />
           <h3>Network layer</h3>
         </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe32">
-          {/* <img src="" alt="" /> */}
+        <div className="dascy__netContents-boxe dascy__netContents-boxe32 dascy__netContents-boxe-img3">
+          <img src={ipImg} alt="" />
           <h3>IP address</h3>
-        </div>
-        <div className="dascy__netContents-boxe dascy__netContents-boxe3">
-          {/* <img src="" alt="routing" /> */}
-          <h3>Routing</h3>
         </div>
       </div>
     </div>

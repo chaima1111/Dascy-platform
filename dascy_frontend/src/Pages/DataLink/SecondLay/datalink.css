@@ -1,0 +1,232 @@
+.dascy__dataLink {
+  /* background: var(--color-text2); */
+  width: 60vm;
+  min-height: 80vh;
+  box-sizing: border-box;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 0 10px;
+  margin: 5rem;
+    border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.dascy__dataLink-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.dascy__datalink-container-header{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.dascy__datalink-container .dascy__datalink-container-header h1{
+   
+text-align: center;
+padding: 20px;
+margin: 10px;
+color: black;
+}
+
+.dascy__datalink-container-illust{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            border-radius: 10px;
+        
+}
+.dascy__datalink-container-illustout{
+      background-color: #b3cde0;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+              -webkit-animation:scaledown 1s linear;
+  -moz-animation:scaledown 1s linear;
+  animation:scaledown 1s linear;
+  transform-origin:50% 50%;
+  animation-fill-mode: forwards;
+}
+.dascy__datalink-container-illust5 h4{
+transform: rotate(-90deg);
+text-align: center;
+font-size: 20px;
+
+}
+        .dascy__datalink-container-illust1 { background-color: #E6A043; grid-column: 1 / 3; grid-row: 1/3; }
+        .dascy__datalink-container-illust2 { background-color: #e68443; border-bottom: none; grid-column: 3; grid-row: 1/2; }
+        .dascy__datalink-container-illust22 {background-color: #e68443; grid-column: 3; grid-row: 2/3; }
+        .dascy__datalink-container-illust3 {background-color: #85D4ff; grid-column: 1 / 3; grid-row: 3/4; }
+        .dascy__datalink-container-illust4 { background-color: #6dc5f5;grid-column: 3/ 4; grid-row: 3/4; }
+        .dascy__datalink-container-illust5 { background-color: #e6ceaa; background-color: #e6ceaa;  grid-column: 4/5 ; grid-row: 1 / 4; }
+        .dascy__datalink-container-illust11 { background-color: #e68443;grid-column:  5/10; grid-row: 1; }
+        .dascy__datalink-container-illust6 {  grid-column:  5; grid-row: 2/ 4; }
+        .dascy__datalink-container-illust7 { grid-column: 6; grid-row: 2 / 4; }
+        .dascy__datalink-container-illust8 { grid-column: 7; grid-row: 2 / 4; }
+        .dascy__datalink-container-illust9{ grid-column: 8; grid-row: 2/ 4; }
+        .dascy__datalink-container-illust10 { grid-column: 9; grid-row: 2 / 4; }
+
+        .dascy__datalink-container-illustout:hover{
+   z-index:100;
+  -webkit-animation:scale 1s linear;
+  -moz-animation:scale 1s linear;
+  animation:scale 1s linear;
+  transform-origin:50% 50%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+  0%{
+    transform:scale(1.0);
+  }
+  100%{
+    transform:scale(1.1);
+    -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+-moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.1);
+  }
+}
+
+@keyframes scaledown{
+  0%{
+    transform:scale(1.1);
+  }
+   100%{
+    transform:scale(1.0);
+  }
+}
+
+
+.dascy__ethernet-trame-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another-box {
+    margin: 2rem;
+  width: 600px;
+  height: 100px;
+  background-color: #e6ceaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid ; */
+  user-select: none;
+  border-radius: 5px;
+
+     position: relative;
+
+}
+.dascy__ethernet-trame{
+padding: 30px;   
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+gap: 30px;
+
+
+}
+.dascy__ethernet-trame1,
+.dascy__ethernet-trame2,
+.dascy__ethernet-trame3,
+.dascy__ethernet-trame4,
+.dascy__ethernet-trame5,
+.dascy__ethernet-trame6{
+   padding: 10px;
+
+}
+.dascy__ethernet-trame h4{
+text-align: center;
+}
+.dascy__ethernet-trame2{
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.dascy__ethernet-trame1::before{
+content: "7 bytes for synchronization";
+position: absolute;
+left: 15px;
+top: 110px;
+background-color:#e68443;
+color: white;
+padding: 20px;
+border-radius: 10px;
+display: none;
+}
+.dascy__ethernet-trame1:hover:before{
+    display: block;
+}
+.dascy__ethernet-trame2::before{
+content: "6 bytes for each";
+position: absolute;
+left: 180px;
+top: 110px;
+background-color: darkred;
+color: white;
+padding: 20px;
+border-radius: 10px;
+display: none;
+}
+
+.dascy__ethernet-trame2:hover:before{
+    display: block;
+ }
+.dascy__ethernet-trame3::before{
+content: "2 bytes ";
+position: absolute;
+left: 350px;
+top: 110px;
+background-color: #e68443;
+color: white;
+padding: 20px;
+border-radius: 10px;
+display: none;
+}
+
+.dascy__ethernet-trame3:hover:before{
+    display: block;
+ }
+.dascy__ethernet-trame4::before{
+content: "46 bytes to 1500 ";
+position: absolute;
+left: 400px;
+top: 110px;
+background-color: darkred;
+color: white;
+padding: 20px;
+border-radius: 10px;
+display: none;
+}
+
+.dascy__ethernet-trame4:hover:before{
+    display: block;
+ }
+.dascy__ethernet-trame5::before{
+content: "error detection 4bytes ";
+position: absolute;
+left: 450px;
+top: 110px;
+background-color: #e68443;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+display: none;
+}
+
+.dascy__ethernet-trame5:hover:before{
+    display: block;
+ }

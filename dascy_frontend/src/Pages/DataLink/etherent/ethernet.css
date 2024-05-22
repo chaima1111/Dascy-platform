@@ -1,0 +1,191 @@
+.dascy__flow {
+
+  background: var(--color-text2);
+  /* width: 40vm; */
+  min-height: 80vh;
+  box-sizing: border-box;
+    position: relative;
+  padding: 5px 10px;
+  margin: 5rem;
+  justify-content: center;
+  flex-direction: column;
+
+    border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+.dascy__flow h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.dascy__flow-container{
+    margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* position: relative; */
+
+}
+
+.header-box, .trailer-box {
+  background-color: #FFC000;
+  padding: 5px;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #FFC000;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-box {
+  right: -300px; 
+}
+
+.header-box.show {
+  right: 219px; /* Slide in from the right */
+}
+
+.trailer-box {
+  left: -200px; /* Hide initially off-screen to the left */
+}
+
+.trailer-box.show {
+  left: 220px; /* Slide in from the left */
+}
+
+.dascy__data-box {
+  background-color: #eee;
+  padding: 10px;
+  width: 500px;
+  border-radius: 5px;
+    height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  z-index: 10; /* Ensure the data box is above the sliding boxes */
+}
+.dascy__data-box:hover{
+    background-color: #FFC000;
+      border: 1px solid #FFC000;
+
+}
+.dascy__flow-container-desc{
+position: relative;
+}
+.dascy__flow-container-desc img{
+    position: absolute;
+    top: -60px;
+    left:290px ;
+}
+.dascy__flow-container-desc h2 {
+margin-top: 60px;
+
+ }
+.dascy__flow-container-desc {
+color: white;
+font-size: 20px;
+font-family: var(--font-family);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.dascy__flow  .desc2{
+background-color: #eee;
+width: 200px;
+padding: 20px;
+border-radius: 10px;
+display: flex;
+color: black;
+justify-content: center;
+align-items: center;
+}
+
+.dascy__flow-container-desc-img{
+      position: absolute;
+    top: -50px;
+    left:-180px ;
+}
+
+.dascy__flow-container-button{
+  display: flex;
+  flex-direction: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.dascy__flow-container-button button{
+  /* margin-top: 1rem; */
+  width: 160px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+  background-color: white;
+  color: balck;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 0.1em;
+  padding: 5px;
+  transition: 0.5s;
+  position: relative;
+}
+.dascy__flow-container-button button:hover{
+ letter-spacing: 0.12em;
+ box-shadow: 0 0 35px rgba(); 
+
+}
+/* .dascy__flow-container-button button::before{
+ content: "";
+ position: absolute;
+ inset: 2px;
+ background: var(--color-text2);
+
+
+}
+.dascy__flow-container-button button span{
+  position: relative;
+z-index: 2;
+}
+
+.dascy__flow-container-button button span i {
+  position: absolute;
+  inset: 0;
+  display: block;
+
+}
+.dascy__flow-container-button button span i::before {
+content: "";
+position: absolute;
+top: 0;
+left: 80%;
+width:10px ;
+height: 4px;
+background-color: var(--color-text2) ;
+transform: translateX(-50% ) skewX(325deg);
+
+}
+.dascy__flow-container-button button:hover span i::before {
+width: 20px;
+left: 20%;
+}
+.dascy__flow-container-button button span i::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 20%;
+width:10px ;
+height: 4px;
+background-color: #FFC000;
+transform: translateX(-50% ) skewX(325deg);
+
+}
+.dascy__flow-container-button button:hover span i::after {
+width: 20px;
+left: 80%;
+} */
