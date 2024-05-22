@@ -1,0 +1,51 @@
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dascy_laws_progress{
+  opacity: 0;
+  animation: fadeInContent 1s forwards;
+  animation-delay: 8s;
+}
+
+.dascy_laws_progress{
+    position: relative; 
+    height: 68px;
+    width: 68px;
+    background: conic-gradient(#AA2EE6 36deg, #cfcfcf 0deg);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -110px;
+  }
+  
+  .dascy_laws_progress::before{
+    content: "";
+    position: absolute;
+    top: 50%; /* Position from top at 50% */
+    left: 50%; /* Position from left at 50% */
+    transform: translate(-50%, -50%); /* Center the circle */
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+  .dascy_laws_value{
+    position: relative;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+  }
+  .dascy_laws_value2{
+    position: relative;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 2px;
+  }
