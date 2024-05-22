@@ -1,0 +1,2218 @@
+@keyframes changeStylesText {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*************** bitrate*******************/
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_info2, .dascy_laws_card > .dascy_laws_row > .dascy_laws_info3,.dascy_laws_card > .dascy_laws_row > .dascy_laws_pr,.dascy_laws_card > .dascy_laws_row > .dascy_laws_pr2{
+  color: #000;
+  margin-bottom: 60px;
+  position: absolute;
+  overflow: hidden;
+  height: 80px;
+  width: 200px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+  
+}
+input:checked + label .dascy_laws_info2, input:checked + label .dascy_laws_info3{
+  /* opacity: 1 !important;
+  transform: translateY(0) !important; */
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 4s;
+}
+input:checked + label .dascy_laws_pr,input:checked + label .dascy_laws_pr2{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 5s;
+}
+.dascy_laws_info2{
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 335px;
+  margin-top: -280px;
+}
+.dascy_laws_info3{
+  position: absolute;
+  margin-left: 357px;
+  margin-top: -200px;
+  margin-bottom: 70px;
+  height: 250px; 
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+
+.dascy_laws_info1{
+  position: absolute;
+  color: #000;
+  margin-left: 345px;
+  margin-top: -395px;
+  height: 250px; 
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_info1{
+  color: #000;
+  margin-bottom: 60px;
+  position: absolute;
+  overflow: hidden;
+  height: 80px;
+  width: 200px;
+  opacity: 0;
+  transform: translateY(30px);
+  /* animation: fadeInContent 2.5s forwards;
+  animation-delay: 3s; */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+
+.dascy_laws_pr{
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -90px;
+  font-size: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+.dascy_laws_pr2{
+  position: absolute;
+  margin-left: 560px;
+  margin-top: -90px;
+  margin-bottom: 70px;
+  font-size: 30px;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+
+
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_word,.dascy_laws_card > .dascy_laws_row >.dascy_laws_send,.dascy_laws_card > .dascy_laws_row >.dascy_laws_rece,.dascy_laws_card > .dascy_laws_row >.dascy_laws_sender,.dascy_laws_card > .dascy_laws_row >.dascy_laws_receiver,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc1,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc2,.dascy_laws_card > .dascy_laws_row >.dascy_laws_prog{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_image {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+/******animation********/
+input:checked + label .dascy_laws_receiver, input:checked + label .dascy_laws_sender, input:checked + label .dascy_laws_pc1, input:checked + label .dascy_laws_pc2{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 1s;
+}
+input:checked + label .dascy_laws_send,input:checked + label .dascy_laws_rece{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 2s;
+}
+input:checked + label .dascy_laws_info2 {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: changeStylesText 2.5s forwards;
+  animation-delay: 4.5s;
+}
+
+input:checked + label .dascy_laws_image {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 3s;
+}
+input:checked + label .dascy_laws_word{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 4s;
+}
+
+input:checked + label .dascy_laws_info1{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 7s;
+}
+input:checked + label .dascy_laws_info3{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 8s;
+}
+input:checked + label .dascy_laws_prog{
+  /* opacity: 1 !important;
+  visibility: visible; 
+  transform: translateY(0) !important; */
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 8s;
+}
+input:checked + label .dascy_laws_pr,input:checked + label .dascy_laws_pr2{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 11s;
+}
+/************************/
+
+.dascy_laws_image {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 380px;
+  margin-top: -455px;
+  height: 250px; 
+  width: 80px;
+}
+
+.dascy_laws_word {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 345px;
+  margin-top: -330px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.dascy_laws_sender {
+  width: 310px;
+  height: 140px;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -405px;
+}
+.dascy_laws_receiver{
+  width: 300px;
+  height: 140px;
+  position: absolute;
+  margin-left: 425px;
+  margin-top: -405px;
+  z-index: 2;
+}
+.dascy_laws_send{
+  position: absolute;
+  margin-left: 205px;
+  margin-top: -240px;
+  font-size: 18px;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+.dascy_laws_rece{
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -240px;
+  font-size: 18px;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+.dascy_laws_pc1{
+  position: absolute;
+  margin-left: 480px;
+  margin-top: -400px;
+}
+.dascy_laws_pc2{
+  position: absolute;
+  margin-left: 140px;
+  margin-top: -400px;
+}
+/* info3 to the middle */
+.dascy_laws_prog{
+  position: absolute;
+  margin-left: 365px;
+  margin-top: -65px;
+}
+
+
+/************** T **********/
+.dascy_laws_linear {
+  position: absolute;
+  margin-left: 516px;
+  margin-top: -210px;
+  width: 86px;
+  height: 25px; 
+}
+.dascy_laws_linear2 {
+  position: absolute;
+  margin-left: 286px;
+  margin-top: -210px;
+  width: 46px;
+  height: 25px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear,.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear2{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear2,input:checked + label .dascy_laws_linear{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 1s,1s;
+}
+
+@keyframes reveal {
+  from {
+    clip-path: inset(0 100% 0 0); /* Start with the image clipped from the right */
+  }
+  to {
+    clip-path: inset(0 0 0 0); /* End with the image fully visible */
+  }
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_t2,.dascy_laws_card > .dascy_laws_row > .dascy_laws_t{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_t2,input:checked + label .dascy_laws_t{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards,fadeOut 9s forwards;
+  animation-delay: 2s,5s;
+}
+.dascy_laws_t2{
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  margin-left: 280px;
+  margin-top: -190px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_t{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  margin-left: 535px;
+  margin-top: -190px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/******** R *******/
+.dascy_laws_linear1 {
+  position: absolute;
+  margin-left: 430px;
+  margin-top: -150px;
+  width: 270px;
+  height: 25px; 
+}
+.dascy_laws_linear21 {
+  position: absolute;
+  margin-left: 85px;
+  margin-top: -150px;
+  width: 90px;
+  height: 25px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear1,.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear21{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear21,input:checked + label .dascy_laws_linear1{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 11s,11s;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_r2,.dascy_laws_card > .dascy_laws_row > .dascy_laws_r,.dascy_laws_card > .dascy_laws_row > .dascy_laws_rlaw,.dascy_laws_card > .dascy_laws_row > .dascy_laws_rlaws{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_r2,input:checked + label .dascy_laws_r{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 5s;
+}
+.dascy_laws_r2{
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  margin-left: 90px;
+  margin-top: -130px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_r{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  margin-left: 525px;
+  margin-top: -130px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_rlaws{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  margin-left: 330px;
+  margin-top: -80px;
+  font-size: 18px;
+  text-align: center;
+}
+input:checked + label .dascy_laws_rlaws{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: changeStylesText 3s forwards;
+  animation-delay: 10s;
+}
+
+.dascy_laws_rlaw{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  margin-left: 330px;
+  margin-top: -80px;
+  font-size: 25px;
+  text-align: center;
+}
+input:checked + label .dascy_laws_rlaw{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 13s;
+}
+
+.dascy_laws_line11r{
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -122px;
+  width: 100px;
+  height: 35px;
+}
+.dascy_laws_line21r{
+  position: absolute;
+  margin-left: 490px;
+  margin-top: -140px;
+  width: 90px;
+  height: 35px; 
+}
+.dascy_laws_line31r{
+  position: absolute;
+  margin-left: 530px;
+  margin-top: -160px;
+  width: 100px;
+  height: 35px; 
+}
+.dascy_laws_line12r{
+  position: absolute;
+  margin-left:  40px;
+  margin-top: -150px;
+  width: 100px;
+  height: 35px; 
+}
+.dascy_laws_line22r{
+  position: absolute;
+  margin-left: 70px;
+  margin-top: -160px;
+  width: 100px;
+  height: 35px; 
+}
+
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line11r{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-130deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line21r{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-90deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line31r{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-50deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line12r{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-100deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line22r{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-80deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+
+input:checked + label .dascy_laws_line11r,input:checked + label .dascy_laws_line21r,input:checked + label .dascy_laws_line31r{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,changeStylesText 9s forwards;
+  animation-delay: 5s,5s;
+}
+input:checked + label .dascy_laws_line12r,input:checked + label .dascy_laws_line22r{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,changeStylesText 9s forwards,reveal 2s forwards;
+  animation-delay: 6s,6s,13s;
+}
+
+/****************/
+.dascy_laws_charts{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -300px;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_charts{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_charts{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  /* opacity: 1; 
+  /* visibility: visible;  */
+  /* transform: translateY(0);  */
+  /* animation: changeStylesText 2.5s forwards;
+  animation-delay: 4.5s; */ 
+}
+
+
+/********* n **************/
+/* 1s */
+.dascy_laws_line1{
+  position: absolute;
+  margin-left: 430px;
+  margin-top: -182px;
+  width: 120px;
+  height: 35px; 
+  /* transform: rotate(-30deg); */
+}
+.dascy_laws_line2{
+  position: absolute;
+  margin-left: 289px;
+  margin-top: -130px;
+  width: 120px;
+  height: 35px; 
+  /* transform: rotate(-150deg); */
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line1{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-30deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line2{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-150deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_line2,input:checked + label .dascy_laws_line1{
+  /* opacity: 1 !important; */
+  /* transform: translateY(0) !important; */
+   /* opacity: 1;  */
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 1s,1s;
+}
+/* 2s */
+.dascy_laws_n{
+  position: absolute;
+  margin-left: 420px;
+  margin-top: -135px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_nbb{
+  position: absolute;
+  margin-left: 380px;
+  margin-top: -110px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_n,.dascy_laws_card > .dascy_laws_row > .dascy_laws_nbb{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_n{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 5s forwards;
+  animation-delay: 2s,2s;
+}
+input:checked + label .dascy_laws_nbb{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,changeStylesText 5s forwards;
+  animation-delay: 2s,2s;
+}
+/****** L ******/
+/* 5s */
+.dascy_laws_vline1{
+  position: absolute;
+  margin-left: 167px;
+  margin-top: -137px;
+  width: 66px;
+  height: 35px; 
+  transform: rotate(-90deg);
+}
+.dascy_laws_vline2{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -157px;
+  width: 100px;
+  height: 35px; 
+  transform: rotate(-65deg);
+}
+.dascy_laws_vline3{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -165px;
+  width: 120px;
+  height: 35px; 
+  transform: rotate(-90deg);
+}
+.dascy_laws_vline4{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -140px;
+  width: 120px;
+  height: 35px; 
+  transform: rotate(-115deg);
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vline1{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-90deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vline2{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-65deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vline3{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-90deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vline4{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-115deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_vline1,input:checked + label .dascy_laws_vline2,input:checked + label .dascy_laws_vline3,input:checked + label .dascy_laws_vline4{
+  /* opacity: 1 !important; */
+  /* transform: translateY(0) !important; */
+   /* opacity: 1;  */
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 5s,5s;
+}
+/* 6s */
+.dascy_laws_v{
+  position: absolute;
+  margin-left: 190px;
+  margin-top: -110px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_nbl{
+  position: absolute;
+  margin-left: 130px;
+  margin-top: -90px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_v,.dascy_laws_card > .dascy_laws_row > .dascy_laws_nbl{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_v{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 6s,6s;
+}
+input:checked + label .dascy_laws_nbl{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards, changeStylesText 5s forwards;
+  animation-delay: 6s,6s;
+}
+/* 8s */
+.dascy_laws_vLaw{
+  position: absolute;
+  margin-left: 330px;
+  margin-top: -70px;
+  font-size: 24px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vLaw{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_vLaw{
+  /* opacity: 1 !important;
+  transform: translateY(0) !important; */
+  visibility: visible; 
+  opacity: 1;
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 9s,9s;
+}
+
+
+
+
+/******** temps de transfert *******/
+.dascy_laws_vertical-line {
+  position: absolute;
+  height: 270px; 
+  border-left: 2px solid black;
+  margin-left: 120px;
+  top: 50%; 
+  margin-top: -135px;
+  transform: translateY(-50%);
+  
+}
+.dascy_laws_vertical-line2 {
+  position: absolute;
+  height: 270px;              /* Line height */
+  border-left: 2px solid black; /* Line width and color */
+  margin-left: 420px;
+  /* margin-top: -250px; */
+  margin-top: -135px;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vertical-line,.dascy_laws_card > .dascy_laws_row > .dascy_laws_vertical-line2{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_vertical-line,input:checked + label .dascy_laws_vertical-line2{
+  /* opacity: 1 !important; */
+  transform: translateY(0) !important;
+   opacity: 1; 
+  /* visibility: visible;  */
+  /* transform: translateY(0); */
+  animation: fadeInContent 2s forwards;
+  animation-delay: 1s;
+}
+
+.dascy_laws_arrow {
+    position: absolute;
+    width: 314px;
+    height: 2px;
+    margin-left: 241px;
+    margin-top: -270px;
+    background-color: black;
+    transform: rotate(20deg);
+  }
+  .dascy_laws_card > .dascy_laws_row > .dascy_laws_arrow{
+    position: absolute;
+    opacity: 0;
+    /* transform: translateY(30px); */
+    /* transform: translateY(30px); */
+    /* transition-delay: .3s; */
+    /* transition: all .3s ease; */
+  }
+  input:checked + label .dascy_laws_arrow{
+     opacity: 1; 
+      visibility: visible; 
+     /* reveal 2s forwards */
+     animation: fadeInContent 4s forwards;
+     animation-delay: 1s;
+  }
+  .dascy_laws_card > .dascy_laws_row > .dascy_laws_arrows{
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    /* transform: translateY(30px); */
+    transition-delay: .3s;
+    transition: all .3s ease;
+  }
+  input:checked + label .dascy_laws_arrows{
+    /* opacity: 1 !important; */
+    transform: translateY(0) !important;
+     opacity: 1; 
+    /* visibility: visible;  */
+    /* transform: translateY(0); */
+    animation: fadeInContent 2s forwards;
+    animation-delay: 1s;
+  }
+  .dascy_laws_arrows{
+    margin-top: 10px;
+    margin-left: -130px;
+  }
+  .dascy_laws_arrow::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Position the arrow vertically */
+    right: -10px; /* Position the arrow at the end of the line */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    transform: rotate(-90deg);
+  }
+  .dascy_laws_arrow2 {
+    position: absolute;
+    width: 314px;
+    height: 2px;
+    margin-left: 241px;
+    margin-top: -160px;
+    background-color: black;
+    transform: rotate(20deg);
+  }
+  input:checked + label .dascy_laws_arrow2{
+    opacity: 1; 
+     visibility: visible; 
+    /* reveal 2s forwards */
+    animation: fadeInContent 6s forwards;
+    animation-delay: 1s;
+ }
+ .dascy_laws_card > .dascy_laws_row > .dascy_laws_arrow2{
+   position: absolute;
+   opacity: 0;
+   transform: translateY(30px);
+   /* transform: translateY(30px); */
+   transition-delay: .3s;
+   transition: all .3s ease;
+ }
+  .dascy_laws_arrow2::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Position the arrow vertically */
+    right: -10px; /* Position the arrow at the end of the line */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    transform: rotate(-90deg);
+  }
+
+.dascy_laws_horz-line1{
+  position: absolute;
+  height: 290px;           
+  border-left: 2px dashed black; 
+  margin-left: 400px;
+  margin-top: -250px;
+  transform: rotate(90deg);
+}
+.dascy_laws_horz-line2{
+  position: absolute;
+  height: 290px;           
+  border-left: 2px dashed black; 
+  margin-left: 400px;
+  margin-top: -360px;
+  transform: rotate(90deg);
+}
+.dascy_laws_horz-line3{
+  position: absolute;
+  height: 290px;           
+  border-left: 2px dashed black; 
+  margin-left: 400px;
+  margin-top: -470px;
+  transform: rotate(90deg);
+}
+@keyframes revealr {
+  from {
+    clip-path: inset(100% 0 0 0); /* Start with the image clipped from the right */
+  }
+  to {
+    clip-path: inset(0 0 0 0); /* End with the image fully visible */
+  }
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_horz-line3,.dascy_laws_card > .dascy_laws_row > .dascy_laws_horz-line2,.dascy_laws_card > .dascy_laws_row > .dascy_laws_horz-line1{
+  position: absolute;
+  opacity: 0;
+  
+}
+input:checked + label .dascy_laws_horz-line3{
+  visibility: visible; 
+  animation: revealr 3s forwards,fadeInContent 5s forwards;
+  animation-delay: 1s;
+}
+input:checked + label .dascy_laws_horz-line2{
+  visibility: visible; 
+  animation: revealr 5s forwards,fadeInContent 5s forwards;
+  animation-delay: 1s;
+}
+input:checked + label .dascy_laws_horz-line1{
+  visibility: visible; 
+  animation: revealr 7s forwards,fadeInContent 5s forwards;
+  animation-delay: 1s;
+}
+
+.dascy_laws_linear7 {
+  position: absolute;
+  margin-left: 520px;
+  margin-top: -241px;
+  width: 220px;
+  height: 70px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear7{
+  position: absolute;
+  opacity: 0;
+  transform:rotate(90deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear7{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 7s,7s;
+}
+
+.dascy_laws_linear71{
+  position: absolute;
+  margin-left: 420px;
+  margin-top: -295px;
+  width: 110px;
+  height: 70px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear71{
+  position: absolute;
+  opacity: 0;
+  transform:rotate(90deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear71{
+  /* opacity: 1 !important; */
+  /* transform: translateY(0) !important; */
+   /* opacity: 1;  */
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 3s,3s;
+}
+
+.dascy_laws_linear72 {
+  position: absolute;
+  margin-left: 420px;
+  margin-top: -180px;
+  width: 110px;
+  height: 70px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear72{
+  position: absolute;
+  opacity: 0;
+  transform:rotate(90deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear72{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 5s,5s;
+}
+
+.dascy_laws_mes{
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 620px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+.dascy_laws_mes1{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 460px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_mes2{
+  position: absolute;
+  margin-top: -185px;
+  margin-left: 460px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_mes,.dascy_laws_card > .dascy_laws_row > .dascy_laws_mes1,.dascy_laws_card > .dascy_laws_row > .dascy_laws_mes2{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_mes1{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 3s,3s;
+}
+input:checked + label .dascy_laws_mes2{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 5s,5s;
+}
+input:checked + label .dascy_laws_mes{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 7s,7s;
+}
+
+.dascy_laws_first{
+  position: absolute;
+  margin-top: -230px;
+  margin-left: 340px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_last{
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 340px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_first,.dascy_laws_card > .dascy_laws_row > .dascy_laws_last{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_first{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,changeStylesText 3s forwards;
+  animation-delay: 4s,4s;
+}
+input:checked + label .dascy_laws_last{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,changeStylesText 3s forwards;
+  animation-delay: 6s,6s;
+}
+
+.dascy_laws_sender7 {
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: -445px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_receiver7{
+  width: 175px;
+  height: 75px;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: -445px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_pc17{
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  margin-left: 395px;
+  margin-top: -440px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_pc27{
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  margin-left: 50px;
+  margin-top: -440px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_sender7,.dascy_laws_card > .dascy_laws_row >.dascy_laws_receiver7,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc17,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc27{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+input:checked + label .dascy_laws_sender7,input:checked + label .dascy_laws_receiver7,input:checked + label .dascy_laws_pc17,input:checked + label .dascy_laws_pc27{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 1s;
+}
+
+/************ t propagation ************/
+
+
+
+.dascy_laws_horz-line1pt{
+  position: absolute;
+  height: 290px;           
+  border-left: 2px dashed black; 
+  margin-left: 400px;
+  margin-top: -250px;
+  transform: rotate(90deg);
+}
+.dascy_laws_horz-line2pt{
+  position: absolute;
+  height: 290px;           
+  border-left: 2px dashed black; 
+  margin-left: 400px;
+  margin-top: -360px;
+  transform: rotate(90deg);
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_horz-line2pt,.dascy_laws_card > .dascy_laws_row > .dascy_laws_horz-line1pt{
+  position: absolute;
+  opacity: 0;
+  
+}
+input:checked + label .dascy_laws_horz-line2pt{
+  visibility: visible; 
+  animation: revealr 5s forwards,fadeInContent 5s forwards;
+  animation-delay: 1s;
+}
+input:checked + label .dascy_laws_horz-line1pt{
+  visibility: visible; 
+  animation: revealr 7s forwards,fadeInContent 5s forwards;
+  animation-delay: 1s;
+}
+
+.dascy_laws_vertical-linept {
+  position: absolute;
+  height: 270px; 
+  border-left: 2px solid black;
+  margin-left: 120px;
+  top: 50%; 
+  margin-top: -135px;
+  transform: translateY(-50%);
+  
+}
+.dascy_laws_vertical-line2pt {
+  position: absolute;
+  height: 270px;              /* Line height */
+  border-left: 2px solid black; /* Line width and color */
+  margin-left: 420px;
+  /* margin-top: -250px; */
+  margin-top: -135px;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_vertical-linept,.dascy_laws_card > .dascy_laws_row > .dascy_laws_vertical-line2pt{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_vertical-linept,input:checked + label .dascy_laws_vertical-line2pt{
+  /* opacity: 1 !important; */
+  transform: translateY(0) !important;
+   opacity: 1; 
+  /* visibility: visible;  */
+  /* transform: translateY(0); */
+  animation: fadeInContent 2s forwards,changeStylesText 10s forwards;
+  animation-delay: 1s,1s;
+}
+
+.dascy_laws_arrowpt {
+  position: absolute;
+  width: 314px;
+  height: 2px;
+  margin-left: 241px;
+  margin-top: -270px;
+  background-color: black;
+  transform: rotate(20deg);
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_arrowpt{
+  position: absolute;
+  opacity: 0;
+  /* transform: translateY(30px); */
+  /* transform: translateY(30px); */
+  /* transition-delay: .3s; */
+  /* transition: all .3s ease; */
+}
+input:checked + label .dascy_laws_arrowpt{
+   opacity: 1; 
+    visibility: visible; 
+   /* reveal 2s forwards */
+   animation: fadeInContent 2s forwards;
+   animation-delay: 1s;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_arrowspt{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+/************/
+input:checked + label .dascy_laws_arrowspt{
+  transform: translateY(0) !important;
+   opacity: 1; 
+  animation: fadeInContent 2s forwards, changeStylesText 9s forwards;
+  animation-delay: 1s,1s;
+}
+.dascy_laws_arrowspt{
+  margin-top: 10px;
+  margin-left: -130px;
+}
+.dascy_laws_arrowpt::after {
+  content: "";
+  position: absolute;
+  top: -5px; /* Position the arrow vertically */
+  right: -10px; /* Position the arrow at the end of the line */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+  transform: rotate(-90deg);
+}
+.dascy_laws_arrow2pt {
+  position: absolute;
+  width: 314px;
+  height: 2px;
+  margin-left: 241px;
+  margin-top: -160px;
+  background-color: black;
+  transform: rotate(20deg);
+}
+input:checked + label .dascy_laws_arrow2pt{
+  opacity: 1; 
+   visibility: visible; 
+  /* reveal 2s forwards */
+  animation: fadeInContent 6s forwards;
+  animation-delay: 1s;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_arrow2pt{
+ position: absolute;
+ opacity: 0;
+ transform: translateY(30px);
+ /* transform: translateY(30px); */
+ transition-delay: .3s;
+ transition: all .3s ease;
+}
+.dascy_laws_arrow2pt::after {
+  content: "";
+  position: absolute;
+  top: -5px; /* Position the arrow vertically */
+  right: -10px; /* Position the arrow at the end of the line */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+  transform: rotate(-90deg);
+}
+/*******/
+.dascy_laws_first{
+  position: absolute;
+  margin-top: -230px;
+  margin-left: 340px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_last{
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 340px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_first,.dascy_laws_card > .dascy_laws_row > .dascy_laws_last{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_first{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: changeStylesText 2s forwards;
+  animation-delay: 4s;
+}
+input:checked + label .dascy_laws_last{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: changeStylesText 2s forwards;
+  animation-delay: 6s;
+}
+
+.dascy_laws_sender7pt {
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: -445px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_receiver7pt{
+  width: 175px;
+  height: 75px;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: -445px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_pc17pt{
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  margin-left: 395px;
+  margin-top: -440px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.dascy_laws_pc27pt{
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  margin-left: 50px;
+  margin-top: -440px;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.dascy_laws_linear72pt {
+  position: absolute;
+  margin-left: 420px;
+  margin-top: -180px;
+  width: 110px;
+  height: 70px; 
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear72pt{
+  position: absolute;
+  opacity: 0;
+  transform:rotate(90deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear72pt{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards,changeStylesText 4s forwards;
+  animation-delay: 5s,5s,5s;
+}
+
+.dascy_laws_mes2pt{
+  position: absolute;
+  margin-top: -185px;
+  margin-left: 460px;
+  width: 100px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_mes2pt{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+input:checked + label .dascy_laws_mes2pt{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards,changeStylesText 4s forwards;
+  animation-delay: 5s,5s,5s;
+}
+
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_sender7pt,.dascy_laws_card > .dascy_laws_row >.dascy_laws_receiver7pt,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc17pt,.dascy_laws_card > .dascy_laws_row >.dascy_laws_pc27pt{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+input:checked + label .dascy_laws_sender7pt,input:checked + label .dascy_laws_receiver7pt,input:checked + label .dascy_laws_pc17pt,input:checked + label .dascy_laws_pc27pt{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards,changeStylesText 9s forwards;
+  animation-delay: 1s,1s;
+}
+
+/********`*******pt law***********/
+
+.dascy_laws_ptlaw{
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 230px;
+  font-size: 22px;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_ptlaw,.dascy_laws_card > .dascy_laws_row > .dascy_laws_ps,.dascy_laws_card > .dascy_laws_row > .dascy_laws_pd{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_ptlaw{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 11s,11s;
+}
+input:checked + label .dascy_laws_pd{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 18s,18s;
+}
+input:checked + label .dascy_laws_ps{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 12s,12s;
+}
+
+.dascy_laws_ps{
+  position: absolute;
+  margin-top: -410px;
+  margin-left: 100px;
+  font-size: 18px;
+}
+.dascy_laws_pd{
+  position: absolute;
+  margin-top: -410px;
+  margin-left: 485px;
+  font-size: 18px;
+}
+
+
+.dascy_laws_canvas-container {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -330px;
+  width: 110px;
+  height: 150px;
+}  
+.dascy_laws_canvas-container2 {
+  position: absolute;
+  margin-left: 240px;
+  margin-top: -330px;
+  width: 110px;
+  height: 150px;
+}  
+input:checked + label .dascy_laws_canvas-container{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 15s;
+}
+input:checked + label .dascy_laws_canvas-container2{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 16s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_canvas-container,.dascy_laws_card > .dascy_laws_row >.dascy_laws_canvas-container2 {
+  transform: translateY(30px) ; /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+.dascy_laws_line-sp{
+  position: absolute;
+  margin-left:  210px;
+  margin-top: -330px;
+  width: 80px;
+  height: 35px; 
+}
+input:checked + label .dascy_laws_line-sp {
+  opacity: 1; 
+  visibility: visible; 
+  transform:  translateY(0); 
+  animation: reveal 1s forwards, fadeInContent 0.5s forwards;
+  animation-delay: 15s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_line-sp {
+  transform: translateY(30px); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+.dascy_laws_image-pd {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 560px;
+  margin-top: -400px;
+  height: 250px; 
+  width: 80px;
+}
+input:checked + label .dascy_laws_image-pd {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 1s forwards;
+  animation-delay: 19s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_image-pd {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+.dascy_laws_info-pd{
+  position: absolute;
+  margin-top: -340px;
+  margin-left: 530px;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_info-pd{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+  
+}
+input:checked + label .dascy_laws_info-pd{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: changeStylesText 4s forwards;
+  /*  */
+  animation-delay: 20s;
+}
+
+.dascy_laws_linear-pd {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -230px;
+  width: 200px;
+  height: 25px;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_linear-pd{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_linear-pd{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 20s,20s;
+}
+
+.dascy_laws_y{
+  position: absolute;
+  border-top: 1px solid black;
+  margin-left: 30px;
+  margin-top: -250px;
+  width: 200px;
+}
+.dascy_laws_x{
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -255px;
+  border-top: 1px solid black;
+  width: 270px;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_x{
+  position: absolute;
+  opacity: 0;
+  transform:translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_y{
+  position: absolute;
+  opacity: 0;
+  transform:rotate(90deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_y,input:checked + label .dascy_laws_x{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 1s forwards,fadeInContent 2s forwards;
+  animation-delay: 13s,13s;
+}
+
+
+
+
+
+
+
+/************ capacity ************/
+.dascy_laws_mesg-c{
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -265px;
+  font-size: 24px;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_mesg-c{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_mesg-c{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 0s,0s;
+}
+
+.dascy_laws_mesg-snr{
+  position: absolute;
+  margin-left: 170px;
+  margin-top: -135px;
+  font-size: 24px;
+  width: 200px;
+  text-align: center;
+}
+.dascy_laws_mesg-bw{
+  position: absolute;
+  margin-left: 170px;
+  margin-top: -360px;
+  font-size: 24px;
+  text-align: center;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_mesg-snr,.dascy_laws_card > .dascy_laws_row > .dascy_laws_mesg-bw,.dascy_laws_card > .dascy_laws_row > .dascy_laws_lawc{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_mesg-bw{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 2s,2s;
+}
+input:checked + label .dascy_laws_mesg-snr{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 9s,9s;
+}
+
+.dascy_laws_lawc{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -259px;
+  font-size: 18px;
+}
+input:checked + label .dascy_laws_lawc{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 16s,16s;
+}
+
+
+.dascy_laws_line1c{
+  position: absolute;
+  margin-left:  50px;
+  margin-top: -320px;
+  width: 100px;
+  height: 35px; 
+}
+.dascy_laws_line2c{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -190px;
+  width: 100px;
+  height: 35px; 
+}
+input:checked + label .dascy_laws_line1c,input:checked + label .dascy_laws_line2c{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 0.5s forwards;
+  animation-delay: 1s,1s;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line1c{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-50deg) translateY(30px);
+  /* transform: translateY(30px); */
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_line2c{
+  position: absolute;
+  opacity: 0;
+  transform: rotate(50deg) translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+/********** bandwidth ********/
+
+.dascy_laws_highbw{
+  position: absolute;
+  margin-left: 610px;
+  margin-top: -335px;
+  font-size: 18px;
+}
+
+.dascy_laws_lowbw{
+  position: absolute;
+  margin-left: 610px;
+  margin-top: -435px;
+  font-size: 18px;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_highbw,.dascy_laws_card > .dascy_laws_row > .dascy_laws_lowbw,.dascy_laws_card > .dascy_laws_row > .dascy_laws_lowSNR,.dascy_laws_card > .dascy_laws_row > .dascy_laws_highSNR{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+input:checked + label .dascy_laws_lowbw{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 5s,5s;
+}
+input:checked + label .dascy_laws_highbw{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 8s,8s;
+}
+
+
+.dascy_laws_imageW {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 440px;
+  margin-top: -555px;
+  height: 250px; 
+  width: 80px;
+}
+
+.dascy_laws_wordW {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 405px;
+  margin-top: -430px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+input:checked + label .dascy_laws_imageW {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 3s;
+}
+input:checked + label .dascy_laws_wordW{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 4s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_wordW{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_imageW {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+
+.dascy_laws_imageW2 {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 420px;
+  margin-top: -455px;
+  height: 250px; 
+  width: 120px;
+}
+
+.dascy_laws_wordW2 {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 405px;
+  margin-top: -310px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.dascy_laws_wordW22 {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 405px;
+  margin-top: -350px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+input:checked + label .dascy_laws_imageW2 {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 6s;
+}
+input:checked + label .dascy_laws_wordW2,input:checked + label .dascy_laws_wordW22{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 7s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_wordW2,.dascy_laws_card > .dascy_laws_row >.dascy_laws_wordW22{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_imageW2 {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+
+/************ SNR *************/
+.dascy_laws_highSNR{
+  position: absolute;
+  margin-left: 640px;
+  margin-top: -185px;
+  font-size: 18px;
+}
+.dascy_laws_lowSNR{
+  position: absolute;
+  margin-left: 640px;
+  margin-top: -85px;
+  font-size: 18px;
+}
+input:checked + label .dascy_laws_lowSNR{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 15s,15s;
+}
+input:checked + label .dascy_laws_highSNR{
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: reveal 2s forwards,fadeInContent 2s forwards;
+  animation-delay: 12s,12s;
+}
+
+.dascy_laws_imageSNR {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 470px;
+  margin-top: -305px;
+  height: 250px; 
+  width: 80px;
+}
+
+.dascy_laws_wordSNR {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 435px;
+  margin-top: -180px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+input:checked + label .dascy_laws_imageSNR {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 10s;
+}
+input:checked + label .dascy_laws_wordSNR{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 11s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_wordSNR{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_imageSNR {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+
+.dascy_laws_imageSNR2 {
+  transform: rotate(90deg);
+  position: absolute;
+  overflow: hidden;
+  margin-left: 470px;
+  margin-top: -205px;
+  height: 250px; 
+  width: 80px;
+}
+
+.dascy_laws_wordSNR2 {
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  margin-left: 435px;
+  margin-top: -80px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.dascy_laws_blurred-overlay {
+  position: absolute;
+  margin-left: 445px;
+  margin-top: -100px;
+  width: 75px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the color and opacity */
+  backdrop-filter: blur(3px); 
+  z-index: 2;
+}
+.dascy_laws_blurred-overlay-low {
+  position: absolute;
+  margin-left: 444px;
+  margin-top: -200px;
+  width: 21px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the color and opacity */
+  backdrop-filter: blur(3px); 
+  z-index: 2;
+}
+input:checked + label .dascy_laws_blurred-overlay,input:checked + label .dascy_laws_blurred-overlay-low{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 1s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_blurred-overlay,.dascy_laws_card > .dascy_laws_row >.dascy_laws_blurred-overlay-low{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+
+input:checked + label .dascy_laws_imageSNR2 {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 13s;
+}
+input:checked + label .dascy_laws_wordSNR2{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 14s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_wordSNR2{
+  position: absolute;
+ /* overflow */
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_imageSNR2 {
+  transform: translateY(30px) rotate(90deg); /* Apply translation and rotation together */
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: .3s;
+  transition: all 0.3s ease; 
+}
+
+/**************** trans time *************/
+.dascy_laws_ttlaw{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 580px;
+  width: 150px;
+  text-align: center;
+}
+input:checked + label .dascy_laws_ttlaw{
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+  animation: fadeInContent 0.5s forwards;
+  animation-delay: 6s;
+}
+.dascy_laws_card > .dascy_laws_row >.dascy_laws_ttlaw{
+  position: absolute;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+
+
+
+/**************************************************************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #AA2EE6;
+  overflow: hidden;
+}
+
+.dascy_laws_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dascy_laws_container {
+  height: 570px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.dascy_laws_card {
+  width:55px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  background-color: rgb(255, 255, 255);
+}
+
+.dascy_laws_card > .dascy_laws_row {
+  color: rgb(0, 0, 0); /**** content color *******/
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-left: 8px;
+}
+
+.dascy_laws_card > .dascy_laws_row > .dascy_laws_description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 580px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.dascy_laws_description p {
+  color: #262629;
+  padding-top: 5px;
+}
+
+.dascy_laws_description h4 {
+  text-transform: uppercase;
+  color: #AA2EE6;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 800px;
+}
+
+input:checked + label .dascy_laws_description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* @media (max-width: 600px) {
+  .dascy_laws_vertical-line {
+    width: 1px;             
+    height: 60%;           
+  }
+}
+
+@media (min-width: 1200px) {
+  .dascy_laws_vertical-line {
+    width: 3px;  
+    height: 40%;              
+  }
+} */

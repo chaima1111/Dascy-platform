@@ -1,0 +1,9 @@
+/* SineWaveCanvas.css */
+.dascy_laws_sine-wave-canvas {
+    position: absolute;
+    width: 100%; /* 100% width of the container */
+    height: 100%; /* 100% height of the container */
+    display: block; /* Ensure no extra space around the canvas */
+  }
+  
+  

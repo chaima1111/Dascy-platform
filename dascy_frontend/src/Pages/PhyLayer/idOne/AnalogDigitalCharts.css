@@ -1,0 +1,33 @@
+
+  
+  
+  .dascy_laws_chart-wrapper1{
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: 320px;
+    margin-top: 0px;
+  }
+  .dascy_laws_chart-wrapper2{
+    flex: 1;
+    position: absolute;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: -20px;
+    margin-top: -8px;
+  }
+  
+  .dascy_laws_chart-title1 {
+    text-align: center;
+    margin-bottom: 19px;
+    margin-top: -8px;
+  }
+  .dascy_laws_chart-title2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .dascy_laws_chart-container {
+    width: 100%;
+  }
+  
