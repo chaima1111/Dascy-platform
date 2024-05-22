@@ -15,6 +15,7 @@ import Register from "../src/Pages/Register/Register.jsx"
 import HomePage from "./Main/HomePage.jsx"
 import OSI from  "./Pages/OSI/OSI.jsx"
 import Topo from  "./Pages/OSI/Topology/Topo"
+import Taille from  "./Pages/OSI/Taille/taille.jsx"
 import HardWare from "./Pages/OSI/HardWare.jsx"
 import IdeaOneFirst from  "./Pages/PhyLayer/idOne/idOneFirst.jsx"
 import IdeaTwoFirst from  "./Pages/PhyLayer/idTwo/IdTwo.jsx"
@@ -117,6 +118,10 @@ const router = createBrowserRouter([
       {
         path: "/firstChapter/topo",
         element: <Topo />,
+      },
+      {
+        path: "/firstChapter/Taille",
+        element: <Taille />,
       },
       {
         path: "/chapterTwo/second",
