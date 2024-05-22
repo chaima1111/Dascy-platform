@@ -4,7 +4,7 @@ import pc from "../../../assets/DatTwo/pc2.png"
 import arrow from "../../../assets/DatTwo/arrowDa2.png"
 import arrowinv from "../../../assets/DatTwo/arrowDaInv.png"
 
-const errorDet = () => {
+const ErrorDet = () => {
   const [step, setStep] = useState(0);
 
   const handleKeyPress = () => {
@@ -169,4 +169,4 @@ const errorDet = () => {
   )
 }
 
-export default errorDet
+export default ErrorDet
