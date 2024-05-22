@@ -1,0 +1,115 @@
+.dascy__taille{
+    width: 100%;
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0D0FF;
+
+}
+
+
+.dascy__taille-container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+.dascy__taille-title h1{
+    
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center; /* Centrer horizontalement */
+    position: absolute;
+    display: flex;
+    top:100px;
+    left: 500px;
+    }
+
+
+.dascy__taille-card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.dascy__taille-card > .dascy__taille-row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.dascy__taille-card > .dascy__taille-row > .dascy__taille-icon{
+    background-color: #110218;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+.dascy__taille-card > .dascy__taille-row > .dascy__taille-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.dascy_taille-description p{
+    color: #223;
+}
+.dascy__taille-description h2{
+   /* text-transform: uppercase;*/
+    color: #223;
+    height: 20px;
+
+    
+}
+.dascy__taille-container input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+}
+input:checked + label .dascy__taille-description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.dascy__taille-card[for='c3'] {
+  background-image: url("../../../assets/Osi/taille/man.png");
+  background-size: 590px 400px;      
+  background-color: aliceblue;
+  background-position-x: -50px;
+  justify-content: center;
+  background-position: center;
+
+}
+.dascy__taille-card[for='c2'] {
+  background-image: url('../../../assets/Osi/taille/large (1).png');
+  background-size: 595px 400px;
+  background-color: aliceblue;
+  background-position-x: 50px;
+  justify-content: center;
+  background-position: center;
+
+}
+.dascy__taille-card[for='c1'] {
+  background-image: url('../../../assets/Osi/taille/large.png');
+  background-size: 620px 390px;  
+  background-color: aliceblue;
+}
