@@ -28,7 +28,52 @@ const IdTwo = () => {
               <h4>Codage RZ (Return to Zero)</h4>
               <p>On utlise deux valeurs pour representer le 0 et le 1</p>
             </div>
+
+
+<div className="lines2">
+                    <div className='graph2_Line-1'></div>
+                    <div className='graph2_Line-2'></div>
+                    <div className='graph2_Line-3'></div>
+                    <div className='graph2_Line-4'></div>
+                    <div className='graph2_Line-5'></div>
+                    <div className='graph2_Line-6'></div>
+                    <div className='graph2_Line-7'></div>
+                    <div className='graph2_Line-8'></div>
+                    <div className='graph2_Line-9'></div>
+                    <div className='graph2_Line-10'></div>
+                    <div className='graph2_Line-11'></div>
+                    <div className='graph2_Line-12'></div>
+                  </div>
 */
+const [hoverMessage, setHoverMessage] = useState('');
+
+const handleMouseEnter = (message) => {
+  setHoverMessage(message);
+};
+
+const handleMouseLeave = () => {
+  setHoverMessage('');
+};
+
+const [hoverMessage2, setHoverMessage2] = useState('');
+
+  const handleMouseEnter2 = (message2) => {
+    setHoverMessage2(message2);
+  };
+
+  const handleMouseLeave2 = () => {
+    setHoverMessage2('');
+  };
+
+  const [hoverMessage3, setHoverMessage3] = useState('');
+
+  const handleMouseEnter3 = (message3) => {
+    setHoverMessage3(message3);
+  };
+
+  const handleMouseLeave3 = () => {
+    setHoverMessage3('');
+  };
   return (
     <>
     <div className='dascy__idTwo'>
@@ -93,19 +138,43 @@ const IdTwo = () => {
                     <div className="dashed-line6" ></div>
                   </div>
                   <div className="lines2">
-                    <div className='graph2_Line-1'></div>
-                    <div className='graph2_Line-2'></div>
-                    <div className='graph2_Line-3'></div>
-                    <div className='graph2_Line-4'></div>
-                    <div className='graph2_Line-5'></div>
-                    <div className='graph2_Line-6'></div>
-                    <div className='graph2_Line-7'></div>
-                    <div className='graph2_Line-8'></div>
-                    <div className='graph2_Line-9'></div>
-                    <div className='graph2_Line-10'></div>
-                    <div className='graph2_Line-11'></div>
-                    <div className='graph2_Line-12'></div>
-                  </div>
+              <div
+                className='graph2_Line-1'
+                onMouseEnter={() => handleMouseEnter('un tension nulle code le 0')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+              <div className='graph2_Line-2'></div>
+              <div
+                className='graph2_Line-3'
+                onMouseEnter={() => handleMouseEnter('une tension positive indique le 1')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+              <div className='graph2_Line-4'></div>
+              <div
+                className='graph2_Line-5'
+                onMouseEnter={() => handleMouseEnter('une tension negative indique le 1')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+              <div className='graph2_Line-6'></div>
+              <div className='graph2_Line-7'></div>
+              <div 
+                className='graph2_Line-8'
+                onMouseEnter={() => handleMouseEnter('un tension nulle code le 0')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+              <div className='graph2_Line-9'></div>
+              <div 
+                className='graph2_Line-10'
+                onMouseEnter={() => handleMouseEnter('une tension positive indique le 1')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+              <div className='graph2_Line-11'></div>
+              <div
+                className='graph2_Line-12'
+                onMouseEnter={() => handleMouseEnter('un tension nulle code le 0')}
+                onMouseLeave={handleMouseLeave}
+              ></div>
+            </div>
                   <div className='nmbrs' id='nbr'>
                     <p>0</p>
                     <p>1</p>
@@ -115,10 +184,11 @@ const IdTwo = () => {
                     <p>1</p>
                     <p>0</p>
                   </div> 
+                  {hoverMessage && <div className="hover-message">{hoverMessage}</div>}
               </div> 
           </div>
         </label>
-        <input type="radio" name='slide' id='c3' checked/>
+        <input type="radio" name='slide' id='c3' />
         <label htmlFor="c3" className='dascy__idTwo-card' >
           <div className='dascy__idTwo-row'>
             <div className='dascy__idTwo-graph'>
@@ -136,17 +206,37 @@ const IdTwo = () => {
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
                   <div className="lines3">
-                    <div className="graph3_line-1"></div>
-                    <div className="graph3_line-2"></div>
-                    <div className="graph3_line-3"></div>
-                    <div className="graph3_line-4"></div>
-                    <div className="graph3_line-5"></div>
-                    <div className="graph3_line-6"></div>
-                    <div className="graph3_line-7"></div>
-                    <div className="graph3_line-8"></div>
-                    <div className="graph3_line-9"></div>
-                    <div className="graph3_line-10"></div>
-                  </div>
+              <div
+                className="graph3_line-1"
+                onMouseEnter={() => handleMouseEnter2('une tension negative code le 0')}
+                onMouseLeave={handleMouseLeave2}
+              ></div>
+              <div className="graph3_line-2"></div>
+              <div
+                className="graph3_line-3"
+                onMouseEnter={() => handleMouseEnter2('une tension positive indique le 1')}
+                onMouseLeave={handleMouseLeave2}
+              ></div>
+              <div className="graph3_line-4"></div>
+              <div
+                className="graph3_line-5"
+                onMouseEnter={() => handleMouseEnter2('une tension negative code le 0')}
+                onMouseLeave={handleMouseLeave2}
+              ></div>
+              <div className="graph3_line-6"></div>
+              <div
+                className="graph3_line-7"
+                onMouseEnter={() => handleMouseEnter2('une tension positive indique le 1')}
+                onMouseLeave={handleMouseLeave2}
+              ></div>
+              <div className="graph3_line-8"></div>
+              <div 
+                className="graph3_line-9"
+                onMouseEnter={() => handleMouseEnter2('une tension negative code le 0')}
+                onMouseLeave={handleMouseLeave2}
+              ></div>
+              <div className="graph3_line-10"></div>
+            </div>
                   <div className='nmbrs' id='nbr1'>
                     <p>0</p>
                     <p>1</p>
@@ -156,10 +246,11 @@ const IdTwo = () => {
                     <p>1</p>
                     <p>0</p>
                   </div> 
+                  {hoverMessage2 && <div className="hover-message2">{hoverMessage2}</div>}
             </div> 
           </div>
         </label>
-        <input type="radio" name='slide' id='c4' checked/>
+        <input type="radio" name='slide' id='c4' />
         <label htmlFor="c4" className='dascy__idTwo-card' >
           <div className='dascy__idTwo-row'>
           <div className='dascy__idTwo-graph'>
@@ -177,16 +268,28 @@ const IdTwo = () => {
                 <div className="dashed-line6 dash-line6" ></div>
               </div>
               <div className="lines4">
-                <div className="graph4_line-1"></div>
-                <div className="graph4_line-2"></div>
-                <div className="graph4_line-3"></div>
-                <div className="graph4_line-4"></div>
-                <div className="graph4_line-5"></div>
-                <div className="graph4_line-6"></div>
-                <div className="graph4_line-7"></div>
-                <div className="graph4_line-8"></div>
-                <div className="graph4_line-9"></div>
-              </div>
+              <div className="graph4_line-1"></div>
+              <div
+                className="graph4_line-2"
+                onMouseEnter={() => handleMouseEnter3('Front descendant = 1')}
+                onMouseLeave={handleMouseLeave3}
+              ></div>
+              <div className="graph4_line-3"></div>
+              <div className="graph4_line-4"></div>
+              <div
+                className="graph4_line-5"
+                onMouseEnter={() => handleMouseEnter3('Front descendant = 1')}
+                onMouseLeave={handleMouseLeave3}
+              ></div>
+              <div className="graph4_line-6"></div>
+              <div className="graph4_line-7"></div>
+              <div
+                className="graph4_line-8"
+                onMouseEnter={() => handleMouseEnter3('Front descendant = 1')}
+                onMouseLeave={handleMouseLeave3}
+              ></div>
+              <div className="graph4_line-9"></div>
+            </div>
               <div className='nmbrs'>
                 <p>0</p>
                 <p>1</p>
@@ -196,6 +299,7 @@ const IdTwo = () => {
                 <p>1</p>
                 <p>0</p>
               </div> 
+              {hoverMessage3 && <div className="hover-message3">{hoverMessage3}</div>}
               </div>
           </div>
         </label>
@@ -215,6 +319,26 @@ const IdTwo = () => {
                     <div className="dashed-line4" id='dash-line4'></div>
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
+                  </div>
+                  <div className="lines5">
+                    <div className="graph5_line-1"></div>
+                    <div className="graph5_line-2"></div>
+                    <div className="graph5_line-3"></div>
+                    <div className="graph5_line-4"></div>
+                    <div className="graph5_line-5"></div>
+                    <div className="graph5_line-6"></div>
+                    <div className="graph5_line-7"></div>
+                    <div className="graph5_line-8"></div>
+                    <div className="graph5_line-9"></div>
+                    <div className="graph5_line-10"></div>
+                    <div className="graph5_line-11"></div>
+                    <div className="graph5_line-12"></div>
+                    <div className="graph5_line-13"></div>
+                    <div className="graph5_line-14"></div>
+                    <div className="graph5_line-15"></div>
+                    <div className="graph5_line-16"></div>
+                    <div className="graph5_line-17"></div>
+                    <div className="graph5_line-18"></div>
                   </div>
                   <div className='nmbrs' id='nbr5'>
                     <p>0</p>
@@ -245,6 +369,21 @@ const IdTwo = () => {
                     <div className="dashed-line5" id='dash-line5'></div>
                     <div className="dashed-line6" id='dash-line6'></div>
                   </div>
+                  <div className="lines6">
+                    <div className="graph6_line-1"></div>
+                    <div className="graph6_line-2"></div>
+                    <div className="graph6_line-3"></div>
+                    <div className="graph6_line-4"></div>
+                    <div className="graph6_line-5"></div>
+                    <div className="graph6_line-6"></div>
+                    <div className="graph6_line-7"></div>
+                    <div className="graph6_line-8"></div>
+                    <div className="graph6_line-9"></div>
+                    <div className="graph6_line-10"></div>
+                    <div className="graph6_line-11"></div>
+                    <div className="graph6_line-12"></div>
+                    <div className="graph6_line-13"></div>
+                  </div>
                   <div className='nmbrs' id='nbr6'>
                     <p>0</p>
                     <p>1</p>
@@ -259,11 +398,6 @@ const IdTwo = () => {
         </label>
       </div>
     </div>
-
-    
-
-    
-    
     </>
   )
 }

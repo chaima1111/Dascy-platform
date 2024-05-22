@@ -131,9 +131,9 @@ const Topo = () => {
             <>
              <div className="dascy__topo-Pc">
               <img src={photo1} alt="STAR Topology" className="image-large2" />
-              {/*<div className="writing-square">
+              <div className="writing-square">
                 <h2>What happened??</h2>
-          </div>*/}
+          </div>
               <img src={photo1} alt="STAR Topology" className="image-large2" />
               <div className="writing-square1">
                 <h2>Dont blame me!</h2>
