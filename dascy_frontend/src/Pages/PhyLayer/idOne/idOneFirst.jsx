@@ -16,6 +16,11 @@ const IdOneFirst = () => {
   return (
      <div className="dascy_laws_App">
        <div className="dascy_laws_wrapper">
+         
+          <div class="circle">
+            <div class="next"></div>
+           </div>
+         
             <div className="dascy_laws_container">
             <input type="radio" name="slide" id="c1" checked={selectedCard ==='c1'}
             onChange={()=> setSelecteedCard('c1')} />

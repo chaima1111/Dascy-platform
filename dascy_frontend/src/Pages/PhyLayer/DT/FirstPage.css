@@ -1,0 +1,442 @@
+/* .rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  } */
+  .dascy__firstPage{
+
+    display: flex;
+     justify-content: center; 
+     align-items: center;
+     min-height: 100vh;
+     background: #AA2EE6;
+ 
+   }
+ 
+   .dascy__firstPage-content{
+ 
+   width: 900px;
+   background: #ffffff;
+   display: flex;
+   align-items: flex-end;
+   padding: 60px 40px;
+   border-radius: 10px;
+   
+   }
+   @keyframes popIn {
+     from {
+       transform: translateX(-50%); /* Start off the screen on the left */
+     }
+     to {
+       transform: translateX(0); /* Move to its place on the screen */
+     }
+   }
+   
+   /* Apply the animation to the text container */
+   .title {
+     animation: popIn 1s forwards; /* Use popIn animation for 0.5 seconds */
+   }
+ 
+   @keyframes fadeInContent {
+     from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
+   }
+   
+   /* Apply the fade-in animation to the additional content */
+   
+   .rectangle11{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 1s;
+   }
+   .img1{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 1.5s;
+   }
+   .rectangle21{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 2s;
+   }
+   .img11{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 2.5s;
+   }
+   .img22{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 3.5s;
+   }
+   .rectangle22{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 4s;
+   }
+   .img2{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 4.5s;
+   }
+   .rectangle12{
+     opacity: 0;
+     animation: fadeInContent 1s forwards;
+     animation-delay: 5s;
+   }
+ 
+   .title{ 
+     padding-bottom: 350px;
+   }
+ 
+   .first,
+ .second {
+   display: flex;
+   
+ }
+ .first {
+   padding-bottom: 3px;
+ }
+ .second{
+   justify-content: space-between;
+   padding: 10px;
+ }
+   
+   .flow-chart {
+      justify-content: center;
+     margin-left: 55px; /**************************/
+   }
+   
+   .rectangle11{
+     width: 185px;
+     height: 50px;
+     background-color: #AA2EE6;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     margin-left: 10px;
+     margin-right: 200px;
+   }
+   .rectangle12{
+     width: 185px;
+     height: 50px;
+     background-color: #AA2EE6;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     margin-left: 10px;
+     margin-right: 200px;
+   }
+ 
+   @keyframes changeStylesBits {
+     0% {
+       border: 3px solid #AA2EE6;
+     }
+     50% {
+       background-color: #ffffff;
+       border: 3px solid #AA2EE6;
+ 
+     }
+     100% {
+       border: 3px solid #AA2EE6;
+     }
+   }
+   @keyframes changeStylesHoverText {
+     0% { opacity: 0;}
+     50% { opacity: 1; }
+     100% { opacity: 0;}
+   }
+   .rectangle21 {  
+     width: 150px;
+     height: 50px;
+     background-color: #AA2EE6;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     margin-left: 10px;
+     margin-right: 200px;
+   }
+   .rectangle22 {  
+     width: 150px;
+     height: 50px;
+     background-color: #AA2EE6;
+     color: #ffffff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     margin-left: 10px;
+     margin-right: 200px;
+   }
+   .rectangle21 .normal-text{
+     display: block;
+     font-size: 17px; 
+     font-weight: 450;    
+   }
+   .rectangle22 .normal-text{
+     display: block;
+     font-size: 17px; 
+     font-weight: 450;  
+   }
+   .rectangle21 .hover-text{
+ 
+     color: #000000;
+     font-size: 17px; 
+     font-weight: 450;
+   }
+   .rectangle22 .hover-text {
+     color: #000000;
+     font-size: 17px; 
+     font-weight: 450;
+   }
+  
+ .digital{
+   opacity: 0;
+   font-size: 17px; 
+   font-weight: 450;
+   padding-left: 230px;
+   animation: changeStylesHoverText 3s forwards; 
+   animation-delay: 6.5s;
+ }
+ @keyframes changeStylesCircle {
+   0% { opacity: 0;}
+   100% { opacity: 1;}
+ }
+ .circle {
+   opacity: 0;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%; 
+   background-color: #AA2EE6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 650px;
+   margin-bottom: -30px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   animation: changeStylesCircle 0s forwards; 
+   animation-delay:12s; 
+ }
+ .circle:hover{
+   background-color: #6d0c9e;
+   cursor: pointer;
+ }
+ 
+ .circle span {
+   margin-top: 3px;
+   margin-left: 2px;
+ }
+ 
+   
+       /* texttt */
+   .normal-text {
+     display: block;
+     font-size: 17px; 
+     font-weight: 450;
+   }
+ 
+     .hover-text {
+         display: none;
+         color: #000000;
+         font-size: 17px; 
+         font-weight: 450;
+     }
+ 
+    .rectangle21:hover .hover-text, .rectangle22:hover .hover-text{
+         display: block;
+     }
+ 
+     .rectangle21:hover .normal-text, .rectangle22:hover .normal-text{
+         display: none;
+     }
+     .rectangle21:hover,.rectangle22:hover{
+       background-color: #ffffff;
+       border: 3px solid #AA2EE6;
+       
+     }
+ 
+     .img1{
+       padding-left: 80px;
+       padding-right: 150px;
+     }
+ 
+     .img2{
+       padding-left: 200px;
+       padding-right: 150px;
+     }
+     .img11{
+       padding-left: 80px;
+       padding-right: 150px;
+     }
+     .img22{
+       padding-left: 155px;
+     }
+        /******************************************/
+     @keyframes changeStyles {
+       0% {
+         border: 3px solid #AA2EE6;
+       }
+       50% {
+         background-image: url(../../../assets/signaldig.svg);
+         border: 3px solid #AA2EE6;
+ 
+       }
+       100% {
+         border: 3px solid #AA2EE6;
+       }
+     }
+     @keyframes changeStylesText {
+       0% { opacity: 1; }
+       50% { opacity: 0; }
+       100% { opacity: 1; }
+     }
+     .rectangle .normal-text{
+       display: block;
+       font-size: 17px; 
+       font-weight: 450;
+       animation: changeStylesText 5s forwards; 
+       animation-delay: 6s;     
+     }
+    
+   .rectangle{
+       width: 250px;
+       height: 50px;
+       background-color: #AA2EE6;
+       color: #ffffff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 5px;
+       margin-left: 180px; 
+       margin-bottom: 5px;
+       opacity: 0;
+       animation: fadeInContent 1s forwards,changeStyles 5s forwards; 
+       animation-delay: 3s,6s;
+       
+     }
+     /******************************************/
+   .rectangle:hover{
+     background-image: url(../../../assets/signaldig.svg);
+     border: 3px solid #AA2EE6;
+     cursor: pointer;
+   }
+   .rectangle:hover .normal-text{
+     display: none;
+     }
+ 
+   .routfleche{
+     margin: 50px;
+   }
+ 
+ 
+   /*************************************************************/
+ 
+   *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     scroll-behavior: smooth;
+ }
+ 
+ body{
+     background: var(--color-bg);
+     /*background-color: #F9F8FD;*/
+ }
+ 
+ a{
+     color: unset;
+     text-decoration: none;
+ }
+ .gradient-bg
+ {
+             /* global 92%+ browsers support */
+             background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(238, 130, 238, 1) 100%);
+ }
+ .gradient__text{
+     background: var(--gradient-text);
+     background-clip:text ;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ 
+ .section__padding{
+     padding: 4rem 6rem;
+ }
+ 
+ .section__margin{
+     margin: 4rem 6rem;
+ }
+ 
+ .scale-up-center {
+     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+ }
+ 
+ /* ----------------------------------------------
+  * Generated by Animista on 2024-3-25 17:38:24
+  * Licensed under FreeBSD License.
+  * See http://animista.net/license for more info. 
+  * w: http://animista.net, t: @cssanimista
+  * ---------------------------------------------- */
+ 
+ /**
+  * ----------------------------------------
+  * animation scale-up-center
+  * ----------------------------------------
+  */
+ @-webkit-keyframes scale-up-center {
+     0% {
+         -webkit-transform: scale(0.5);
+         transform: scale(0.5);
+     }
+ 
+     100% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+     }
+ }
+ 
+ @keyframes scale-up-center {
+     0% {
+         -webkit-transform: scale(0.5);
+         transform: scale(0.5);
+     }
+ 
+     100% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+     }
+ }
+ 
+ @media screen and (max-width:700px) {
+     .section__padding{
+         padding: 4rem ;
+     }
+     .section__margin{
+         margin: 4rem ;
+     }
+ }
+ 
+ @media screen and (max-width:550px) {
+     .section__padding{
+         padding: 4rem 2rem;
+     }
+     .section__margin{
+         margin: 4rem 2rem;
+     }
+ }
