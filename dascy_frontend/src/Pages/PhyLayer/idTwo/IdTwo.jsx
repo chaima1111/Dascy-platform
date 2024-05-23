@@ -360,7 +360,7 @@ const handleMouseLeave6 = () => {
               </div> 
               {hoverMessage3 && <div className="hover-message3">{hoverMessage3}</div>}
               <div className='icon-description'>
-                <div className='icon'>4</div>
+                <div className='icon1'>4</div>
                 <div className='description'>
                   <h4>Codage RZ (Return to Zero)</h4>
                   <p>On utlise deux valeurs pour representer le 0 et le 1</p>
