@@ -2225,9 +2225,9 @@ body {
 .dascy_laws_description h4 {
   text-transform: uppercase;
   color: #AA2EE6;
-}/*nnnnnnnnnnnnnnnnnnnnnn*/
+}
 
-input {
+.dascy_laws_container input {
   display: none;
 }
 
