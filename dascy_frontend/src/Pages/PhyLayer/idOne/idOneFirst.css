@@ -17,6 +17,43 @@
   100% { opacity: 1; }
 }
 
+@keyframes changeStylesCircle {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+.circle {
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  background-color: #a86ec5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1310px;
+  margin-top: 550px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: changeStylesCircle 0s forwards; 
+  animation-delay:12s; 
+}
+.circle:hover{
+  background-color: #6d0c9e;
+  cursor: pointer;
+}
+.next {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid white;
+  position: absolute;
+}
+.circle span {
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
 /*************** bitrate*******************/
 .dascy_laws_card > .dascy_laws_row > .dascy_laws_info2, .dascy_laws_card > .dascy_laws_row > .dascy_laws_info3,.dascy_laws_card > .dascy_laws_row > .dascy_laws_pr,.dascy_laws_card > .dascy_laws_row > .dascy_laws_pr2{
   color: #000;
