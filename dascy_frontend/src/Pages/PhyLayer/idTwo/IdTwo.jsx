@@ -30,7 +30,7 @@ import './idTwo.css';
 /*const [selectedCard, setSelectedCard] = useState('c1'); */
 const IdTwo = () => {
 
-  const [selectedCard, setSelectedCard] = useState('c1');
+  const [selectedCard, setSelectedCard] = useState('c6');
   
 const [hoverMessage, setHoverMessage] = useState('');
 
@@ -369,65 +369,6 @@ const handleMouseLeave6 = () => {
               </div>
           </div>
         </label>
-        <input type="radio" name='slide' id='c5'  checked={selectedCard === 'c5'}
-          onChange={() => setSelectedCard('c5')}/>
-        <label htmlFor="c5" className='dascy__idTwo-card' >
-          <div className='dascy__idTwo-row'>
-          <p className='tension'>Tension</p>
-          <div className='dascy__idTwo-graph'>
-                  <div className="arrows5">
-                    <div className="arrow-x" id='arr2-x'></div>
-                    <div className="arrow-y" id='arr2-y'></div>
-                  </div>
-                  <div className="dashed-lines5">
-                    <div className="dashed-line" id='dash-line'></div>
-                    <div className="dashed-line1" id='dash-line1'></div>
-                    <div className="dashed-line2" id='dash-line2'></div>
-                    <div className="dashed-line3" id='dash-line3'></div>
-                    <div className="dashed-line4" id='dash-line4'></div>
-                    <div className="dashed-line5" id='dash-line5'></div>
-                    <div className="dashed-line6" id='dash-line6'></div>
-                  </div>
-                  <div className="lines5">
-                    <div className="graph5_line-1"></div>
-                    <div className="graph5_line-2"></div>
-                    <div className="graph5_line-3"></div>
-                    <div className="graph5_line-4"></div>
-                    <div className="graph5_line-5"></div>
-                    <div className="graph5_line-6"></div>
-                    <div className="graph5_line-7"></div>
-                    <div className="graph5_line-8"></div>
-                    <div className="graph5_line-9"></div>
-                    <div className="graph5_line-10"></div>
-                    <div className="graph5_line-11"></div>
-                    <div className="graph5_line-12"></div>
-                    <div className="graph5_line-13"></div>
-                    <div className="graph5_line-14"></div>
-                    <div className="graph5_line-15"></div>
-                    <div className="graph5_line-16"></div>
-                    <div className="graph5_line-17"></div>
-                    <div className="graph5_line-18"></div>
-                  </div>
-                  <div className='nmbrs' id='nbr5'>
-                    <p>0</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>0</p>
-                    <p>0</p>
-                    <p>1</p>
-                    <p>0</p>
-                    <p className='temps2'>Temps</p>
-                  </div> 
-                  <div className='icon-description'>
-                <div className='icon5'>5</div>
-                <div className='description'>
-                  <h4>Codage Manchester différentiel</h4>
-                  <p>On utlise deux valeurs pour representer le 0 et le 1</p>
-                </div>
-              </div>
-            </div> 
-          </div>
-        </label>
         <input type="radio" name='slide' id='c6'  checked={selectedCard === 'c6'}
           onChange={() => setSelectedCard('c6')}/>
         <label htmlFor="c6" className='dascy__idTwo-card' >
@@ -502,7 +443,7 @@ const handleMouseLeave6 = () => {
                   </div> 
                   {hoverMessage6 && <div className="hover-message3" id='hover-message6'>{hoverMessage6}</div>}
                   <div className='icon-description'>
-                <div className='icon6'>6</div>
+                <div className='icon6'>5</div>
                 <div className='description'>
                   <h4>Codage Manchester différentiel</h4>
                   <p>On utlise deux valeurs pour representer le 0 et le 1</p>
