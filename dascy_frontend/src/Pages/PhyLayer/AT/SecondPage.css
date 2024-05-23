@@ -292,7 +292,7 @@
          border: 3px solid #AA2EE6;
        }
        50% {
-         background-image: url(../../../assets/signaldig.svg);
+         background-image: url(../../../assets/anlgsignal.png);
          border: 3px solid #AA2EE6;
  
        }
@@ -331,7 +331,7 @@
      }
      /******************************************/
    .rectangle:hover{
-     background-image: url(../../../assets/signaldig.svg);
+     background-image: url(../../../assets/anlgsignal.png);
      border: 3px solid #AA2EE6;
      cursor: pointer;
    }
