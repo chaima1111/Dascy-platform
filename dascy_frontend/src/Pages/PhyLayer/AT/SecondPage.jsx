@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SecondPage.css"
-const FirstPage = () => {
+const SecondPage = () => {
   return (
     
     <div className="dascy__firstPage">
@@ -66,4 +66,4 @@ const FirstPage = () => {
   );
 }
 
-export default FirstPage
+export default SecondPage
