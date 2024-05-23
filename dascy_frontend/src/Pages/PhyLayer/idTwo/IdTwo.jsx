@@ -30,7 +30,7 @@ import './idTwo.css';
 /*const [selectedCard, setSelectedCard] = useState('c1'); */
 const IdTwo = () => {
 
-  const [selectedCard, setSelectedCard] = useState('c6');
+  const [selectedCard, setSelectedCard] = useState('c1');
   
 const [hoverMessage, setHoverMessage] = useState('');
 
@@ -147,7 +147,7 @@ const handleMouseLeave6 = () => {
               </div> 
               {hoverMessage && <div className="hover-message">{hoverMessage}</div>}
               <div className='icon-description'>
-                <div className='icon'>1</div>
+                <div className='icon1'>1</div>
                 <div className='description'>
                   <h4>Codage tout ou rien (unipolaire)</h4>
                   <p>On utlise deux valeurs pour representer le 0 et le 1</p>
